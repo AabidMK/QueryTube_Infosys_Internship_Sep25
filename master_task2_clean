@@ -1,0 +1,44 @@
+import pandas as pd
+import re
+
+# Load the dataset
+df2 = pd.read_csv('master_task2_datset.csv')
+
+# 1. Remove [Music], [Applause], timestamps
+def clean_transcript(text):
+    if isinstance(text, str):
+        text = re.sub(r'\[.*?\]', '', text) # Remove [Music], [Applause]
+        text = re.sub(r'\d{1,2}:\d{1,2}(:\d{1,2})?', '', text) # Remove timestamps
+        return text
+    return text
+
+df2['transcript'] = df2['transcript'].apply(clean_transcript)
+
+# 2. Remove Special characters or non-UTF symbols
+def remove_special_chars_transcript(text):
+    if isinstance(text, str):
+        return re.sub(r'[^\x00-\x7F]+', ' ', text) # Remove non-UTF symbols
+    return text
+
+df2['transcript'] = df2['transcript'].apply(remove_special_chars_transcript)
+
+# 3. Convert to lowercase except Videoid
+df2['transcript'] = df2['transcript'].str.lower()
+
+# 4. Replace newlines with spaces.
+df2['transcript'] = df2['transcript'].str.replace('\n', ' ').str.replace('\r', ' ')
+
+# 5. Handle missing transcripts (Corrected line)
+df2['transcript'] = df2['transcript'].fillna('')
+
+# 6. Strip extra whitespace.
+def strip_extra_whitespace(text):
+    if isinstance(text, str):
+        return " ".join(text.split())
+    return text
+    
+df2['transcript'] = df2['transcript'].apply(strip_extra_whitespace)
+
+# Save the cleaned data
+df2.to_csv('cleaned_transcripts.csv', index=False)
+print("Cleaned transcript data saved to cleaned_transcripts.csv")
