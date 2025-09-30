@@ -1,0 +1,2482 @@
+id,title,description,publishedAt,tags,categoryId,defaultLanguage,defaultAudioLanguage,thumbnail_default,thumbnail_high,duration,viewCount,likeCount,commentCount,privacyStatus,channel_id,channel_title,channel_description,channel_country,channel_thumbnail,channel_subscriberCount,channel_videoCount
+yguDjZcUpH8,Lone Wolf Dev turned Open Source Super Contributor Tom Mondloch [Podcast #190],"Tom Mondloch quit programming after he finished community college. After a few years of odd jobs, he decided to get back into programming and discovered freeCodeCamp. 
+
+He was just learning his own way, and didn't think freeCodeCamp's linear curriculum would be worth his time. But he stuck with it, got good, and ultimately started contributing to our open source project.
+
+He's since joined freeCodeCamp's staff and archetected freeCodeCamp's entire relational database curriculum, which you can run in your browser or right inside your VS Code editor.
+
+Tom shares tips for:
+- Brushing up on your programming skills if you've taken a few years off
+- Contributing to open source
+- Using AI codegen tools sensibly and not relying too heavily on them
+
+He also talks about the role of vocational college, his love of the outdoors, and how working remotely allows him to continue to live in small town middle America without the need to move to a big city.
+
+A huge thank you to the 10,889 kind folks who make this podcast possible by supporting freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+Links we talk about:
+🔗 freeCodeCamp's daily coding challenges in Python and JavaScript: https://www.freecodecamp.org/news/introducing-freecodecamp-daily-python-and-javascript-challenges-solve-a-new-programming-puzzle-every-day/
+🔗 Mrugesh's article on AI Assisted Coding (that Tom used for his hackathon project): https://www.freecodecamp.org/news/how-to-become-an-expert-in-ai-assisted-coding-a-handbook-for-developers/
+🔗 Jessica Wilkins who helped Tom with his hackathon project on the freeCodeCamp podcast episode #111: https://www.freecodecamp.org/news/podcast-jessica-wilkins-classical-music-learning-to-code/
+
+News items:
+
+1. freeCodeCamp just published this comprehensive front end development course where you build your own browser-based code editor. You can code along at home and build your own single page app development environment with tabs for editing your HTML, CSS, and JavaScript. Along the way, you'll learn some intermediate JS techniques that allow for instant live preview, so you can see the results of your code changes right away. (4 hour YouTube course): https://www.freecodecamp.org/news/code-your-own-code-editor/
+
+2. I also made a quick announcement about some big improvements to our core Full Stack Development curriculum. In short, we're breaking down our new coursework into a series of six new certifications you can earn along the way to the capstone cert. These include Python, Relational Databases, Front End Libraries, and more. (5 minute read): https://www.freecodecamp.org/news/introducing-freecodecamp-checkpoint-certifications/
+
+3. freeCodeCamp also just published this new course that will help you pass the Databricks Data Engineer Associate certification exam. Andrew Brown is a CTO who has passed practically every DevOps exam under the sun, and he teaches this course. He'll introduce you to key concepts like Clusters, Structured Streaming, Data Lakes, and more. (8 hour course): https://www.freecodecamp.org/news/prepare-for-the-databricks-data-engineer-associate-certification-exam-and-pass/
+
+5. Enjoy this breezy read about Cosine Similarity and the role it plays in Large Language Models. As its author, Manish, says, Cosine Similarity is “a bridge between human language and machine understanding. It allows a model to treat meaning as geometry, turning questions and answers into points in space.” Not only will you learn the math involved, you'll also see it implemented in Python code. (10 minute read): https://www.freecodecamp.org/news/how-does-cosine-similarity-work/
+
+6. Krazam America's Next Top Model Context Protocol Server skit: https://www.youtube.com/watch?v=mVrCPo8eB3A
+
+Song of the Week: A Taste of Honey: https://www.youtube.com/watch?v=PhD58dP9kq8
+
+Chapters
+0:00 - Introduction
+0:08 - Community News
+0:13 - Front End Development Course
+0:56 - New Certifications
+1:34 - Databricks Certification Guide
+2:03 - Cosine Similarity Tutorial
+2:34 - Developer Comedy
+3:10 - Song of the Week
+3:42 - Interview with Tom Mondloch
+4:50 - Daily Coding Challenges
+8:20 - The Hardest Part of Creating Challenges
+11:05 - Future Features for Challenges
+15:00 - LLMs vs. Daily Challenges
+15:47 - Tom's Programming Journey
+17:05 - Returning to Programming
+19:56 - Transition to Open Source Contributor
+23:24 - Relational Database Curriculum Development
+27:33 - Language Curricula
+30:33 - AI Assisted Development
+33:11 - MAME Machine Project
+35:52 - Advice for Open Source Contributions
+36:25 - Hopes for 2026",2025-09-26T14:00:06Z,N/A,27,en,en,https://i.ytimg.com/vi/yguDjZcUpH8/default.jpg,https://i.ytimg.com/vi/yguDjZcUpH8/hqdefault.jpg,PT38M19S,5045,168,4,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+mvleESOUTRw,Production-Grade AI Project Tutorial – Build & Deploy,"This course will teach you to build a powerful, enterprise-grade AI system that prepares high-quality training data for tasks like creating chatbots or summarization tools.
+
+✏️ Course created by @AyushSinghSh 
+
+🔗 Instructions: https://drive.google.com/file/d/1vaEi_LeSaIDXs9b77qYTIk56c3mmuTrd/view?usp=drive_link
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp
+
+⭐️ Contents ⭐️
+- (0:00:00) Introductions
+- (0:03:18) Main Entrance (`__init__.py`)
+- (0:19:25) Factory Manager (`bot.py`)
+- (0:36:47) Factory Blueprints (`models.py`)
+- (0:49:13) Document Highway System
+- (1:04:35) Specialized Document Loaders
+- (1:13:47) Text Processing Pipeline
+- (1:19:30) Task Assignment Office
+- (1:26:11) AI Brain (`client.py`)
+- (1:31:56) Quality Control Lab
+- (1:35:17) Packaging and Shipping
+- (1:37:22) Professional Web Scout (`decoder_client.py`)
+- (1:40:11) Command Line Interface (CLI)
+
+🎉 Thanks to our Champion and Sponsor supporters:
+👾 Drake Milly
+👾 Ulises Moralez
+👾 Goddard Tan
+👾 David MG
+👾 Matthew Springman
+👾 Claudio
+👾 Oscar R.
+👾 jedi-or-sith
+👾 Nattira Maneerat
+👾 Justin Hual
+
+--
+
+Learn to code for free and get a developer job: https://www.freecodecamp.org
+
+Read hundreds of articles on programming: https://freecodecamp.org/news",2025-09-25T13:58:50Z,N/A,27,en,en,https://i.ytimg.com/vi/mvleESOUTRw/default.jpg,https://i.ytimg.com/vi/mvleESOUTRw/hqdefault.jpg,PT1H44M27S,20336,1009,35,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+p3sij8QzONQ,LLMs from Scratch – Practical Engineering from Base Model to PPO RLHF,"Learn to build a complete large language model from scratch using only pure PyTorch. This course takes you through the entire lifecycle, from foundational concepts to advanced alignment techniques. By the end, you'll have the deep, hands-on experience needed to build and customize your own LLMs.
+
+✏️ Course developed by Vivek Kalyanarangan.
+
+💻 Code: https://github.com/vivekkalyanarangan30/llm_from_scratch
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp
+
+⭐️ Contents ⭐️
+0:00:00 Part 0 - Introduction
+0:05:43 Part 1 - Core Transformer Architecture
+0:40:24 Part 2 — Training a Tiny LLM
+1:30:27 Part 3 — Modernizing the Architecture
+2:33:53 Part 4 — Scaling Up
+3:17:22 Part 5 — Mixture-of-Experts (MoE)
+3:44:19 Part 6 — Supervised Fine-Tuning (SFT)
+4:23:44 Part 7 — Reward Modeling
+4:59:55 Part 8 — RLHF with PPO
+
+🎉 Thanks to our Champion and Sponsor supporters:
+👾 Drake Milly
+👾 Ulises Moralez
+👾 Goddard Tan
+👾 David MG
+👾 Matthew Springman
+👾 Claudio
+👾 Oscar R.
+👾 jedi-or-sith
+👾 Nattira Maneerat
+👾 Justin Hual
+
+--
+
+Learn to code for free and get a developer job: https://www.freecodecamp.org
+
+Read hundreds of articles on programming: https://freecodecamp.org/news",2025-09-23T12:32:33Z,N/A,27,en,en,https://i.ytimg.com/vi/p3sij8QzONQ/default.jpg,https://i.ytimg.com/vi/p3sij8QzONQ/hqdefault.jpg,PT6H6M21S,61235,3683,85,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+B0TJC4lmzEM,"How to Build Advanced AI Agents – Course for Beginners (LiveKit, Exa, LangChain)","Learn how to build real-world AI apps in this 3-part workshop series. You'll learn to build voice agents,  deep research tools,  multi-agent workflows, and more.‌﻿‍﻿‍‍‌‍﻿﻿‌﻿‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍‍‍﻿‍‍‍‍‌﻿﻿‌‍‌‌‍﻿‍‌‍‍‌‌﻿‌‌﻿‍‌‍﻿‍‌‍‍‌‌‍﻿﻿‍‍‍﻿‍‍‌‍‍‌﻿‍‌‍‌‌‌‍‌‍‍‍﻿‍‍‍‍‍﻿﻿‌﻿﻿‌﻿‌‌﻿‌‌‌‍‌‌‍‍‌‌‍﻿﻿‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌‌‍‌‌‌‍﻿‍‌﻿‌‍﻿﻿‌‍‌‌‌‍‌‌‍‍‌‌﻿‌‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌‌‍‌‌﻿﻿‌‌﻿‌﻿‍‌‍‌‌‌﻿﻿‌‍‌‌‌‍﻿‍‌﻿‌‌‍‌‌﻿‌‌‍‍‌‌‍﻿﻿‌‍﻿‍﻿‍﻿‌‍‍‌‌‍‌﻿﻿‌﻿‌‌‌‍‌‌﻿‌‌﻿‌﻿﻿﻿‌‍﻿‌﻿‌‍﻿‌‌‍‌‍﻿‌‌‍﻿‌‍‌‍‍﻿‌﻿‌﻿‌‍﻿﻿‌‌‍﻿‌‌‍‌‌‍‌‌﻿‍‌‌‍‌‍﻿‌﻿‌﻿‌‌‍﻿‌‍‌‌‍﻿﻿‍‌‍‍‌‍‌‌‍‌‌‍‍﻿‍‌‍‌﻿‍﻿‌﻿‌‌﻿‍‌‌﻿‌‍‌‌﻿﻿‌‌﻿‌‍‌‌‍‌﻿‌‍‌‌﻿‍﻿‌﻿‌‍‌‌﻿‌‌‍‍﻿﻿‌‌﻿﻿‌‍﻿‌‍‍‌‌‍﻿‌‍‌‌‌﻿﻿‍‌‌﻿‌‌‌‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌‍‌‌﻿﻿‌‌‍‌‌﻿﻿‌‌‍‌‌﻿‍﻿‍‌‍‌‌‍‍‌‍‌﻿﻿﻿‌‍‌‍﻿‍‌﻿‍‌‌‍‌﻿‍‌﻿‌‌‍‌‍‌‌﻿‍﻿‍‍‌‌﻿‌‌‌‌‍﻿‍‌‍‌‌‍‌‌‌﻿﻿‌‍﻿‌﻿‍‌‍‍‌‌﻿‌﻿‌‌‍‍‌‌‍﻿﻿‌‍﻿‍‍‌‌﻿‌‌‌‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌‍‌‌﻿﻿‌‌‍‌‌﻿﻿‌‌‍‌‌﻿‍﻿‍﻿‌﻿‌‌‌‍‌‍‌‍‌‌﻿‌‌‍‌﻿‌﻿﻿‌‌‌‍‌‌﻿﻿‌‍‌‌‍‌‍‌‌﻿‍﻿‍‍‌‌﻿‌‌‌‌‍﻿‍‌‍﻿‌‍‍‌‍‍‌‌‍﻿‌‍‌‌﻿‍‌‍‌‌‌‍﻿‍‍‌‌﻿‌‌‌‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌‍‌‌﻿﻿‌‌‍‌‌﻿﻿‌‌‍‌‌﻿‍﻿‍﻿‍﻿‌﻿﻿‍﻿‌﻿﻿‍‌‍‌‍‌‍‍‌‍‌﻿‍﻿‍‌﻿‍‍‌‌﻿‍﻿‍‍‌‌﻿‌‌‌‌‍﻿‍‌﻿‌‌‍‌‌‌﻿‍‌﻿‌﻿﻿﻿‌‍‍‌‍‌‌﻿﻿‌‍‌‌‌‌‌‌‌﻿‍‌‍﻿﻿﻿‌‍‌‌﻿‍‌‌‍‌﻿﻿‌﻿‌‌﻿‌‌‌‍‌‌‍‍‌‌‍﻿﻿‍‌‍‌‍‍‌‌‍‌﻿﻿‌﻿‌‌‌‍‌‌﻿‌‌﻿‌﻿﻿﻿‌‍﻿‌﻿‌‍﻿‌‌‍‌‍﻿‌‌‍﻿‌‍‌‍‍﻿‌﻿‌﻿‌‍﻿﻿‌‌‍﻿‌‌‍‌‌‍‌‌﻿‍‌‌‍‌‍﻿‌﻿‌﻿‌‌‍﻿‌‍‌‌‍﻿﻿‍‌‍‍‌‍‌‌‍‌‌‍‍﻿‍‌‍‌‍‌‍‌﻿‌‌﻿‍‌‌﻿‌‍‌‌﻿﻿‌‌﻿‌‍‌‌‍‌﻿‌‍‌‌‍‌‍‌﻿‌‍‌‌﻿‌‌‍‍﻿﻿‌‌﻿﻿‌‍﻿‌‍‍‌‌‍﻿‌‍‌‌‌﻿﻿‍‌‌﻿‌‌‌‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌‍‌‌﻿﻿‌‌‍‌‌﻿﻿‌‌‍‌‌﻿‍﻿‍‌‍‌‌‍‍‌‍‌﻿﻿﻿‌‍‌‍﻿‍‌﻿‍‌‌‍‌﻿‍‌﻿‌‌‍‌‍‌‌﻿‍﻿‍‍‌‌﻿‌‌‌‌‍﻿‍‌‍‌‌‍‌‌‌﻿﻿‌‍﻿‌﻿‍‌‍‍‌‌﻿‌﻿‌‌‍‍‌‌‍﻿﻿‌‍﻿‍‍‌‌﻿‌‌‌‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌‍‌‌﻿﻿‌‌‍‌‌﻿﻿‌‌‍‌‌﻿‍﻿‍﻿‌﻿‌‌‌‍‌‍‌‍‌‌﻿‌‌‍‌﻿‌﻿﻿‌‌‌‍‌‌﻿﻿‌‍‌‌‍‌‍‌‌﻿‍﻿‍‍‌‌﻿‌‌‌‌‍﻿‍‌‍﻿‌‍‍‌‍‍‌‌‍﻿‌‍‌‌﻿‍‌‍‌‌‌‍﻿‍‍‌‌﻿‌‌‌‍‌‌﻿﻿‌‍‍﻿‌‍‌‌‌﻿‍‌‍‌‌﻿﻿‌‌‍‌‌﻿﻿‌‌‍‌‌﻿‍﻿‍﻿‍﻿‌﻿﻿‍﻿‌﻿﻿‍‌‍‌‍‌‍‍‌‍‌﻿‍﻿‍‌﻿‍‍‌‌﻿‍﻿‍‍‌‌﻿‌‌‌‌‍﻿‍‌﻿‌‌‍‌‌‌﻿‍‌﻿‌‍‍‌﻿﻿‌ You’ll get hands on with today’s most popular tools, sample code, and open-source repos so you can follow along and build fast.
+
+This workshop series leverages Cerebras, the world's fastest AI inference provider. Get a free Cerebras API key (w/ increased rate limits) at https://cloud.cerebras.ai?referral_code=freecodecamp
+
+In this workshop, you'll learn how to build real-world AI apps in this 3-part workshop series. You'll learn to build voice agents, deep research tools, multi-agent workflows, and more.‌‍‍‍‌‍‌‍‌‍‍‌‌‍‌‌‍‍‌‌‍‍‍‍‍‍‍‍‌‌‍‌‌‍‍‌‍‍‌‌‌‌‍‌‍‍‌‍‍‌‌‍‍‍‍‍‍‌‍‍‌‍‌‍‌‌‌‍‌‍‍‍‍‍‍‍‍‌‌‌‌‌‌‌‍‌‌‍‍‌‌‍‍‌‍‍‌‌‍‍‌‌‌‍‌‌‌‍‍‌‌‍‌‍‌‌‌‍‌‌‍‍‌‌‌‍‌‍‌‌‍‌‍‌‌‍‌‌‌‌‌‍‌‍‌‌‌‌‍‌‌‌‍‍‌‌‌‍‌‌‌‌‍‍‌‌‍‌‍‍‍‌‍‍‌‌‍‌‌‌‌‌‍‌‌‌‌‌‌‍‌‌‍‌‌‍‌‍‌‌‍‌‍‌‍‍‌‌‌‍‌‌‍‌‌‍‌‌‍‌‌‍‌‌‍‌‍‌‌‌‌‍‌‍‌‌‍‍‌‍‍‌‍‌‌‍‌‌‍‍‍‌‍‌‍‌‌‌‍‌‌‌‍‌‌‌‌‌‍‌‌‍‌‌‍‌‌‍‌‌‍‌‌‌‌‍‍‌‌‌‍‌‍‍‌‌‍‌‍‌‌‌‍‌‌‌‌‌‍‌‌‌‍‍‌‍‌‌‌‍‌‍‌‌‌‌‍‌‌‌‌‍‌‌‍‍‌‍‌‌‍‍‌‍‌‌‍‌‍‍‌‍‌‌‍‌‍‌‌‌‍‌‍‌‌‍‍‍‌‌‌‌‌‌‍‍‌‍‌‌‍‌‌‌‌‍‌‍‌‍‍‌‌‌‌‌‍‍‌‌‍‌‍‍‍‌‌‌‌‌‍‌‌‌‍‍‌‍‌‌‌‍‌‍‌‌‌‌‍‌‌‌‌‍‌‌‍‍‌‌‌‌‍‌‍‌‍‌‌‌‌‍‌‌‌‌‌‍‌‌‌‍‌‌‍‌‍‌‌‍‍‍‌‌‌‌‌‌‍‍‌‍‌‍‍‌‍‍‌‌‍‌‍‌‌‍‌‍‌‌‌‍‍‍‌‌‌‌‌‍‌‌‌‍‍‌‍‌‌‌‍‌‍‌‌‌‌‍‌‌‌‌‍‌‌‍‍‍‌‍‌‍‌‍‌‍‌‍‍‌‍‌‍‍‌‍‍‌‌‍‍‍‌‌‌‌‌‌‍‍‌‌‌‍‌‌‌‍‌‌‌‍‍‌‍‌‌‌‍‌‌‌‌‌‌‌‍‌‍‌‍‌‌‍‌‌‍‌‌‌‌‌‌‌‍‌‌‍‍‌‌‍‍‌‍‌‍‍‌‌‍‌‌‌‌‌‍‌‌‌‌‌‌‍‌‌‍‌‌‍‌‍‌‌‍‌‍‌‍‍‌‌‌‍‌‌‍‌‌‍‌‌‍‌‌‍‌‌‍‌‍‌‌‌‌‍‌‍‌‌‍‍‌‍‍‌‍‌‌‍‌‌‍‍‍‌‍‌‍‌‍‌‌‌‍‌‌‌‍‌‌‌‌‌‍‌‌‍‌‌‍‌‌‍‌‍‌‌‍‌‌‌‌‍‍‌‌‌‍‌‍‍‌‌‍‌‍‌‌‌‍‌‌‌‌‌‍‌‌‌‍‍‌‍‌‌‌‍‌‍‌‌‌‌‍‌‌‌‌‍‌‌‍‍‌‍‌‌‍‍‌‍‌‌‍‌‍‍‌‍‌‌‍‌‍‌‌‌‍‌‍‌‌‍‍‍‌‌‌‌‌‌‍‍‌‍‌‌‍‌‌‌‌‍‌‍‌‍‍‌‌‌‌‌‍‍‌‌‍‌‍‍‍‌‌‌‌‌‍‌‌‌‍‍‌‍‌‌‌‍‌‍‌‌‌‌‍‌‌‌‌‍‌‌‍‍‌‌‌‌‍‌‍‌‍‌‌‌‌‍‌‌‌‌‌‍‌‌‌‍‌‌‍‌‍‌‌‍‍‍‌‌‌‌‌‌‍‍‌‍‌‍‍‌‍‍‌‌‍‌‍‌‌‍‌‍‌‌‌‍‍‍‌‌‌‌‌‍‌‌‌‍‍‌‍‌‌‌‍‌‍‌‌‌‌‍‌‌‌‌‍‌‌‍‍‍‌‍‌‍‌‍‌‍‌‍‍‌‍‌‍‍‌‍‍‌‌‍‍‍‌‌‌‌‌‌‍‍‌‌‌‍‌‌‌‍‌‌‍‍‌‌You’ll get hands on with today’s most popular tools, sample code, and open-source repos so you can follow along and build fast.
+
+⭐️ Workshop 1: Building Voice Agents with LiveKit and Cerebras ⭐️
+Learn how to build a sophisticated real-time voice sales agent that can have natural conversations with potential customers. You'll create both single-agent and multi-agent systems where specialized AI assistants handle sales, technical support, and pricing inquiries.
+
+⭐️ Workshop 2: Creating Research Assistants with Exa and Cerebras ⭐️
+Build your own AI-powered research assistant that can intelligently search the web, analyze information, and provide comprehensive answers with proper citations. You'll create a ""Perplexity-style"" tool that rivals commercial AI search platforms.
+
+⭐️ Workshop 3: Developing Multi-Agent Workflows with LangChain and Cerebras ⭐️
+Build an AI-powered user research system that automatically generates user personas, conducts interviews, and synthesizes insights using LangGraph's multi-agent workflow. You'll create a complete research automation system that can deliver comprehensive user insights in under 60 seconds.
+
+⭐️ Code ⭐️
+https://inference-docs.cerebras.ai/cookbook/agents/sales-agent-cerebras-livekit
+https://inference-docs.cerebras.ai/cookbook/agents/build-your-own-perplexity
+https://inference-docs.cerebras.ai/cookbook/agents/automate-user-research
+
+🏗️ Thanks to Cerebras for providing a grant to make this course possible.
+
+⭐️ Contents ⭐️
+00:00 Introduction
+01:31 Build a sales agent with LiveKit
+23:32 Build your own deep research with Exa
+37:05 Automate user research with LangChain",2025-09-22T14:35:42Z,N/A,27,en,en,https://i.ytimg.com/vi/B0TJC4lmzEM/default.jpg,https://i.ytimg.com/vi/B0TJC4lmzEM/hqdefault.jpg,PT49M55S,31850,1476,45,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+916GWv2Qs08,HTML Tutorial - Website Crash Course for Beginners,"Learn the basics of HTML in this crash course.
+
+✏️ This course was developed by Beau Carnes.
+
+🐈 cats.jpg: https://cdn.freecodecamp.org/youtube/html-course/cats.jpg
+🍝 lasagna.jpg: https://cdn.freecodecamp.org/youtube/html-course/lasagna.jpg
+💻 Code: https://github.com/freeCodeCamp/cdn/blob/main/build/youtube/html-course/index.html
+
+🔗 Sign up for Hostinger here:  https://www.hostinger.com/getstarted
+
+🎉 Thanks to Hostinger for providing a grant that made this course possible.
+
+⭐️ Course Contents ⭐️
+⌨️ (00:00) Introduction
+⌨️ (01:38) Choosing a code editor
+⌨️ (04:27) Basic HTML file
+⌨️ (05:02) Elements and Tags
+⌨️ (07:05) Headers
+⌨️ (08:34) Paragraphs
+⌨️ (09:55) Comments
+⌨️ (10:45) Content Area Tags
+⌨️ (13:10) Images
+⌨️ (16:00) Links
+⌨️ (19:54) Unordered Lists
+⌨️ (22:08) Ordered Lists
+⌨️ (24:24) Forms and Input Elements
+⌨️ (36:45) Div Elements
+⌨️ (38:57) Footer Section
+⌨️ (41:06) Head Section
+⌨️ (41:27) Website Title
+⌨️ (42:23) Deploying Website with Hostinger
+
+🎉 Thanks to our Champion and Sponsor supporters:
+👾 Wong Voon jinq
+👾 hexploitation
+👾 Katia Moran
+👾 BlckPhantom
+👾 Nick Raker
+👾 Otis Morgan
+👾 DeezMaster
+👾 Treehouse
+👾 AppWrite
+
+--
+
+Learn to code for free and get a developer job: https://www.freecodecamp.org
+
+Read hundreds of articles on programming: https://freecodecamp.org/news 
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp",2021-08-05T13:56:08Z,N/A,27,en,en,https://i.ytimg.com/vi/916GWv2Qs08/default.jpg,https://i.ytimg.com/vi/916GWv2Qs08/hqdefault.jpg,PT45M20S,576110,12086,350,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+a_iQb1lnAEQ,Learn HTML & CSS – Full Course for Beginners,"Learn HTML and CSS from scratch by building 6 projects and solving 80+ coding challenges. Go here for the interactive browser-version: https://scrimba.com/links/htmlandcss
+
+⭐️ Code ⭐️ 
+🔗 Interactive version: https://scrimba.com/links/htmlandcss
+🔗 GitHub repo: https://github.com/scrimba/learn-html-and-css
+
+✏️ This course was created by Per Harald Borgen, the co-founder and CEO of Scrimba. You can follow Per on Twitter here: https://twitter.com/perborgen
+
+🛠 Tools used:
+🔗 Netlify: https://www.netlify.com/
+🔗 VS Code: https://code.visualstudio.com/
+🔗 GitHub Desktop: https://desktop.github.com/
+🔗 Figma: https://www.figma.com/
+🔗 Coolors: https://coolors.co/
+🔗 Google Fonts: https://fonts.google.com/
+🔗 1001 Fonts: https://www.1001fonts.com/
+
+⭐️ Contents ⭐️
+0:00:00 Introduction
+
+Build and deploy your first website
+0:01:32 1: Welcome to the HTML & CSS Course
+0:04:12 2: HTML Tags
+0:07:33 3: Write a news article
+0:09:43 4: The image tag
+0:14:43 5: Nesting
+0:17:33 6: Internet superpowers - Change the BBC news!
+0:22:34 7: Interactive elements - Button
+0:24:37 8: Interactive elements - input tags -- Experiment with input types 100%
+0:29:37 9: Let’s build Google!
+0:33:28 10: Aside - Anchor tags
+0:38:04 11: Add an anchor tag to Google.com
+0:39:43 12: Proper document structure
+0:45:29 13: Aside: Lists
+0:49:27 14: Build a personal Website
+0:58:15 15: Deploy your Personal Website
+1:01:30 16: HTML Recap
+
+Build a Google.com clone
+1:03:06 1: Let’s learn CSS!
+1:03:53 2: Write your first lines of CSS!
+1:08:10 3: Write your first lines of CSS! Solution
+1:11:46 4: Let’s destroy wikipedia - recording
+1:13:43 5: Link to the CSS file
+1:16:22 6: Set the width of the elements
+1:18:31 7: Inline vs block elements
+1:20:49 8: Margin top
+1:22:05 9: Divs rule the world
+1:24:10 10: CSS classes
+1:28:07 11: Aside - Learn margins via flags
+1:34:04 12: Add space between our elements
+1:35:12 13: Aside - Centering with margins
+1:38:39 14: Centering our content
+1:40:01 15: Aside - padding
+1:45:23 16: Aside - Border and border-radius
+1:50:33 17: Aside challenge - style Twitter button
+1:55:36 18: Fix the input field
+2:00:22 19: Center the button
+2:02:42 20: Style the button
+2:07:13 21: Why we can’t have two block-level buttons
+2:11:42 22: Aside - Flexbox
+2:15:25 23: Centering both buttons with flexbox
+2:18:20 24: Google clone recap
+
+Build a Digital Business Card
+2:20:27 1: Building your digital business card
+2:21:00 2: Fix the image path
+2:23:56 3: Add alt attribute
+2:28:24 4: Make image smaller
+2:29:40 5: Add a border and padding
+2:33:30 6: Aside - flexbox child containers
+2:37:11 7: Flex item containers
+2:38:51 8: Add a utility class
+2:42:04 9: Justify the items
+2:44:13 10: Center the card
+2:46:13 11: Aside - inheritance
+2:50:31 12: Center the text via inheritance
+2:53:32 13: Add colors
+2:56:57 14: Web-safe fonts
+3:02:06 15: Aside - margin/padding shorthand
+3:06:09 16: Use the margin & padding shorhands
+3:07:26 17: Deploy your Digital Business Card
+3:12:16 18: Business Card Recap
+
+Build a Space Exploration Site
+3:14:17 1: Let’s go to space
+3:14:54 2: Add a background image from unsplash
+3:18:54 3: Center elements and Style button
+3:22:12 4: Add a Google font
+3:26:34 5: @font-face
+3:28:39 6: Aside - spans
+3:32:37 7: Add an underline using a span
+3:34:27 8: Use an ID for the logo
+3:38:51 9: Replace the jpg with a webp
+3:41:25 10: Choose a color palette from an image
+3:44:18 11: Add the terms & conditions section
+3:48:17 12: Aside - text shadow
+3:54:17 13: Improving the readability with text shadows
+3:56:17 14: Space - Exploration recap
+
+Build a Birthday GIFt Site
+3:58:02 1: Let’s build a Birthday GIFt site
+3:59:13 2: Add basic header styling
+4:02:47 3: Set the colors
+4:04:13 4: Add shadow on text
+4:07:34 5: We have a problem that flexbox can fix
+4:10:10 6: Aside - align-items
+4:16:13 7: Aside - flex-direction
+4:20:42 8: Turn the header into a flexbox
+4:22:26 9: Fix date and age design
+4:26:36 10: Create the first gift
+4:31:56 11: Replace the img with a div
+4:36:14 12: Aside - make elements change on hover
+4:39:08 13: Add the hover effect
+4:41:17 14: Create the next GIFt
+4:45:39 15: Create two more GIFts
+4:48:15 16: Create the final GIFt
+4:51:38 17: Add the footer
+4:55:18 18: Add a background gradient
+4:58:46 19: Personalize the Birthday GIFt Site
+5:00:25 20: Use GitHub Desktop to publish your Birthday GIFt Site
+5:05:44 21: Deploying your Birthday GIFt Site
+5:06:45 22: Use VS Code to edit your Birthday GIFt
+5:11:36 23: GIFt site recap
+
+Solo Project: Hometown Homepage
+5:13:29 1: It’s time to go solo!
+5:15:47 2: Solo Project - Hometown Homepage
+5:19:54 3: Congrats on completing the course! 
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp",2022-09-14T15:04:16Z,N/A,27,en,en,https://i.ytimg.com/vi/a_iQb1lnAEQ/default.jpg,https://i.ytimg.com/vi/a_iQb1lnAEQ/hqdefault.jpg,PT5H21M44S,825781,22704,467,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+Zi-Q0t4gMC8,JavaScript Course for Beginners,"Learn how to use the JavaScript programming language. This beginner's tutorial will teach you all the basics of JavaScript and also includes quiz sections. 
+
+Code for course: https://github.com/stevenGarciaDev/javascript-for-beginners-notes
+
+Course developed by @StevenCodeCraft 
+Steven's LinkedIn: https://www.linkedin.com/in/stevengarciadev/
+
+❤️ Try interactive JavaScript courses we love, right in your browser: https://scrimba.com/freeCodeCamp-JavaScript (Made possible by a grant from our friends at Scrimba)
+
+⭐️ Contents ⭐️
+Section 1: Getting Started
+(0:00:00) Introduction
+(0:01:22) What is JavaScript?
+(0:02:30) Setting up the Development Environment 
+
+Section 2: JavaScript Variables
+(0:07:46) Variables
+(0:12:40) Constants
+(0:14:31) Primitive Types
+(0:19:30) Dynamic Typing
+(0:21:13) Objects
+(0:24:38) Arrays
+(0:27:24) Functions
+(0:29:48) Types of Functions
+(0:31:30) Summary of Variables
+
+Section 3: JavaScript Operators
+(0:32:31) Intro to Operators
+(0:32:45) Arithmetic Operators
+(0:35:43) Assignment Operator
+(0:36:24) Comparison Operators
+(0:38:22) Equality Operators
+(0:41:39) The Ternary Operator
+(0:43:47) Logical Operators
+(0:51:19) Logical Operators with Non-booleans
+(0:54:37) Operator Precedence
+(0:55:29) Summary of Operator
+
+Section 4: Control Flow
+(0:56:31) If-Else Statements
+(1:01:03) Switch-Case Statements
+(1:05:32) For Loops
+(1:10:58) While Loops
+(1:14:05) Do-while Loops
+(1:15:44) Infinite Loops
+(1:17:33) For-in Loops
+(1:19:43) For-of Loops
+(1:21:38) Break and Continue
+(1:30:01) Exercise: Max of two numbers
+(1:31:05) Exercise: FizzBuzz
+(1:33:36) Exercise: Even and Odd Numbers
+(1:35:03) Summary of Control Flow
+
+Section 5: JavaScript Objects
+(1:35:55) Object Literals
+(1:37:26) Factory Functions
+(1:40:33) Constructor Functions
+(1:44:10) Objects are Dynamic
+(1:46:39) The Constructor Property
+(1:48:25) Functions are Objects
+(1:51:31) Value vs Reference types
+(1:53:54) Enumerating Properties of an Object
+(1:57:43) Cloning an Object
+(2:00:00) Garbage Collection
+(2:00:28) The Built in Math Function
+(2:03:19) String Methods
+(2:08:52) Template Literals
+(2:10:58) The Date Object
+(2:13:12) Summary of Objects
+
+Section 6: JavaScript Arrays
+(2:14:03) Introduction to Arrays
+(2:14:39) Adding Elements
+(2:17:34) Finding Elements (Primitives)
+(2:21:13) Finding Elements (Reference Types)
+(2:23:40) Arrow Functions
+(2:26:16) Removing Elements
+(2:29:06) Emptying an Array
+(2:31:25) Combining and Slicing Arrays
+(2:33:15) Spread Operator
+(2:34:48) Iterating an Array
+(2:36:44) Joining Arrays
+(2:41:19) Sorting Arrays
+(2:46:06) Testing the Elements of an Array
+(2:50:12) Filtering an Array
+(2:53:19) Mapping an Array
+(2:57:43) Reducing an Array
+
+Section 7: JavaScript Functions
+(3:01:21) Function Declarations vs Expressions 
+(3:03:55) Hoisting
+(3:06:06) Arguments
+(3:09:29) The Rest Operator
+(3:13:48) Default Parameters
+(3:17:47) Getters and Setters
+(3:21:59) Try and Catch
+(3:24:58) Local vs Global Scope
+(3:28:03) Let vs Var
+(3:31:11) The ‘this’ keyword
+
+
+🎉 Thanks to our Champion and Sponsor supporters:
+👾 davthecoder
+👾 jedi-or-sith
+👾 南宮千影
+👾 Agustín Kussrow
+👾 Nattira Maneerat
+👾 Heather Wcislo
+👾 Serhiy Kalinets
+👾 Justin Hual
+👾 Otis Morgan 
+👾 Oscar Rahnama
+
+--
+
+Learn to code for free and get a developer job: https://www.freecodecamp.org
+
+Read hundreds of articles on programming: https://freecodecamp.org/news",2024-05-13T13:48:55Z,N/A,27,en,en,https://i.ytimg.com/vi/Zi-Q0t4gMC8/default.jpg,https://i.ytimg.com/vi/Zi-Q0t4gMC8/hqdefault.jpg,PT3H35M38S,662025,7111,267,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+_ZvnD73m40o,Prompt Engineering Tutorial – Master ChatGPT and LLM Responses,"Learn prompt engineering techniques to get better results from ChatGPT and other LLMs.
+
+✏️ Course developed by @aniakubow 
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp
+
+⭐️ Contents ⭐️
+⌨️ (00:00) Introduction
+⌨️ (01:31) What is Prompt Engineering?
+⌨️ (02:17) Introduction to AI
+⌨️ (03:52) Why is Machine learning useful?
+⌨️ (06:36) Linguistics
+⌨️ (08:04) Language Models
+⌨️ (14:35) Prompt Engineering Mindset
+⌨️ (15:38) Using GPT-4
+⌨️ (20:41) Best practices
+⌨️ (31:20) Zero shot and few shot prompts
+⌨️ (35:06) AI hallucinations
+⌨️ (36:43) Vectors/text embeddings
+⌨️ (40:28) Recap
+
+🎉 Thanks to our Champion and Sponsor supporters:
+👾 davthecoder
+👾 jedi-or-sith
+👾 南宮千影
+👾 Agustín Kussrow
+👾 Nattira Maneerat
+👾 Heather Wcislo
+👾 Serhiy Kalinets
+👾 Justin Hual
+👾 Otis Morgan 
+👾 Oscar Rahnama
+
+
+English
+This video has been dubbed using an artificial voice via https://aloud.area120.google.com to increase accessibility. You can change the audio track language in the Settings menu.
+
+Spanish
+Este video ha sido doblado al español con voz artificial con https://aloud.area120.google.com para aumentar la accesibilidad. Puede cambiar el idioma de la pista de audio en el menú Configuración.
+
+Portuguese
+Este vídeo foi dublado para o português usando uma voz artificial via https://aloud.area120.google.com para melhorar sua acessibilidade. Você pode alterar o idioma do áudio no menu Configurações.
+
+Hindi
+इस वीडियो को ज़्यादा लोगों तक पहुंचाने के लिए, इसे https://aloud.area120.google.com के ज़रिए एक आर्टिफ़िशियल वॉइस का इस्तेमाल करके डब किया गया है. सेटिंग्स मेनू में जाकर ऑडियो ट्रैक की भाषा बदली जा सकती है.
+
+(Hindi dubbed via Melt Labs - https://www.withmelt.com/)
+
+--
+
+Learn to code for free and get a developer job: https://www.freecodecamp.org
+
+Read hundreds of articles on programming: https://freecodecamp.org/news",2023-09-05T14:36:07Z,N/A,27,en,en,https://i.ytimg.com/vi/_ZvnD73m40o/default.jpg,https://i.ytimg.com/vi/_ZvnD73m40o/hqdefault.jpg,PT41M36S,2374124,59018,1084,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+krfUjg0S2uI,"Build a Simple Website with HTML, CSS, JavaScript – Course for Beginners","Improve your skills in JavaScript, HTML, and CSS by building a social media dashboard with a dark/light theme. Jess, who runs the popular Coder Coder YouTube channel, will guide you through a beginner Frontend Mentor challenge.
+
+✏️ Course created by @TheCoderCoder 
+
+Resources:
+🔗 Responsive Design for Beginners! https://coder-coder.com/responsive/
+🔗 Source code on GitHub: https://github.com/thecodercoder/fem-dklt-toggle
+🔗 Challenge on Frontend Mentor: https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H
+🔗 Andy Bell: Create a user controlled dark or light mode -- https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/
+
+❤️ Try interactive Frontend courses we love, right in your browser: https://scrimba.com/freeCodeCamp-Frontend (Made possible by a grant from our friends at Scrimba)
+
+⭐️ Contents ⭐️
+Part 1
+⌨️ (0:00:00) Intro
+⌨️ (0:01:26) Functional requirements of design
+⌨️ (0:11:31) Accessible form controls
+⌨️ (0:15:37) Update CSS custom properties with JS
+⌨️ (0:23:39) Screen reader-only text
+
+Part 2
+⌨️ (0:29:10) Creating GitHub repo
+⌨️ (0:34:33) Set up SCSS and JS files
+⌨️ (1:09:55) Set up Gulp workflow
+
+Part 3
+⌨️ (1:31:24) Studying the design
+⌨️ (1:37:10) Building out the top bar
+⌨️ (1:51:42) Using accessible markup
+⌨️ (2:04:55) Styling top bar
+⌨️ (2:23:26) Styling toggle and make accessible
+
+Part 4
+⌨️ (3:24:56) What is BEM? Planning out the class names
+⌨️ (3:36:46) Adding the markup and the SCSS selectors for the cards
+⌨️ (3:47:30) Styles for card
+⌨️ (4:16:41) Layout for the card grid with flexbox, then CSS grid
+⌨️ (4:33:26) Styling the top bars on the cards
+⌨️ (4:49:36) Bottom cards markup and styles
+
+Part 5
+⌨️ (5:33:54) Changing the toggle based on comments
+⌨️ (5:54:42) Use system preferences to load light or dark theme
+⌨️ (6:18:24) Build the toggle logic to manually change light/dark theme
+⌨️ (6:43:34) Save toggle settings in local storage
+
+🎉 Thanks to our Champion and Sponsor supporters:
+👾 davthecoder
+👾 jedi-or-sith
+👾 南宮千影
+👾 Agustín Kussrow
+👾 Nattira Maneerat
+👾 Heather Wcislo
+👾 Serhiy Kalinets
+👾 Justin Hual
+👾 Otis Morgan
+
+--
+
+Learn to code for free and get a developer job: https://www.freecodecamp.org
+
+Read hundreds of articles on programming: https://freecodecamp.org/news",2023-04-26T14:05:46Z,N/A,27,en,en,https://i.ytimg.com/vi/krfUjg0S2uI/default.jpg,https://i.ytimg.com/vi/krfUjg0S2uI/hqdefault.jpg,PT7H12M30S,706896,17999,373,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+RGOj5yH7evk,Git and GitHub for Beginners - Crash Course,"Learn about Git and GitHub in this tutorial. These are important tools for all developers to understand. Git and GitHub make it easier to manage different software versions and make it easier for multiple people to work on the same software project.
+
+This course was developed by Gwen Faraday. Check out her YouTube channel: https://www.youtube.com/channel/UCxA99Yr6P_tZF9_BgtMGAWA 
+
+🔗 Git Commands: https://gist.github.com/gwenf/19e5748a5391929e8e938a22c8a4b3f2
+🔗 Install git: https://www.atlassian.com/git/tutorials/install-git
+🔗 SSH Keys: https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+
+⭐️ Contents ⭐️
+⌨️ (0:00) Introduction
+⌨️ (1:10) What is git?
+⌨️ (1:30) What is version control?
+⌨️ (2:10) Terms to be learn in video
+⌨️ (5:20) Git commands
+⌨️ (7:05) sign up in GitHub
+⌨️ (11:32) using git in local machine
+⌨️ (11:54) git install
+⌨️ (12:48) getting code editor
+⌨️ (13:30) inside VS Code
+⌨️ (14:30) cloning through VS Code
+⌨️ (17:30) git commit command
+⌨️ (18:15) git add command
+⌨️ (19:15) committing
+⌨️ (20:20) git push command
+⌨️ (20:30) SSH Keys
+⌨️ (25:25) git push
+⌨️ (30:21) Review workflow so far
+⌨️ (31:40) Compare between GitHub workflow and local git workflow
+⌨️ (32:42) git branching
+⌨️ (56:30) Undoing in git
+⌨️ (1:01:50) Forking in git
+⌨️ (1:07:55) Ending
+
+
+
+Thanks to Harsh Raj for creating these time codes and section descriptions.
+
+
+
+--
+
+Learn to code for free and get a developer job: https://www.freecodecamp.org
+
+Read hundreds of articles on programming: https://freecodecamp.org/news 
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp",2020-05-28T14:58:15Z,N/A,27,en,en,https://i.ytimg.com/vi/RGOj5yH7evk/default.jpg,https://i.ytimg.com/vi/RGOj5yH7evk/hqdefault.jpg,PT1H8M30S,4797037,103246,3046,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+x4rFhThSX04,Learn React JS - Full Beginner’s Tutorial & Practice Projects,"Learn modern React basics in the most interactive, hands-on way possible in the full course for beginners.
+
+Throughout this tutorial, you'll tackle over 170 interactive coding challenges and build six exciting projects. If you're tired of React courses that leave you staring blankly at an empty editor screen, you're in the right place! Here, you'll actually build React projects by the end, giving you the confidence and skills to tackle real-world apps.
+
+Scrimba on YouTube: https://www.youtube.com/c/Scrimba
+
+Code: https://github.com/scrimba/learn-react
+
+✏️ Bob Ziroll teaches this course.
+
+⭐️ Course Contents ⭐️
+
+- 0:00:00 Section 1 – React Basics
+⌨️ Course Introduction
+⌨️ What we'll learn
+⌨️ First React Code 
+⌨️ First React Challenge
+⌨️ Local Setup w/ Vite
+⌨️ Libraries/Frameworks
+⌨️ React.createElement()
+⌨️ JSX
+⌨️ Why React? It's Composable!
+⌨️ Why React? It's Declarative!
+⌨️ Random housekeeping
+⌨️ ReactFacts Project - Markup
+⌨️ Pop Quiz
+⌨️ Custom Components
+⌨️ Custom Components Challenge Part 2
+⌨️ Custom Components Quiz
+⌨️ Fragments
+⌨️ Custom Components - Parent/Child Components
+⌨️ Styling with Classes
+⌨️ Organizing Components
+⌨️ Make Mental Outline of Project
+⌨️ Initial Project Setup
+⌨️ ReactFacts - Navbar & Styling
+⌨️ ReactFacts - Main Content Section
+⌨️ ReactFacts - Coloring the Bullets
+⌨️ ReactFacts - Add Background Image
+⌨️ Section 1 Recap
+
+- 2:17:59 Section 2 – Travel Journal Project
+⌨️ Section 2 Intro
+⌨️ Travel Journal - Header
+⌨️ Travel Journal - Entry Component
+⌨️ Problem - Not reusable
+⌨️ Props
+⌨️ Prop quiz! (Get it?? )
+⌨️ Destructuring props
+⌨️ Props practice
+⌨️ Non-string props
+⌨️ Importing static assets
+⌨️ Pass props to Entry component
+⌨️ Review - array .map()
+⌨️ React can render arrays
+⌨️ Mapping components
+⌨️ Map quiz!
+⌨️ Travel Journal: Map Entry components
+⌨️ Travel Journal: key prop
+⌨️ Travel Journal: Pass object as props
+⌨️ Travel Journal: Spread object as props
+⌨️ Section 2 Recap
+
+- 4:33:02 Section 3 – Chef Claude Project
+⌨️ Section 3 Intro
+⌨️ Chef Claude: Header
+⌨️ Chef Claude: form
+⌨️ Chef Claude: Project overview
+⌨️ Event Listeners
+⌨️ Chef Claude: Map ingredients list
+⌨️ Props vs. State: Props
+⌨️ Props vs. State: State
+⌨️ useState
+⌨️ useState array destructuring
+⌨️ Changing state
+⌨️ State practice
+⌨️ Updating state with a callback function
+⌨️ Changing state quiz
+⌨️ Ternary practice
+⌨️ Toggling state
+⌨️ Complex state: Arrays
+⌨️ Chef Claude: Refactor array state
+⌨️ Complex state: Objects
+⌨️ Complex state: updating state objects
+⌨️ React forms intro
+⌨️ Form basics
+⌨️ Form submission
+⌨️ Form action
+⌨️ Chef Claude: Refactor form submission
+⌨️ Forms: textarea & defaultValue
+⌨️ Forms: radio
+⌨️ Forms: checkbox
+⌨️ Forms: select and option
+⌨️ Forms: Object.fromEntries
+⌨️ Chef Claude: conditional rendering intro
+⌨️ Conditional rendering
+⌨️ Chef Claude
+⌨️ Chef Claude: Get recipe placeholder challenge
+⌨️ Passing state as props
+⌨️ Setting state from child components
+⌨️ Passing data around React
+⌨️ Sound pads challenge
+⌨️ Chef Claude challenge: refactor to separate components
+⌨️ API Sign Ups
+⌨️ AI code walkthrough
+⌨️ Challenge quiz: prep to get recipe from the AI chef 
+⌨️ Challenge: Get recipe from the AI chef 
+⌨️ Format recipe response
+⌨️ Section 3 Outro
+
+- 9:43:55 Section 4 – Meme Generator Project
+⌨️ Section 4 Intro
+⌨️ Meme Generator Starting Point
+⌨️ Meme Generator State
+⌨️ Controlled Components
+⌨️ Planning data fetch
+⌨️ Functional programming in React
+⌨️ Fetching data in React
+⌨️ useEffect()
+⌨️ Meme Generator - Fetch Memes
+⌨️ State and Effect practices
+⌨️ useEffect cleanup function
+⌨️ Meme Generator - Get random meme
+⌨️ Sneak peak: refs
+⌨️ useEffect practice: scrollIntoView()
+⌨️ scrollIntoView() iFrame bug fix 
+⌨️ Section 4 Outro
+
+- 11:41:14 Section 5 – Tenzies Project
+⌨️ Tenzies Intro
+⌨️ Setup
+⌨️ Die component
+⌨️ Generate 10 random numbers
+⌨️ Map array to Die components
+⌨️ Roll dice button
+⌨️ Change dice to objects
+⌨️ Styling held dice
+⌨️ Hold dice
+⌨️ End game
+⌨️ Lazy State Initialization
+⌨️ New game
+⌨️ Accessibility Improvements
+⌨️ Tenzies Outro
+
+- 13:11:13 Section 6 – Assembly Endgame Project
+⌨️ Assembly Endgame Intro
+⌨️ Project Planning
+⌨️ Header Section
+⌨️ Status Section
+⌨️ Languages List
+⌨️ Word Display
+⌨️ Keyboard
+⌨️ Save the guessed letters
+⌨️ Keyboard letter styles for guesses
+⌨️ Only display correctly guessed letters in word
+⌨️ Wrong guess count
+⌨️ Lost languages
+⌨️ isGameOver
+⌨️ Display won/lost status
+⌨️ Quick CSS alignment fix 
+⌨️ Conditional rendering with a helper function
+⌨️ Backlog inventory
+⌨️ Farewell messages
+⌨️ Disable keyboard when the game is over
+⌨️ Make the game more a11y-friendly
+⌨️ Choose random word
+⌨️ New game button resets the game
+⌨️ Display missed letters when lost
+⌨️ 🎉🎉
+⌨️ Assembly Endgame Outro
+⌨️ Course Outro
+
+- 15:18:12 Bonus Section – React and VS Code
+⌨️ Helpful React VS Code Extensions
+⌨️ Moving to VS Code
+⌨️ ES7 + React Snippets Extension
+⌨️ Import Extension
+⌨️ React Developer Tools Chrome Extension
+⌨️ React Component Tree
+⌨️ ReacTree",2024-11-20T18:25:12Z,N/A,27,en,en,https://i.ytimg.com/vi/x4rFhThSX04/default.jpg,https://i.ytimg.com/vi/x4rFhThSX04/hqdefault.jpg,PT15H40M54S,817232,17575,890,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+MiGXhDvuvEg,Learn Chess and Become a Better Developer with Ihechikara Abba (ELO rating of 2285) [Podcast #189],"On this week's freeCodeCamp podcast we're talking with software engineer Ihechikara Abba, who has a chess ELO rating of 2285, putting him among top competitive chess players. We just published his freeCodeCamp course on chess end games, and an accompanying handbook. 
+
+We talk about:
+how learning chess can make you a better developer
+tips for getting into embedded systems development with Arduino
+how contributing to open source can serve as an alternative to building up a social media presence
+
+Links from our discussion:
+
+Ihechikara's checkmate patterns handbook: https://www.freecodecamp.org/news/checkmate-patterns-in-chess-for-beginners/
+
+Ihechikara's Arduino embedded systems handbook: https://www.freecodecamp.org/news/the-arduino-handbook/
+
+Links from community news segment at the beginning: 
+
+1. freeCodeCamp just published a GameDev for beginners course that will help you build your first 2D platformer game. First you'll learn the basics of the open source Godot game engine, and its Python-like GDScript programming language. Then you'll dive into Godot's editor, custom tile sets, game mechanics, scoring, checkpoint systems, and more. By the end of the course, you'll have your own game that your friends can play in any browser. (1 hour YouTube course): https://www.freecodecamp.org/news/learn-game-development-by-building-your-first-platformer-with-godot/
+
+2. freeCodeCamp just launched our daily coding challenges. You can solve these programming puzzles using Python or JavaScript. Build up your data structures + algorithms skills each day, right in your browser or in the freeCodeCamp iPhone or Android app. We're launching with a backlog of 30 challenges that are live now. See how many you can solve. (article with more details): https://www.freecodecamp.org/news/introducing-freecodecamp-daily-python-and-javascript-challenges-solve-a-new-programming-puzzle-every-day/
+
+3. Learn how to build your own secure PHP web apps using the popular open source Symfony framework. This intermediate course is taught by Beau Carnes, who has many years of experience as a software engineer and as a high school special ed teacher. He'll quickly fill you in on Symfony's security features, which enable you to query encrypted data without ever even needing to decrypt it on your MongoDB database server. You can code along and home and build your own secure personal finance app while applying these new concepts. (1 hour YouTube course): https://www.freecodecamp.org/news/build-secure-web-applications-with-php-symfony-and-mongodb/
+
+4. I also recommend reading this quick post by a freeCodeCamp community member on the importance of Hackathons. They opened all sorts of doors for him in his job search. (10 minute read): https://www.freecodecamp.org/news/why-every-student-should-join-hackathons/
+
+I also recommend you watch this video essay on Janet Jackson's ""Rhythm Nation"" explaining the physics behind why the song breaks some laptop hard drives when played: https://www.youtube.com/watch?v=-y3RGeaxksY
+
+And the song of the week is 1989's Rhythm Nation by a then 23-year-old Janet Jackson. The song's great but you really want to watch the video version, with its awesome dance choreography. I've linked to it in the description. Listen to it after the podcast. https://www.youtube.com/watch?v=OAwaNWGLM0c
+
+Support also comes from the 10,889 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate",2025-09-19T14:00:05Z,N/A,27,en,en,https://i.ytimg.com/vi/MiGXhDvuvEg/default.jpg,https://i.ytimg.com/vi/MiGXhDvuvEg/hqdefault.jpg,PT58M36S,16391,484,28,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+Zv2a6ixXEQc,How to focus on building your skills when everything's so distracting with Ania Kubów [Podcast #187],"For this week's interview, I'm talking with Ania Kubów. She's a software engineer and prolific programming teacher on YouTube.
+
+She shares tips for:
+- Getting into game development and using JavaScript and browser games as an entry point
+- How to keep your focus in an increasingly distracting world
+- How AI tools are a jack hammer and you usually just need a regular hammer
+- What she's learned from hanging out with Chinese developers
+Growing up in Dubai and how the city has changed over the decades
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 10,889 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+Links from our conversation:
+- Ania's most recent freeCodeCamp course on building your own shopping agent: https://www.freecodecamp.org/news/building-an-ai-powered-e-commerce-chat-assistant-with-mongodb/
+- Ania's Code with Ania YouTube channel: https://www.youtube.com/aniakubow
+- Ania on X/Twitter: https://x.com/ania_kubow
+- Ania's Dubai-based coffee shop chain on Instagram: https://www.instagram.com/homebrew.ae/
+- JS13k games - competition to build games in just 13 kilobytes of JavaScript: https://js13kgames.com/2025/
+
+News items:
+
+The freeCodeCamp community just published this Python Machine Learning course where you'll learn how to control a robotic arm using computer vision. You'll set up serial communication between Python and a cheap Arduino microcontroller board. Then you'll learn how to detect physical objects using the open source Python libraries MediaPipe and OpenCV. You'll also learn how to manipulate servo motors and LED displays. (3 hour YouTube course): https://www.freecodecamp.org/news/use-arduinos-for-computer-vision/
+
+freeCodeCamp also published a course that will help you prepare for the Google Professional Cloud Architect Certification exam. Andrew Brown is a CTO who has passed practically every DevOps exam under the sun, and he teaches this course. You'll learn about Infrastructure as Code, Serverless Architecture, networking, monitoring, logging, and more. (16 hour YouTube course): https://www.freecodecamp.org/news/prepare-for-the-google-professional-cloud-architect-certification-exam-and-pass/
+
+Three.js is a powerful 3D rendering tool that tons of artists use to build games and interactive experiences that can run right inside a browser. This new freeCodeCamp course will walk you through building 5 practical projects. You'll learn about foundational concepts before moving on to textures, dynamic particle effects, and interactive physics. (2 hour YouTube course): https://www.freecodecamp.org/news/create-3d-web-experiences-with-javascript-and-threejs/
+
+The Bag of Words algorithm is an important method that machine learning engineers have used to turn text into numbers so they can train their models. This tutorial will teach you how Bag of Words works, using Python code examples. It also describes the limitations of Bag of Words, and how scientists have gone on to create Word2Vec, GloVe, and other algorithms for mapping the relationships between words. (10 minute read): https://www.freecodecamp.org/news/how-bag-of-words-works/
+
+This week's song of the week is a deep cut from 1981's by Italian Disco singer Ago off their For You album. I love the groove here and the way the bass sits in the mix. Link's in the description. Listen to it after the podcast: https://www.youtube.com/watch?v=w9nUjNuYvfg
+
+Interview with AWS CEO (quotes I highlighted come from here. Note that I misspoke and he is not a developer his path to CEO was through product management): https://www.finalroundai.com/blog/aws-ceo-matt-garman-says-replacing-junior-developers-with-ai-the-dumbest-thing",2025-09-05T14:00:06Z,N/A,27,en,en,https://i.ytimg.com/vi/Zv2a6ixXEQc/default.jpg,https://i.ytimg.com/vi/Zv2a6ixXEQc/hqdefault.jpg,PT57M27S,42184,1395,50,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+ebarbEsoHzg,"How to use AI as an accelerator, not a crutch, with freelance engineer Ankur Tyagi  [Podcast #186]","For this week's interview, I'm talking with Ankur Tyagi. He's a software engineer who's worked at multinational companies like Volvo, Barclays, and Accenture. He grew up in Pune, India and now lives in Gothenburg, Sweden.
+
+Ankur is a prolific contributor to freeCodeCamp's open source learning resources. He also runs DevTools Academy, where he blogs about emerging developer tools.
+
+He shares tips for:
+- How he uses AI tools to get more done as a dev but...
+- He thinks leveraging AI is a skill any dev can learn, and we shouldn't worry about fewer dev jobs.
+- How to run you own developer consultancy
+- How writing programming tutorials can help you become a better engineer
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 10,889 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+Links from our discussion:
+- Ankur's blog: https://www.devtoolsacademy.com/
+- Ankur on X/Twitter: https://x.com/TheAnkurTyagi
+
+News items:
+→ freeCodeCamp launched its first chess course, taught by a software engineer with an international ELO rating of 2285. The beginner-level course covers strategic thinking, checkmate patterns, and includes a handbook and YouTube course. https://www.freecodecamp.org/news/checkmate-patterns-in-chess-for-beginners
+
+→ freeCodeCamp also released a comprehensive course on building an AI shopping agent. Software Engineer Ania Kubów teaches how to use Node, TypeScript, LangChain's LangGraph, Gemini, MongoDB, and other tools to create an autonomous agent. https://www.freecodecamp.org/news/building-an-ai-powered-e-commerce-chat-assistant-with-mongodb/
+
+→ Following Alibaba's Qwen LLM release, freeCodeCamp published a course on training it from scratch. Learn about its architecture, hyperparameters, Muon Optimization, RoPE Positional Embeddings, and more. https://www.freecodecamp.org/news/code-and-train-qwen3-from-scratch/
+
+→ freeCodeCamp also published a guide to System Design, covering scalability, the CAP Theorem, Caching & CDNs, Rate Limiting, and other key concepts. https://www.freecodecamp.org/news/learn-key-system-design-principles-behind-high-traffic-platforms-like-gaming-and-job-discovery/
+
+→ Gamer's Nexus posted a 3-hour documentary on China's graphics chip usage for AI, which has faced multiple copyright claims. The video explores the legal and illegal acquisition of hardware in Hong Kong, Taiwan, Shenzhen, and Singapore. Search ""gamers nexus GPU"" if the link is down. https://www.youtube.com/watch?v=kkNBZeS1OHk
+
+→ The maintainer of the Curl command-line tool discussed ""AI slop"" security issues, where LLMs hallucinate bugs that are then submitted by users. He notes that no LLM-generated issue has ever turned out to be a real security vulnerability, advising against using LLMs to rewrite issues or pull requests. https://www.youtube.com/watch?v=6n2eDcRjSsk
+
+This week's song of the week is 1991's Breather by UK band Chapterhouse. Absolute banger drums on this one. Link's in the description. Listen to it after the podcast. By the way if you're wondering, that's a sleeping cat on the cover: https://www.youtube.com/watch?v=ZGWaBJc1UrY",2025-08-29T14:00:06Z,N/A,27,en,en,https://i.ytimg.com/vi/ebarbEsoHzg/default.jpg,https://i.ytimg.com/vi/ebarbEsoHzg/hqdefault.jpg,PT54M25S,16500,511,41,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+L6kMdLH1S8w,From Hospital Janitor to Developer with Emmett Naughton [Podcast #185],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Emmett Naughton. He worked as hospital janitor for years while teaching himself programming using freeCodeCamp. He's founder of Coder Dads, a chat community where dads encourage one another.
+
+We talk about:
+- Making ends meet while raising a family
+- Recovering from getting laid off twice in the same year
+- Emmet's journey into the PHP Laravel ecosystem as a full stack JavaScript developer
+- How to use social media effectively when you don't like using social media
+- Emmett's sleep apnea and how fixing his sleep dramatically improved his thinking and coding
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to https://donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- Emmett's website with dozens of blog posts: https://emmettnaughton.com/
+- The Coder Dads community: https://coderdads.carrd.co/",2025-08-22T13:15:07Z,N/A,27,en,en,https://i.ytimg.com/vi/L6kMdLH1S8w/default.jpg,https://i.ytimg.com/vi/L6kMdLH1S8w/hqdefault.jpg,PT1H28M56S,11880,350,25,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+16emGG-guIo,From drop-out to backpacker to self-taught developer with Dominick Monaco [Podcast #183],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Dominick Monaco. He dropped out college to hike the Appalachian Trail, a 2,200 mile backpacking route across the US. After working in nature conservation for 3 years, he taught himself how to program and now works as a developer.
+
+We talk about:
+- Life working as a Yogi Bear-style forest ranger in training
+- Close brushes with death in the wilderness and how it affects you
+- Learning programming for a grand total of $15
+- How surrounding yourself with other ambitious learners can help you learn programming faster
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,189 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to https://donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- Dominick's blog article on how he got here: https://dominickjmona.co/blog/how-i-got-here
+- Dominick on LinkedIn: https://www.linkedin.com/in/dominick-j-monaco/
+- Americorps conservation core: https://www.americorps.gov/",2025-08-15T13:00:06Z,N/A,27,en,en,https://i.ytimg.com/vi/16emGG-guIo/default.jpg,https://i.ytimg.com/vi/16emGG-guIo/hqdefault.jpg,PT1H19M46S,12953,276,21,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+N0K0m7dZBJI,Abandoning med school to become a software engineer with Edidiong Asikpo [Podcast #182],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Edidiong Asikpo. Didi is a software engineer. She grew up in Lagos, the biggest city in Nigeria and the biggest tech hub in Africa. 
+
+Didi got into medical school. But while waiting for her studies to start, she started studying computer science and got really into it. She graduated with a CS degree and has worked in tech for nearly a decade. She now works at MongoDB, a cloud database company, remotely from her home in London.
+
+We talk about:
+- Nigeria's tech scene
+- How to break into tech when you live outside the Silicon Valley ecosystem
+- How to transition from one programming language to another (Didi moved from mobile apps to DevOps)
+- How writing programming tutorials can help you become a better developer
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to https://donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- Didi's website: https://edidiongasikpo.com/
+- Didi's freeCodeCamp tutorial with career advice: https://www.freecodecamp.org/news/how-to-kickstart-a-career-in-tech/
+- Open Data Kit - the first open source project Didi contributed to: https://en.wikipedia.org/wiki/ODK_(software)",2025-08-08T13:00:45Z,N/A,27,en,en,https://i.ytimg.com/vi/N0K0m7dZBJI/default.jpg,https://i.ytimg.com/vi/N0K0m7dZBJI/hqdefault.jpg,PT1H13M48S,15753,482,45,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+C7UI_4jIGSQ,Senior Playstation Engineer's tips for learning new tools and getting things done [Podcast #184],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Dilip Krishnamoorthi. He's a software engineer working at Sony, building user interfaces for Playstation game consoles where he's been for 10 years.
+
+We talk about:
+- How he dropped out of a traditional Indian university and used an inexpensive distance learning program to finish his engineering degree for less than US $100 / semester
+- What it's like working in Bengaluru, the Silicon Valley of Asia
+- His experience launching the Playstation 5
+- Tips for continuing to learn new tools even as a senior engineer
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,423 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to https://donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- Wikipedia article on Flow State, a concept Dilip mentions: https://en.wikipedia.org/wiki/Flow_(psychology)
+- An IGN article about major improvements to Playstation 5's UI that Dilip worked on: https://www.ign.com/articles/ps5s-ui-the-five-biggest-gamechangers
+- Webcomic about the perils of context switching: https://www.reddit.com/r/ProgrammerHumor/comments/60wx3z/this_is_why_you_shouldnt_interrupt_a_programmer/#lightbox 
+
+Contents 
+- 00:00 Introduction
+- 02:15 Meeting at a Hackathon
+- 05:30 Dropping Out and Distance Learning
+- 10:45 Working in Bengaluru
+- 15:00 Launching PlayStation 5
+- 20:30 Using AI in Software Development
+- 25:00 Early Days with Computers
+- 30:45 Transition to the US
+- 35:00 Career at Sony
+- 40:15 Learning and Growth",2025-08-01T13:30:09Z,N/A,27,en,en,https://i.ytimg.com/vi/C7UI_4jIGSQ/default.jpg,https://i.ytimg.com/vi/C7UI_4jIGSQ/hqdefault.jpg,PT1H24M13S,19915,550,33,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+m7nkioXNiik,How to turn Open Source into a Job with Nick Taylor [Podcast #181],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Nick Taylor. He's a software engineer from Montreal and a prolific open source contributor.
+
+We talk about:
+- Why trying to build your own tooling will ultimately limit your app development
+- Tips for getting started contributing to open source
+- AI and the changing nature of working in tech
+- Tips for leveraging libraries and tools as a dev
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to https://donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- https://www.nickyt.co/
+
+Contents
+- 00:00 Introduction
+- 00:36 The ""Roll Your Own"" Debate in Software Development
+- 03:32 The Evolution of Libraries and Frameworks like jQuery
+- 04:19 Balancing Dependencies, Security, and Performance
+- 05:27 Tech Stack for Building a Netflix Clone
+- 08:58 Sponsor Message
+- 09:29 Nick's Developer Origin Story
+- 15:58 The Importance of Genuine Networking vs. Transactional Interactions
+- 17:17 The Cyclical Nature of the Developer Job Market
+- 23:24 Mindset for Dealing with Career Uncertainty
+- 25:39 The ""Grind"" and Putting in the Work
+- 30:40 How Nick Got Four Jobs Through Open Source Contributions
+- 38:35 Getting Hired at Dev.to Through Contributions
+- 44:09 Landing a Role at Netlify
+- 47:20 Joining OpenSauce
+- 51:30 Landing a Job at Pomerium and the Power of Your Network
+- 57:22 Recap: Planting Seeds, Your Network, and Job Application Strategy
+- 1:04:02 The Need for Self-Marketing and Continuous Learning
+- 1:11:45 Using AI Tools Effectively as a Developer
+- 1:20:44 When to Use AI vs. Off-the-Shelf Tools
+- 1:24:09 Advice to His Younger Self
+- 1:25:07 Outro",2025-07-25T13:01:36Z,N/A,27,en,en,https://i.ytimg.com/vi/m7nkioXNiik/default.jpg,https://i.ytimg.com/vi/m7nkioXNiik/hqdefault.jpg,PT1H25M31S,17986,478,18,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+clTpnp0TlYg,We are truly in the Hackathon Era – Namanh Kapur interview [Podcast #180],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Namanh Kapur. He's a senior software engineer at LinkedIn. He also creates YouTube videos to help developers with their careers.
+
+We talk about:
+- Tips for getting hired in the post-Leetcode world
+- Tips for cold-DM'ing recruiters and for guessing their email addresses
+- Why AI tools are going to lead to developers doing less repetitive work and more creative problem solving
+- And which foundational developer skills he thinks you should prioritize learning
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- Namanh's video about two legendary Google engineers: https://www.youtube.com/watch?v=IK0I4f8Rbis
+- Namanh Kapur on Instagram: https://www.instagram.com/namanhkapur/?hl=en
+
+Contents
+- 0:00:00 Introduction to Namanh Kapur
+- 0:00:41 The Roy Lee LeetCode Cheating Tool and Its Implications
+- 0:03:38 The Frustration with LeetCode Interviews and the Shift to Problem Solving
+- 0:07:25 Are All the ""Hard Problems"" in Software Solved?
+- 0:13:46 Bridging the Gap: How to Become an Elite Developer in the Current Landscape
+- 0:15:27 The Hackathon/Product Engineering Era
+- 0:18:43 Distribution vs. Technology and Publicity Stunt
+- 0:22:11 The Role of Relationships and Sales in Tech Careers
+- 0:33:36 The Future of Coding Interviews: Avoiding Bias and Proxy-Based Hiring
+- 0:27:28 The Value of University Education Beyond Technical Skills
+- 0:30:28 Alternative Paths to Gaining Experience and Knowledge Without a Traditional University Education
+- 0:36:14 Optimizing for Income: Discipline, Iteration, and Taking Action
+- 0:43:56 Getting into Big Tech in 2025: Strategies and Market Outlook
+- 0:47:19 Tactical Advice for Job Searching: Cold DMing and Building Relationships
+- 0:51:31 Leveraging Events for Networking
+- 0:53:07 The Evolving Job Market and Adapting to Change
+- 0:58:17 Positioning for Future Success: Communication, Problem Solving, and Adaptability
+- 0:59:40 The Value of Hackathons and ""Vibe Coding""
+- 1:01:41 Negotiating Salary and Job Offers
+- 1:05:25 Navigating Exploding Offers and Prioritizing Work-Life Balance
+- 1:12:57 Why You Should Be the ""Dumbest Person in the Room""
+- 1:14:51 Recommended First Programming Language: Python
+- 1:15:51 Essential Data Structures: Hashmaps and Arrays
+- 1:18:11 Navigating Codebases Quickly as a Senior Engineer
+- 1:20:01 Advice to Younger Self: Make Noise and Start Early
+- 1:22:04 Outro",2025-07-18T13:01:14Z,N/A,27,en,en,https://i.ytimg.com/vi/clTpnp0TlYg/default.jpg,https://i.ytimg.com/vi/clTpnp0TlYg/hqdefault.jpg,PT1H23M32S,22693,558,41,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+ilotANpzN7I,799 rejections... but he got the job! Braydon Coyer developer interview [Podcast #179],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Braydon Coyer. He's a software engineer who started building mobile apps in high school – one of which even out-sold Angry Birds for a few days. He dropped out of his computer science degree program once he landed his first web developer job and never went back.
+
+We talk about:
+- Mobile app development VS web app development
+- Strategies for applying for developer roles
+- How useful is a CS degree really?
+- Sane ways to integrate AI into your developer workflows
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to https://donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- Braydon's awesome custom website: https://www.braydoncoyer.dev/
+- Fruit Ninja game development documentary:
+- Raycast tool Braydon uses to automate prpcesses on his Mac: https://www.raycast.com/
+- Tana note taking tool Braydon uses: https://tana.inc/
+
+Chapters
+00:00 The Mobile App Revolution
+10:10 Navigating the Education System
+19:56 The Job Search Journey
+28:02 Navigating Job Opportunities in Tech
+31:00 Understanding Mobile App Development
+33:52 The Evolution of Angular and Developer Tools
+38:50 Enhancing Developer Experience with AI Tools
+43:52 The Role of AI in Software Development
+52:02 Hiring Trends and Challenges in Tech
+56:12 Hiring Practices in Open Source
+59:11 The Impact of AI on Hiring
+01:01:49 The Future of Developer Roles
+01:06:58 Navigating the Job Market
+01:10:30 Internship Pathways for Junior Developers
+01:12:39 Building Community Through Conferences",2025-07-11T13:01:26Z,N/A,27,en,en,https://i.ytimg.com/vi/ilotANpzN7I/default.jpg,https://i.ytimg.com/vi/ilotANpzN7I/hqdefault.jpg,PT1H18M19S,16080,361,39,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+cMOz7Tyq7aE,From freeCodeCamp to NASA with Data Engineer Joe Hill [Podcast #178],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Joe Hill. He's a software engineer who works on a data platform for NASA. 
+
+Joe taught himself programming for 4 years while working as a janitor. As the single father of two Autistic boys, he first used his programming skills to build an iPad app to help them learn how to talk.
+
+We talk about:
+- Data Engineering and wrangling Department of Defense data into a central platform
+- The role of soft skills in getting things done in big organizations
+- The need for patience and practice in self-teaching
+- How to stop jumping from one tool to another and to instead go deep
+- Tips for parents raising kids with Autism
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to https://donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- The trailer of the 1992 classic hacking heist movie Sneakers: https://www.youtube.com/watch?v=NEhgUxQ322A
+- Joe on LinkedIn: https://www.linkedin.com/in/joe-hill-4a138123/
+
+Contents
+00:00 - Intro: Quincy Larson introduces Joe Hill
+00:57 - The Tools of a Data Engineer
+02:04 - What is PySpark?
+02:44 - What are data frames?
+04:04 - SQL, Schema, and Data Analysis
+05:08 - The importance of asking questions
+08:00 - Working with the US federal government
+09:40 - Cybersecurity and password managers
+11:54 - From janitor to data engineer
+14:07 - Joe’s time in the US Army
+16:07 - Living with a knee injury
+17:01 - Weight training and getting older
+19:05 - Raising two sons with autism
+20:10 - How Joe got interested in computers
+22:15 - Building an iPad app to help his son learn to speak
+26:48 - Becoming a janitor while learning to code
+28:50 - How Joe’s two sons are doing today
+32:34 - Why it’s so important to learn a trade
+37:01 - Getting your first developer job may not be at a big tech company
+38:27 - How to contribute to open source when you’re a beginner
+41:34 - How solving your own problems can be a great way to learn
+44:19 - Explaining your work to non-coders
+48:26 - How to get buy-in from stakeholders
+49:24 - Be more than just a ticket completer
+51:12 - Geeking out over the problem, not the tools
+52:50 - Working as a government contractor
+54:49 - Semper Gumby: always be flexible
+57:26 - Using being self-taught to your advantage
+58:45 - Will AI take our jobs?
+01:02:18 - Learning is the real skill
+01:04:47 - How to approach technical interviews as a self-taught developer
+01:06:24 - Building community and helping others learn
+01:10:10 - What if you fall off the wagon and stop coding for a while?
+01:12:30 - A lesson about ego from the TV show Scrubs
+01:16:19 - Helping others learn software development
+01:20:02 - You can still get a developer job if it takes you years to learn
+01:26:24 - What advice would you send back to your younger self?
+01:30:11 - Outro",2025-07-04T12:01:15Z,N/A,27,en,en,https://i.ytimg.com/vi/cMOz7Tyq7aE/default.jpg,https://i.ytimg.com/vi/cMOz7Tyq7aE/hqdefault.jpg,PT1H32M12S,23245,564,36,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+yDhCweudqyY,Rust VS Go VS TypeScript which back end language is for you with Tai Groot [Podcast #176],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Tai Groot. He's a back end software engineer and maintains an open source project used by companies like Google.
+
+For the first half of the interview we talk about back end programming languages. Then he shares tips for running learning back end development and running your own developer consultancy.
+
+We talk about:
+- The Performance VS Developer Experience trade-offs of Rust, Go, and TypeScript
+- How to run a free open source project profitably
+- How to mentor junior devs and ramp them up to work at your consultancy
+- Why he recommends devs learn Arch Linux
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to https://donate.freecodecamp.org.
+
+Links we talk about during our conversation:
+- Tai's website: https://taigrr.com/
+- Why Tai doesn't use Salt Stack anymore and how it inspired grlk: https://taigrr.github.io/blog/so-long-salt-project/
+- The promise-breaking app: https://bridgetime.net/
+- freeCodeCamp's Arch Linux handbook: https://www.freecodecamp.org/news/how-to-install-arch-linux/
+- The Arch wiki: https://wiki.archlinux.org/title/Main_page
+
+Contents
+0:00:00 Introduction to Ty Groot: Python's Role and Limitations in Backend Engineering
+0:10:56 Understanding JavaScript, V8, and Just-In-Time Compilation
+0:24:50 Choosing the Right Language: TypeScript, Rust, and Go for Different Use Cases
+0:45:15 The Linux Kernel and the C vs. Rust Debate
+0:55:51 Ty Groot's Journey into Software Development
+1:19:03 The Genesis and Business Model of GRLX
+1:34:58 Ty Groot's Approach to Training Junior Developers
+1:53:05 Parting Wisdom: Understanding Your Computer at a Deeper Level",2025-06-27T12:01:56Z,N/A,27,en,en,https://i.ytimg.com/vi/yDhCweudqyY/default.jpg,https://i.ytimg.com/vi/yDhCweudqyY/hqdefault.jpg,PT1H58M25S,25594,531,79,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+NCvKYoTeJR0,From Therapist to six figure freelance dev [Podcast #176],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Kelly Vaughn. She's a self-taught software engineer who ran her own developer agency. She was also the founding CTO at financial technology startup. Kelly runs the popular Ladybug Podcast focused on women in tech.
+
+We talk about:
+- How to freelance and ultimately create a developer agency and get clients
+- Tips for navigating the current developer job market
+- How to move from freelance to working for someone else
+- Tips for recognizing burnout so you can know when to take break
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to https://www.donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- Kelly's website: https://kvlly.com
+- The Ladybug Podcast talks about tech, career, and code lead by women in tech: https://ladybug.dev 
+- Kelly's engineering leadership newsletter: https://modernleader.is 
+- Kelly's new burnout-focused newsletter: https://afterburnout.co
+
+Contents
+- 0:00 Platform Over-Reliance and Early Career Lessons
+- 4:03 Learning New Languages Ruby on Rails to Python
+- 6:46 From Neopets to My First Client
+- 10:04 Scaling an Agency to 25 People
+- 13:42 The Agency Rollercoaster and Retainer Wisdom
+- 19:07 Navigating the Direct-to-Consumer Market
+- 24:23 AI Distrust, Creativity, and Augmentation
+- 31:54 The Burnout Revelation Losing Joy
+- 40:02 The Dual Company Struggle and Debt
+- 46:12 The Road to Recovery Paying Off Debt
+- 50:42 Lessons from Running an Agency
+- 56:03 From CEO to Engineering Manager
+- 1:02:59 Understanding and Addressing Burnout
+- 1:13:42 Advice for the Job Hunt",2025-06-13T12:30:19Z,N/A,27,en,en,https://i.ytimg.com/vi/NCvKYoTeJR0/default.jpg,https://i.ytimg.com/vi/NCvKYoTeJR0/hqdefault.jpg,PT1H20M31S,16753,457,29,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+7bS52JVHEk0,From electrical engineering student to CTO with Hitesh Choudhary [Podcast #175],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews former CTO and prolific programming teacher Hitesh Choudhary.
+
+We talk about:
+- The limits of AI in building a robust codebase
+- Time management
+- Higher Education in India
+- Lessons from training developers
+- Lessons you've learned from your travel
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to https://donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- Hitesh's TypeScript course on freeCodeCamp: https://www.freecodecamp.org/news/programming-in-typescript/
+- Hitesh's project-oriented Appwrite course on freeCodeCamp https://www.freecodecamp.org/news/comprehensive-full-stack-react-with-appwrite-tutorial/
+- Hitesh's Git course on freeCodeCamp: https://www.freecodecamp.org/news/learn-git-in-detail-to-manage-your-code/
+- Hitesh's TED talk on time management: https://www.youtube.com/watch?v=s1KrFy_3LYQ
+
+- 00:00 - Introduction
+- 00:28 - Current State of AI Coding Tools
+- 02:24 - AI's Role in a Large Codebase
+- 03:12 - Limitations of AI in Large Codebases
+- 04:33 - Economic and Contextual Limitations of LLMs
+- 05:33 - AI's Impact on Tech Stack Choices
+- 06:56 - Hype vs. Reality of AI Coding Agents
+- 07:40 - The ""Style"" of AI-Generated Code
+- 11:23 - Practical Applications of AI in Development
+- 14:27 - AI in Content Creation
+- 15:40 - Human Oversight in AI-Assisted Coding
+- 16:44 - Encouragement to Learn Coding in the Age of AI
+- 17:25 - Hitesh's Journey to Becoming a Prolific Educator
+- 20:05 - Learnist: Enabling Other Educators
+- 21:44 - Early Life and Educational Struggles in India
+- 23:56 - Transition from Hardware to Software Development
+- 24:27 - Early Programming Languages (Perl, Python)
+- 25:27 - Entry into Cybersecurity and Weekend Lecturing
+- 26:26 - The Rigorous Schedule of a Weekend Lecturer
+- 27:32 - Cross-Cultural Communication and the Art of Teaching
+- 28:34 - The Two Sides of Teaching: Domain Expertise and Pedagogy
+- 29:50 - Transition to iOS Development and Udemy
+- 31:52 - Founding Learnist due to Payment Gateway Issues in India
+- 32:50 - The Acquisition of Learn Code Online and Career as a Director
+- 33:46 - The Motivation Behind ""Chai or Code""
+- 34:26 - Balancing Teaching and LMS Operations
+- 35:49 - Computer Science as a Path out of Poverty in India
+- 38:50 - High Drop-Out Rates in Computer Science
+- 39:35 - The Accessibility of Learning Resources and VC-Funded Tools
+- 42:14 - Advice for University Students without Elite Access
+- 45:49 - Building a ""Product"" Instead of Just a ""Project""
+- 47:20 - Clarification on Starting with Beginner Projects
+- 47:49 - Surprising Observations about Higher Education in India
+- 51:15 - The Diminished Value of Master's and PhD Degrees
+- 53:35 - The Dilution of Prestigious University Brands
+- 56:49 - Justifications for University-Company Collaborations
+- 58:49 - The Experience of Tutoring IIT Students
+- 01:09:43 - The Power of Financial Commitment in Learning
+- 01:10:25 - The Misconception of ""Courses"" vs. ""Books""
+- 01:12:33 - Profound Lessons in Time Management
+- 01:17:42 - Message to His Younger Self",2025-06-06T12:00:13Z,N/A,27,en,en,https://i.ytimg.com/vi/7bS52JVHEk0/default.jpg,https://i.ytimg.com/vi/7bS52JVHEk0/hqdefault.jpg,PT1H21M22S,52113,1527,112,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+07NdHM6pE6M,How to Survive in Tech When Everything's Changing w/ 21-year Veteran Dev Joe Attardi [Podcast #174],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Joe Attardi. He's a software engineer and prolific author of programming books.
+ 
+We talk about:
+- How software development has changed over the past 21 years
+- Tips for suriving AI's sweeping changes to the field
+- The evolving role of Computer Science degrees
+- Why people should still read O'Reilly style programming books on dead trees
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,423 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to donate.freecodecamp.org
+
+Links we talk about during our conversation:
+Joe's freeCodeCamp books and tutorials: https://www.freecodecamp.org/news/author/joeattardi/
+Joe's website: https://joeattardi.com/
+Joe's Web API Cookbook: https://www.webapis.info/
+Joe's open source projects on GitHub: https://github.com/joeattardi
+What Joe's desk looks like: https://x.com/JoeAttardi/status/1849819837360480658
+Some games Joe's recently played: https://backloggd.com/u/jattardi/games?page=1
+
+Chapters
+
+00:00 Introduction to Joe Attardi and His Journey
+03:01 The Pressure of Entrepreneurship in Tech
+06:07 Navigating Career Paths: Management vs. Technical Roles
+08:56 The Impact of AI on Software Development
+12:00 The Role of Computer Science Degrees in Today's Market
+15:01 Advice for the Next Generation: Is CS Still Worth It?
+18:02 The Future of Software Development and AI's Role
+20:45 Reflections on Education and Career in Tech
+24:35 The Shift to Software Engineering
+25:31 Building Foundational Knowledge
+28:32 The Importance of Project-Based Learning
+30:41 Balancing Work and Personal Life
+32:12 The Value of Humility in Tech
+36:10 The Role of Security in Software Development
+41:21 The Book Publishing Journey
+49:37 Streamlining the Editorial Process
+50:44 Weight Loss and Lifestyle Choices
+52:00 The Technical Review Process in Publishing
+53:35 Marketing Your Book
+55:16 The Future of Technical Writing and AI
+01:00:04 Career Aspirations and Growth
+01:02:51 Balancing Work and Hobbies
+01:05:10 Exploring Game Development
+01:09:14 Advice to My Younger Self",2025-05-30T12:00:01Z,N/A,27,en,en,https://i.ytimg.com/vi/07NdHM6pE6M/default.jpg,https://i.ytimg.com/vi/07NdHM6pE6M/hqdefault.jpg,PT1H10M34S,56516,1326,85,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+MHrbAlLpIWs,Laid off but not afraid with X-senior Microsoft Dev MacKevin Fey [Podcast #173],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews MacKevin Fey. He just got laid off last week from his senior engineering role at Microsoft.
+
+We talk about:
+How Mack's approaching the job search after being laid off
+Tips for building your own financial safety net while working as an engineer
+How to use your dev skills to help people around you in the meantime
+And how Mack trains mentally and physically for the rigors of modern work
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,423 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to donate.freecodecamp.org
+
+Links we talk about during our conversation:
+Mack's Oscilliscope course: https://www.youtube.com/playlist?list=PLBfhD_4FPIYsQ9LiWYoHVrLbuvwnb_bvC
+
+Gameplay from RadGamer: https://www.youtube.com/watch?v=wIzM2c2YKfM
+License: Creative Commons Attribution license (reuse allowed)
+
+Chapters
+
+00:00 Navigating Layoffs: A Personal Journey
+03:14 Building a Safety Net: Financial Strategies
+06:00 Mental and Physical Resilience in Tough Times
+09:01 From Childhood to Career: A Unique Path
+12:05 College Decisions: Finding the Right Fit
+15:09 Internships and Early Career Experiences
+18:02 Transitioning to Intel: The Engineering World
+21:01 Firmware and Hardware: A Deep Dive
+23:55 The Role of Testing in Engineering
+27:01 Advice for Aspiring Engineers
+32:43 Transitioning from Intel to Microsoft
+35:05 Navigating Corporate Culture and Growth
+38:05 Learning and Adapting in a New Environment
+40:10 Key Takeaways from Microsoft Experience
+42:27 Physical and Mental Health Management
+49:13 The Importance of Therapy and Self-Improvement
+52:37 Building Financial Independence through Real Estate
+56:50 Understanding Passive Income
+01:04:25 Preparing for Financial Uncertainty
+01:10:04 Navigating Job Loss and Future Steps
+01:18:36 Embracing Resilience and Gratitude",2025-05-23T17:17:27Z,N/A,27,en,en,https://i.ytimg.com/vi/MHrbAlLpIWs/default.jpg,https://i.ytimg.com/vi/MHrbAlLpIWs/hqdefault.jpg,PT1H18M49S,22556,454,50,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+yx1ri8X37S4,"Making Developer Friends Anywhere, with Iraqi Engineer Code;Life [Podcast #172]","On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews software engineer and live coding streamer Code;Life.
+
+For those of you watching the video version of this interview, she lives in Iraq and she uses a 3D avatar to protect her identity.
+
+We talk about:
+Training language models to work well with low-resource languages from Africa and the Middle East
+Growing up in Iraq and her early experiences with computers and the internet
+How streaming yourself coding can be a good way to practice your skills, update your knowledge, and motivate fellow devs
+How to participate in coding competitions and hackathons even if you feel intimidated
+
+Support for freeCodeCamp comes from the 11,384 kind folks who support our charity through a monthly donation. You can join these chill human beings and aid us in our mission by going to donate.freecodecamp.org
+
+Support for also comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Correction: Quincy mentioned half of all articles on Wikipedia are English. While this is no longer true, as of 2025 half of all Wikipedia pageviews are still for English articles.
+
+Links we talk about:
+Quincy's interview with Eammon Cottrell who automated his coffee shop chain: https://www.freecodecamp.org/news/self-taught-coding-automating-coffee-shop-chain-eamonn-cottrell-interview-151/
+MNIST character dataset: https://en.wikipedia.org/wiki/MNIST_database
+Zepeto tool for creating your own V-tuber avatar: https://page.zepeto.me/en/u4EEl3wK89atkdyUiivGEck
+Hugging Face AI Agent course (freeCodeCamp also has several courses on this on YouTube but this is the one CL mentioned): https://huggingface.co/learn/agents-course/en/unit0/introduction
+A video of Code;Life doing a Kaggle data science competition: https://youtube.com/live/WGLqd_sGiVA?feature=share
+
+Chapters
+
+0:00:00 Introduction to Low Resource Languages and Machine Learning
+0:05:04 The Importance of Data in Language Models
+0:09:59 Fine-Tuning Language Models for Specific Tasks
+0:15:01 Growing Up in Iraq and Learning English
+0:19:58 The Impact of English on Opportunities
+0:25:03 Navigating the Arabic Language Internet
+0:26:21 Exploring the Education System
+0:29:28 Journey into Computer Science
+0:32:24 The Role of Free Code Camp
+0:35:24 Career Progression and Development
+0:38:25 Navigating Job Applications
+0:41:19 Pursuing Graduate Education
+0:44:22 Building a Developer Community
+0:58:42 Building Community in Tech
+1:01:10 The Power of Live Streaming for Learning
+1:04:05 Creating a Learning Routine
+1:08:51 Practical Tips for Aspiring Streamers
+1:13:13 Curating Your Learning Resources
+1:16:04 Language Learning Through Entertainment
+1:18:53 Balancing Comfort and Challenge
+1:24:26 Investing in Yourself for Future Security",2025-05-16T11:01:50Z,N/A,27,en,en,https://i.ytimg.com/vi/yx1ri8X37S4/default.jpg,https://i.ytimg.com/vi/yx1ri8X37S4/hqdefault.jpg,PT1H29M24S,31551,613,149,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+FHLmuNj20bA,Ditching My Microsoft Job for Startup Purgatory with Sam Crombie [Podcast #171],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Sam Crombie. He's a software engineer and prolific open source contributor to freeCodeCamp. He abandon his job at Microsoft, got into Y Combinator, and is currently in startup pivot hell trying to decide how to use the half million he raised.
+
+We talk about:
+How useful are AI coding tools, really?
+Tips for getting new users to care about your projects
+What's its really like running a Y-Combinator-funded tech startup
+Tips for getting into an Ivy League computer science degree program
+
+Support for freeCodeCamp comes from the 11,384 kind folks who support our charity through a monthly donation. You can join these chill human beings and aid us in our mission by going to donate.freecodecamp.org
+
+Support for also comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Links we talk about during our conversation:
+Sam's course on how to audit university courses: https://www.freecodecamp.org/news/how-to-audit-a-class-university-course/
+College Compendium, a univeristy course auditing tool Sam built with fellow freeCodeCamp podcast alum Seth Goldin: https://collegecompendium.org/
+
+Chapters
+00:00 Introduction to Sam Crombie and His Journey
+02:59 AI Coding Tools: Hype vs. Reality
+06:05 The Role of AI in Software Development
+08:56 Challenges with Large Code Bases and AI
+11:57 The Importance of Context in AI Development
+15:04 The Future of AI in Software Engineering
+17:59 Sam's Early Years and Introduction to Tech
+21:04 Navigating College Admissions and Extracurriculars
+29:26 The Value of Education and Peer Groups
+31:33 Navigating Internships and Early Career Challenges
+34:58 Transitioning from Intern to Full-Time Employee
+39:51 Internship Experience at Microsoft
+43:19 Negotiating Job Offers and Compensation
+47:22 The Current Job Market Landscape
+48:34 Deciding to Leave Microsoft for New Opportunities
+57:40 Leaving Microsoft: The Decision to Transition
+59:51 The Y Combinator Experience: From Application to Acceptance
+01:02:50 Navigating the Accelerator: Learning and Iteration
+01:07:01 The Co-Founder Dynamic: Challenges and Realizations
+01:25:58 Navigating Pivot Hell
+01:26:49 Exploring Startup Ideas
+01:28:34 Challenges in User Acquisition
+01:30:50 The Importance of Feedback
+01:32:39 Evaluating Assumptions
+01:35:29 Finding Passion in Projects
+01:36:40 The Role of Community and Open Source
+01:39:12 The Impact of Luck and Timing
+01:41:34 Advice for Future Founders",2025-05-09T09:00:32Z,N/A,27,en,en,https://i.ytimg.com/vi/FHLmuNj20bA/default.jpg,https://i.ytimg.com/vi/FHLmuNj20bA/hqdefault.jpg,PT1H55M25S,14382,245,12,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+6JnddhxL6vE,From Art School Drop-out to Microsoft Engineer with Shashi Lo [Podcast #170],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Shashi Lo. He's a software engineer at Microsoft. He grew up the child of refugees. He wanted to start earning money and build his family so he abandoned his art school degree and taught himself how to program.
+
+He immediately hustled to land freelance development clients – something he still does today on top of his full time job and raising his 4 kids.
+
+We talk about:
+- Making ends meet doing freelance work
+- How to bootstrap your reputation toward getting a job in big tech
+- Mistakes he sees careers changers make
+- The pros and cons of working in big tech VS working at developer agencies
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- Shashi's conference talks and other podcast interviews: https://bento.me/shashilo
+
+Chapters
+0:00:00 Teaser and Intro
+0:00:32 Song - Metal Gear 2: Solid Snake Theme
+0:02:54 The Art of Code Reviews
+0:12:53 Shashi's Journey: From Laos to the U.S.
+0:23:00 Navigating High School and Early Work Life
+0:28:21 The Evolution of Web Design and Personal Passion
+0:30:08 The Value of Education in Tech Careers
+0:32:34 Intrinsic Motivation in Software Development
+0:35:47 Balancing Work, Family, and Passion Projects
+0:42:34 Effective Remote Work Strategies
+0:48:21 Navigating the Job Market in Tech
+0:53:54 Bridging the Skills Gap for Junior Developers
+0:57:00 Navigating the Transition from Hackathons to Real-World Engineering
+0:59:55 Understanding the Importance of Code Quality and Collaboration
+1:02:56 The Value of Open Source Projects in Learning
+1:07:16 Agency Life vs. Corporate Work: The Pros and Cons
+1:14:38 Job Application Insights: Standing Out in a Competitive Market
+1:20:07 Building, Failing, and Finding Mentorship for Growth",2025-05-02T16:17:10Z,N/A,27,en,en,https://i.ytimg.com/vi/6JnddhxL6vE/default.jpg,https://i.ytimg.com/vi/6JnddhxL6vE/hqdefault.jpg,PT1H23M48S,14927,321,27,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+LrPhWAGYhlI,From fast food worker to cybersecurity engineer with Tae'lur Alexis [Podcast #169],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Tae'lur Alexis. She's a developer and security analyst. Instead of going to college, Tae'lur spent years working various fast food and retail jobs.
+
+Tae'lur taught herself Python and JavaScript using freeCodeCamp and worked as a software engineer for 5 years before specializing in security engineering. Now instead of building applications, she breaks them.
+
+We talk about:
+- Making ends meet working McDonalds in Florida
+- How she taught herself programming using freeCodeCamp and the #100DaysOfCode challenge
+- Leveraging local meetups to make developer friends
+- Moving to Thailand and working remotely
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- Tae'lur's website and blog articles: https://taeluralexis.com
+- Tae'lur's YouTube channel about working remotely in Bangkok: https://www.youtube.com/@TaelurAlexis
+- Tae'lur on Twitter: https://x.com/TaelurAlexis
+
+Chapters
+0:00:00 Teaser
+0:00:38 Podcast Intro and Song - Astyanax
+0:02:49 Introduction to Security Engineering
+0:05:51 The Importance of Security in Startups
+0:08:50 Tae'lur's Journey into Coding
+0:11:51 Overcoming Challenges in Learning to Code
+0:14:56 Building a Supportive Community
+0:17:37 First Steps into Software Development
+0:20:48 Transitioning to a New Job in Seattle
+0:23:49 Adjusting to the Software Development Environment
+0:30:41 Navigating the Tech Team Dynamics
+0:33:29 Overcoming Workplace Challenges
+0:37:27 Building Communication Skills
+0:40:15 Transitioning from Job Loss to Freelancing
+0:42:49 Exploring the Freelance World
+0:48:13 Diving into Cybersecurity
+0:55:18 Understanding Security Threats and Defense
+0:56:17 Securing Applications Against Threats
+0:58:10 The Journey into Cybersecurity
+1:00:18 Bug Bounty Hunting and Entry-Level Roles
+1:02:49 Understanding CVEs and Their Importance
+1:06:00 Living Abroad: The Move to Thailand
+1:09:51 Cultural Immersion and Personal Growth
+1:12:03 Planning for an International Move
+1:15:11 Setting and Achieving Goals
+1:17:50 Balancing Humility and Confidence",2025-04-21T15:21:53Z,N/A,27,en,en,https://i.ytimg.com/vi/LrPhWAGYhlI/default.jpg,https://i.ytimg.com/vi/LrPhWAGYhlI/hqdefault.jpg,PT1H20M10S,20691,656,73,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+oYMUKagK0n8,From Accountant to Data Engineer with Alyson La [Podcast #168],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Alyson La. She taught herself how to code while working as an accountant at GitHub and was able to transition to a data scientist there, then ultimately a software engineer.
+
+After one of her kids got diagnosed with autism, she left her career for 3 years to be a full-time mom. She then re-entered the workforce and now teaches other moms how to do the same through a charity called Tech-Moms. She recently won a teacher of the year award and was a top 5 finalist in a data visualization competition.
+
+We talk about:
+- How Alyson taught herself programming while working as an accountant
+- How she transitioned to data analyst and ultimately data engineer
+- Tips for preparing for a break from work to take care of your family or address burnout
+- How to re-enter with the workforce with gusto
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to donate.freecodecamp.org
+
+Links we talk about during our conversation:
+- Alyson's new analytics consultancy: https://alysonla.com/
+- The charity Alyson teaches at: https://www.tech-moms.org/
+
+Welcome back to the freeCodeCamp podcast your source for raw, unedited interviews with developers. Today we're talking with Alyson La. She taught herself how to code while working as an accountant at GitHub and was able to transition to a data scientist there, then ultimately a software engineer.
+
+After one of her kids got diagnosed with autism, she left her career for 3 years to be a full-time mom. She then re-entered the workforce and now teaches other moms how to do the same through a charity called Tech-Moms. She recently won a teacher of the year award and was a top 5 finalist in a data visualization competition.
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to donate.freecodecamp.org
+
+For this week's musical intro – with yours truly on drums, guitar, bass, and keys – we're going back to 1990 with the F-zero anthem Mute City.
+
+Chapters
+
+0:00:00 Teaser
+0:02:45 Intro and Song: Mute City
+0:02:45 Empowering Moms Through Tech Education
+0:03:01 Leveraging AI in Learning
+0:05:46 A Journey from Accounting to Tech
+0:08:45 Building Skills and Confidence
+0:12:01 The Importance of Mentorship
+0:15:00 Transitioning to Data Science
+0:17:56 Navigating Career Growth
+0:20:48 The Role of Business Intelligence
+0:23:48 From Data Analyst to Data Scientist
+0:26:48 Navigating Data Engineering and Analytics Engineering
+0:30:38 Balancing Work and Family Life
+0:34:15 The Journey of Motherhood and Career
+0:36:21 Reentering the Workforce After a Break
+0:39:12 Inspiring Stories of Women in Tech
+0:42:43 The Importance of Networking in Tech
+0:47:39 Following Your Passion in Tech
+0:51:49 Navigating Burnout and Recovery
+0:54:03 Preparing for a Sabbatical
+0:56:30 Explaining Career Gaps
+1:00:06 Motherhood as Leadership
+1:01:33 The Concept of Returnships
+1:03:40 Shifting Family Dynamics
+1:06:21 Childcare Solutions
+1:09:44 Generational Progress and Opportunities
+1:12:40 Advice to My Younger Self",2025-04-15T15:14:48Z,N/A,27,en,en,https://i.ytimg.com/vi/oYMUKagK0n8/default.jpg,https://i.ytimg.com/vi/oYMUKagK0n8/hqdefault.jpg,PT1H19M20S,17229,401,25,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+YCS3HsFTbTQ,From drop-out to software architect with Jason Lengstorf [Podcast #167],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Jason Lengstorf. He learned to code out of necessity building websites for local emo bands. 
+
+He dropped out of college but eventually worked as an engineer at IBM and has gone on to roles at many other companies doing everything from software architecture to management. He runs CodeTV, a Bravo-style reality TV channel for developers.
+
+We talk about:
+- Jason's winding path into development from building websites for bands
+- Teaching yourself programming by chasing your curiosity
+- How in-person events gives you tacit knowledge that makes you a better engineer
+- How having a broad range of skills ultimately helps you build better projects
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our charity's mission by going to donate.freecodecamp.org
+
+Links we talk about during our conversation:
+
+- CodeTV: https://codetv.dev/
+- The CodeTV YouTube channel: https://www.youtube.com/channel/UCnty0z0pNRDgnuoirYXnC5A
+- Jason's website: https://jason.energy/
+
+Chapters
+0:00:00 Teaser
+0:00:21 Quincy's Intro and Song: Amazing Spider Man
+0:02:29 Introduction to Leet Heat and Automation
+0:05:32 The Making of Leet Heat: Behind the Scenes
+0:08:28 Jason's Non-Traditional Path to Tech
+0:14:33 Agency Life: The Ups and Downs
+0:20:28 Transitioning from Agency to Corporate
+0:26:40 Innovating at IBM: The Journey of Re-Architecture
+0:29:05 The Evolution of JAMstack
+0:30:42 The Importance of Storytelling in Tech
+0:33:28 Navigating Bureaucracy in Large Organizations
+0:34:58 Finding the Right Work Environment
+0:37:15 Building Community at Gatsby
+0:38:15 The Power of Pair Programming
+0:41:11 The Value of Tacit Knowledge
+0:45:57 Casual Conversations and Problem Solving
+0:47:53 Creating Learning Opportunities in Tech
+0:51:24 The Balance of Learning and Doing
+0:54:17 Building Community and Networking
+0:58:43 The Importance of Building and Sharing Knowledge
+1:03:56 Creating Value Through Building Projects
+1:10:25 Chasing Curiosity and Embracing Challenges
+1:15:15 The Transferable Skills in Career Development",2025-04-04T20:00:42Z,N/A,27,en,en,https://i.ytimg.com/vi/YCS3HsFTbTQ/default.jpg,https://i.ytimg.com/vi/YCS3HsFTbTQ/hqdefault.jpg,PT1H20M55S,18637,436,22,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+PiWejwwj7Nk,From broke musician to working dev. How college drop-out Ryan Furrer learned to code [Podcast #166],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Ryan Furrer. He's a Front End Engineer working on tools that help companies monitor their buildings for energy usage, water leaks, and other environmental factors. Ryan dropped out of college and worked as a musician and violin instructor before teaching himself how to code, working freelance, and ultimately landing developer jobs.
+
+We talk about:
+- Life as a broke musician
+- Teaching yourself to code while working full-time
+- How Ryan had to move back in with his parents after a divorce
+- His 5-year journey to his first developer job
+
+Also, I want to thank the 11,384 kind people who support our charity each month, and who make this podcast possible. You can join them and support our mission at: https://www.freecodecamp.org/donate
+
+Or you can listen to the podcast in Apple Podcasts, Spotify, or your favorite podcast app. Be sure to follow the freeCodeCamp Podcast there so you'll get new episodes each Friday.
+
+Links we talk about during our conversation:
+
+Ryan's podcast, Web Dev Dialogues: https://www.webdevdialogues.com/episodes
+
+Ryan's website: https://www.ryanfurrer.com
+
+A freeCodeCamp course on the Astro front end development framework taught by freeCodeCamp podcast guest James Q Quick: https://www.freecodecamp.org/news/learn-the-astro-web-framework/
+
+Chapters
+
+0:00:00 Teaser
+0:00:00 Intro and Song: Little Nemo The Dream Master - Mushroom Forest 
+0:00:00 Introduction to Ryan Furrer and Astro Framework
+0:05:48 The Advantages of Astro Over React
+0:08:30 Ryan's Journey into Front-End Development
+0:11:32 The Transition from Music to Coding
+0:14:39 Navigating College and Student Debt
+0:17:42 The Reality of Teaching Music
+0:20:21 Building a Private Music Teaching Studio
+0:30:10 Building a Network for Music Teaching
+0:32:38 Transitioning Careers: From Music to Buying
+0:34:44 The Emotional Toll of Career Changes
+0:38:35 Navigating Remote Work During a Pandemic
+0:42:27 The Complexities of a Buyer Role
+0:44:37 The Dilemma of Career Satisfaction
+0:51:42 Facing Personal Challenges and Finding Community
+0:57:39 Burnout and the Importance of Communication
+1:03:43 Finding Balance in a Busy Life
+1:04:54 Balancing Work and Personal Projects
+1:06:49 Skill Progression and Self-Assessment
+1:13:26 The Importance of Community and Networking
+1:22:15 Navigating the Freelance and Remote Work Landscape
+1:30:06 Reflecting on Growth and Future Aspirations",2025-03-28T18:55:15Z,N/A,27,en,en,https://i.ytimg.com/vi/PiWejwwj7Nk/default.jpg,https://i.ytimg.com/vi/PiWejwwj7Nk/hqdefault.jpg,PT1H36M24S,22983,513,29,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+YDLDCm3bPfU,From hating coding to programming satellites at age 37 – Francesco Ciulla interview [Podcast #165],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Francesco Ciulla. He's a software engineer who has worked with the European Space Agency on code that powers the Copernicus satellite program. More recently he's published courses on learning Docker and the Rust programming language.
+
+We talk about:
+- How Francesco worked as a volleyball coach until we was 32, before getting serious about coding
+- Francesco's work on coding satellites
+- How he's given dozens of talks about emerging tools at major tech conferences
+- How he creates tech tutorials even though he's a proud introvert who has to put himself out there
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. You can join these chill human beings and help our mission by going to https://www.freecodecamp.org/donate
+
+Links we talk about during our conversation:
+
+- Francesco's YouTube channel: https://www.youtube.com/@francescociulla
+- Francesco's upcoming book on Rust: https://mybook.to/YJI6DI 
+- Francesco's personal website and all his links: https://www.francescociulla.com
+
+Chapters
+
+0:00:00 Teaser
+0:00:25 Intro & Song: Power of Anger
+0:02:29 The Rise of Rust: A Programming Revolution
+0:08:43 Francesco's Journey: From Volleyball Coach to Software Engineer
+0:14:27 Teaching and Learning: The Importance of Knowledge Sharing
+0:20:30 Navigating Social Media: Building a Developer Presence
+0:28:26 Finding Your Niche: The Docker Community and Beyond
+0:43:16 The Docker Ambassador Program
+0:45:12 The Power of Community Engagement
+0:47:33 Navigating Introversion in Tech
+0:52:45 Building Reputation and Networking
+0:59:42 Day-to-Day as a Freelance DevOps Consultant
+1:09:23 The Future of DevOps and Automation
+1:13:22 Certifications: A Means to an End
+1:20:32 Advice to My Younger Self",2025-03-22T00:45:03Z,N/A,27,en,en,https://i.ytimg.com/vi/YDLDCm3bPfU/default.jpg,https://i.ytimg.com/vi/YDLDCm3bPfU/hqdefault.jpg,PT1H27M18S,33901,835,71,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+28c0QMQZ5yA,How to become a self-taught developer while supporting a family [Podcast #164],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Jesse Hall. He's software engineer and a developer advocate at MongoDB. He taught himself to code while raising kids and working on the Best Buy Geek Squad fixing computers. 
+
+Jesse has created tons of tutorials over the years on YouTube and on freeCodeCamp. We talk about his coding journey, how the field has changed over the few years, and how hype has distorted peoples' perception of getting into code.
+
+We talk about:
+- Growing up in a one stop light town
+- Teaching himself to code for free using freeCodeCamp
+- How he created YouTube tutorials to inspire his kids, then got quite good at it
+- How Jesse's early interest in Web3 lead him to needing to ""dig himself out of the grave"" of being ""the NFT tutorial guy""
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,384 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+Links we talk about during our conversation:
+
+- Jesse's tutorials on freeCodeCamp: https://www.freecodecamp.org/news/author/codeSTACKr/
+
+- Jesse's course on how to set up and configure the VS Code editor: https://www.youtube.com/watch?v=fJEbVCrEMSE
+
+Chapters
+
+0:00:00 Teaser
+0:00:26 Intro with Song 'Elevator Action'
+0:02:26 Introduction and Background
+0:05:25 Embracing AI in Development
+0:08:28 Journey from Hardware to Software
+0:11:23 Transitioning to Software Development
+0:14:31 Family Life and Career Changes
+0:17:25 The Role of YouTube in Learning
+0:20:24 Inspiration and Developer Advocacy
+0:23:25 Life in Texas and Encouragement for Others
+0:28:45 Optimizing Development Environments with VS Code
+0:31:12 The Impact of AI on Learning and Development
+0:33:02 Mentoring the Next Generation of Coders
+0:35:01 Navigating AI Tools in Production Environments
+0:38:47 Boosting Productivity with AI Tools
+0:42:48 Learning to Code in the Age of AI
+0:46:52 Project-Driven Learning and Development
+0:49:19 Embracing New Tools and Technologies
+0:56:31 Recognizing and Overcoming Ruts in Learning
+1:00:05 The Joy of Continuous Learning
+1:03:06 Navigating Time Management and Side Gigs
+1:04:38 The Value of Certifications in Career Growth
+1:10:03 The Rise and Fall of Web3 and NFTs
+1:20:56 Advice for Aspiring Software Engineers",2025-03-14T22:04:40Z,N/A,27,en,en,https://i.ytimg.com/vi/28c0QMQZ5yA/default.jpg,https://i.ytimg.com/vi/28c0QMQZ5yA/hqdefault.jpg,PT1H22M58S,30426,949,70,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+JKwbPZU-FV0,Learn fewer skills but go deeper - the Caleb Curry interview [Podcast #163],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Caleb Curry. He's a software engineer and prolific computer science educator. He recently started mentoring dozens of developers directly and helping them with their skills and careers. We'll talk about his experience getting laid off as a dev and how we prepared for his mid-career job search.
+
+We talk about:
+How Caleb got laid off and went about landing his next developer job
+How most people sleep on networking and recruiters but shouldn't
+Why Caleb is so serious about teaching system design concepts
+How Caleb pairs his deep focus with broad extracurricular learning through podcasts and white papers
+
+Also, I want to thank the 11,343 kind people who support our charity each month, and who make this podcast possible. You can join them and support our mission at: https://www.freecodecamp.org/donate
+
+Links we talk about during our conversation:
+
+Caleb's course on Database Design: https://www.freecodecamp.org/news/database-design-full-course-43233664125b/
+
+Caleb's system design lecture playlist: https://www.youtube.com/watch?v=0e7yQ43bUtg&list=PL_c9BZzLwBRLSs6x50D5WIH76VCUxJs9E
+
+Caleb on LinkedIn: https://www.linkedin.com/in/calebcurry/
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp
+
+Chapters
+
+0:00:00 Teaser
+0:00:20 Intro
+0:01:28 Song from Galaga
+0:02:24 Caleb's Background
+0:05:06 Navigating Layoffs and Job Searching
+0:08:08 Preparing for Layoffs: Financial and Skill Readiness
+0:11:20 The Importance of Continuous Learning
+0:14:07 Career Growth vs. Contentment
+0:17:22 Structuring Your Day for Productivity
+0:20:07 Long-Term Commitment to Skill Development
+0:23:08 Networking Strategies for Success
+0:26:23 Overcoming Learning Barriers
+0:29:08 Final Thoughts and Advice
+0:33:23 Daily Coding Challenges and Consistent Practice
+0:34:13 Learning Fundamentals vs. Quick Fixes
+0:37:28 The Role of AI in Learning and Development
+0:43:05 Choosing the Right Tools for Learning
+0:43:57 Going Deep vs. Broad in Learning
+0:54:11 The Importance of Depth in Technical Skills
+1:02:56 The Art of Authentic Performance
+1:04:31 Teaching Methods: Balancing Theory and Practice
+1:05:47 The Importance of Pedagogy in Programming Education
+1:06:40 Creating Engaging Learning Experiences
+1:08:23 The Value of Passive Learning and Communication Skills
+1:11:20 Deep Learning vs. Surface Learning
+1:13:31 Networking Strategies for Career Growth
+1:15:47 Targeted Job Searching: Finding the Right Fit
+1:20:38 Building Your Personal Brand on LinkedIn
+1:26:56 Confidence and Self-Belief in Career Advancement
+
+🎉 Thanks to our Champion and Sponsor supporters:
+👾 Drake Milly
+👾 Ulises Moralez
+👾 Goddard Tan
+👾 David MG
+👾 Matthew Springman
+👾 Claudio
+👾 Oscar R.
+👾 jedi-or-sith
+👾 Nattira Maneerat
+👾 Justin Hual
+
+--
+
+Learn to code for free and get a developer job: https://www.freecodecamp.org
+
+Read hundreds of articles on programming: https://freecodecamp.org/news",2025-03-07T19:20:51Z,N/A,27,en,en,https://i.ytimg.com/vi/JKwbPZU-FV0/default.jpg,https://i.ytimg.com/vi/JKwbPZU-FV0/hqdefault.jpg,PT1H30M48S,67787,2167,102,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+5k4asZXrzHI,How to become a developer in your 30s with Anjana Vakil [Podcast #162],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Anjana Vakil. She left academia to learn to code and got her first developer job in her 30s.
+
+Anjana was an English teacher who studied computational linguistics, and found building software to be more fun than actual research.
+
+She's worked at ton of tech companies and has freelance clients. She shares some excellent tips on learning new skills and avoiding burnout.
+
+We talk about:
+- How Anjana taught herself to code in her 30s
+- Being an American dev working in Europe
+- Stress, burnout, and how she gets by
+- How skills from your previous non-developer career can help differentiate you as a developer
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,243 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+Links we talk about during our conversation:
+
+- ""How to be the ideal newb"" article: https://jvns.ca/blog/good-questions/
+
+- ""Burnout: The Secret to Unlocking the Stress Cycle"" book that Anjana mentions: https://www.amazon.com/Burnout-Secret-Unlocking-Stress-Cycle/dp/198481706X
+
+- Anjana's website: https://anjana.dev/
+
+Chapters
+
+0:00:00 Podcast Teaser
+0:00:26 Intro, Spy vs. Spy
+0:02:31 Anjana's Background
+0:09:37 Building a Network for Freelancing
+0:15:40 Navigating Freelancing Risks
+0:21:31 The Value of Community and Support
+0:27:28 The Future of Freelancing and Job Security
+0:34:37 Economic Impact of Major Employers
+0:41:29 The Role of AI in Software Development
+0:46:35 Anjana's Journey into Tech
+0:59:44 The Importance of Low-Resource Languages
+1:10:59 Understanding the Recurse Center's Business Model
+1:22:39 Navigating the Application Process for Outreachy
+1:31:29 Building Community in Isolated Environments
+1:39:00 The Importance of Diverse Voices in Tech
+1:46:26 The Value of Free Work and Knowledge Sharing
+1:51:58 Teaching as a Path to Career Growth
+1:58:46 Overcoming Imposter Syndrome in Tech
+2:08:28 Finding Passion in Programming
+2:17:35 Reprioritizing Life Post-Pandemic
+2:23:27 The Impact of Virtual Conferences
+2:32:57 Creating a Supportive Tech Community
+2:38:54 The Value of Diverse Backgrounds in Tech",2025-02-28T15:00:11Z,N/A,27,en,en,https://i.ytimg.com/vi/5k4asZXrzHI/default.jpg,https://i.ytimg.com/vi/5k4asZXrzHI/hqdefault.jpg,PT2H51M56S,34630,928,142,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+TPobG2emAfk,How to go full-on Renaissance Man mode in 2025 with Vaughn Gene [Podcast #161],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Vaughn Gene. He's a self-taught software engineer who works with lots of freelance clients. Vaughn lived in Japan for 10 years, and speaks Japanese, speaks Spanish, plays guitar, plays piano, and is skilled at MMA. He's obsessed with learning new skills.
+
+We talk about:
+- How Vaughn struggled with high school and joined the Navy
+- How he learned Japanese so he could work as a personal trainer in Japan
+- How he learned coding using freeCodeCamp as a way to make more time and more money
+- His pragmatic approach for teaching himself new skills for free
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,043 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+Links we talk about during our conversation:
+
+Vaughn's YouTube channel and his approach to pursuing multiple skills in tandem: https://www.youtube.com/watch?v=wTnsjmsgJS8
+
+Vaughn on Instagram where he posts guitar: https://www.instagram.com/vaughngene/
+
+Chapters
+0:00:00 Teaser / Intro
+0:01:20 Balloon Fight
+0:02:09 The Journey of Self-Teaching
+0:05:10 Overcoming Misconceptions in Learning
+0:08:07 The Importance of Practicality in Learning
+0:11:13 Navigating Language Learning Challenges
+0:14:15 The Shift from Traditional Education to Self-Directed Learning
+0:17:05 Exploring the Military Experience and Its Impact
+0:20:12 The Decision to Learn Japanese
+0:23:07 Practical Approaches to Learning Software Development
+0:34:15 Life in Japan: A Cultural Shift
+0:38:42 Navigating Work and Life as a Digital Nomad
+0:42:03 Cultural Perceptions: Tattoos and Acceptance
+0:45:45 Practical Language Learning: Gym Fluency
+0:51:34 Transitioning to Software Engineering
+0:56:16 Building a Freelance Career: Word of Mouth Success
+0:58:24 The Challenge of Returning Home
+0:59:26 Learning Languages: Spanish and Music as New Challenges
+1:05:47 The Value of Education and Experience
+1:08:12 People Skills Over Technical Skills
+1:10:18 Dealing with Naysayers and Self-Doubt
+1:13:50 The Importance of Positive Feedback
+1:14:10 Anecdotal Evidence vs. Internet Information
+1:16:49 Scheduling Your Dopamine for Productivity
+1:22:30 Finding Balance in Life and Work
+1:30:00 Embracing Spontaneity and Trusting the Process
+1:39:08 Managing Stress and Finding Focus
+1:39:13 Understanding Shiny Object Syndrome
+1:41:18 Overcoming Procrastination and Goal Setting
+1:42:47 The Myth of Immersion Learning
+1:45:30 The Reality of Language Learning Abroad
+1:47:56 The Cost of Learning: A Practical Perspective
+1:54:02 The Importance of Curiosity in Learning
+2:09:08 The Value of Diverse Skills and Interests",2025-02-24T04:15:02Z,N/A,27,en,en,https://i.ytimg.com/vi/TPobG2emAfk/default.jpg,https://i.ytimg.com/vi/TPobG2emAfk/hqdefault.jpg,PT2H11M53S,23225,740,49,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+L6Q8TkPA-ao,She taught herself to code in her 30s for zero dollars [Podcast #160],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Julia Undeutsch who is a self-taught software engineer and accessibility specialist. She works at a large European consultancy helping companies make their software more accessible for people with disabilities. Taught herself to code in her 30s using freeCodeCamp.
+
+We talk about:
+- Julia's coding journey from poker dealer to self-taught software engineer
+- How she creates tutorials in Japanese
+- Her passion for making software easier to use for everyone
+- Working remotely at a big European software consultancy
+
+Links we talk about during our conversation:
+
+- Julia's website: https://www.juliaundeutsch.com/
+
+- Movie trailer for the 1999 Clive Owen movie ""Croupier"" that Quincy mentions: https://www.youtube.com/watch?v=LDWzeq5QGiA
+
+Chapters
+
+0:00:00 Teaser
+0:00:19 Introuction
+0:01:24 Song: Fever
+0:02:20 Introduction to Accessibility and Self-Taught Development
+0:05:12 Understanding Accessibility: Importance and Impact
+0:08:16 The Role of Accessibility in Software Development
+0:11:14 Julia's Journey: From Poker Dealer to Accessibility Specialist
+0:14:27 The Transition to Coding: Overcoming Challenges
+0:17:16 Cultural Insights: Working Across Borders
+0:20:21 The Experience of Working in a Consultancy
+0:23:15 Building Confidence in a New Role
+0:26:16 Final Thoughts on Accessibility and Career Growth
+0:34:36 Navigating the Early Days of Development
+0:36:21 The Evolution of Front-End Frameworks
+0:37:52 Continuous Learning and Skill Development
+0:39:36 Passion for Accessibility
+0:41:26 Cultural Perspectives on Accessibility
+0:44:03 The Importance of Accessibility in Gaming
+0:45:54 The Future of Accessibility in Technology
+0:50:35 Practical Tips for Web Accessibility
+0:56:40 The Role of Companies in Accessibility
+1:03:36 The Value of Language Learning",2025-02-15T00:27:47Z,N/A,27,en,en,https://i.ytimg.com/vi/L6Q8TkPA-ao/default.jpg,https://i.ytimg.com/vi/L6Q8TkPA-ao/hqdefault.jpg,PT1H8M,31236,819,69,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+4rALiJgQjHY,From freeCodeCamp to CTO with Robotics Engineer Peggy Wang [Podcast #159],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Peggy Wang. She's used freeCodeCamp to learn how coding, worked in Big Tech as a robotics engineer, and she's cofounder and CTO of Ego AI, which builds human-like agents for video games.
+
+We talk about:
+- How she grew up a first generation immigrant and public school kid in Milwaukee
+- How her love of robotics helped her get into Stanford
+- How freeCodeCamp served as a key resource to build her developer chops
+- The near future of humanoid robots, self-driving cars, and human-like AI agents in games
+
+Links we talk about during our conversation:
+
+- Peggy's GameDev company, Ego AI: https://www.egoai.com/
+
+- Quincy's interview with hardware engineer Bruno Haid that he mentions toward the end of this episode: https://www.freecodecamp.org/news/podcast-hardware-engineering-bruno-haid/
+
+Chapters
+
+0:00:00 Teaser
+0:00:00 Podcast Intro
+0:00:00 Song - Passing Breeze
+0:03:12 Introduction to AI and Robotics
+0:06:21 Insights from CES 2023
+0:09:06 The Future of Household Robots
+0:12:13 The Evolution of Robotics and AI
+0:15:12 The Importance of Humanoid Robots
+0:18:14 Accessibility and Cost of Robotics
+0:21:16 The Role of Software in Robotics
+0:24:14 Peggy's Journey into Robotics
+0:27:17 Experiences at Stanford University
+0:37:43 Navigating the Path to Elite Education
+0:43:31 The Evolution of Robotics and AI
+0:51:05 The Intersection of Gaming and AI
+0:58:52 Creating Infinite Games with AI
+1:08:26 The Evolution of Virtual Characters
+1:14:26 The Future of Self-Driving Cars
+1:20:30 Advancements in AI and Robotics
+1:22:03 The Quest for Immersive VR Experiences
+1:30:11 Creating Personalized Gaming Worlds
+1:37:15 The Evolution of Game Engines
+1:41:07 The Future of Game Development Tools
+1:43:46 The Path to Humanoid Robots
+1:47:59 The Human Element in AI Decision Making
+1:58:21 The Future of Robotics and Hardware Innovation",2025-02-07T23:04:55Z,N/A,27,en,en,https://i.ytimg.com/vi/4rALiJgQjHY/default.jpg,https://i.ytimg.com/vi/4rALiJgQjHY/hqdefault.jpg,PT2H2M4S,22337,438,56,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+8JLtPIhQduU,From Gas Station to Google with Self-Taught Cloud Engineer Rishab Kumar [Podcast #158],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Rishab Kumar, cloud engineer and developer advocate at Twillio. 
+
+Rishab grew up in India and moved to Canada for school. But he couldn't afford to finish. He resorted to delivering pizzas and working at a gas station. But he worked hard to teach himself how to code and how to build cloud infrastructure, and eventually got a job Google.
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,043 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+We talk about:
+- How to teach yourself cloud engineering
+- Getting repeatedly rejected from FAANG jobs but persisting
+- Filling up the Infinity Gauntlet with cloud certifications
+- How DevOps and Cloud Engineering are changing
+
+Can you guess what song I'm playing in the intro?
+
+Links we talk about during our conversation:
+
+- Rishab's Terraform course on freeCodeCamp: https://www.freecodecamp.org/news/how-to-use-terraform-to-deploy-a-site-on-google-cloud-platform/
+
+- Rishab's LangChain LLM deployment course on freeCodeCamp: https://www.freecodecamp.org/news/learn-langchain-for-llm-development/
+
+- Learn to Cloud guide by Rishab and his friend at Microsoft, Gwyn: https://learntocloud.guide/
+
+- Rishab's YouTube channel https://www.youtube.com/@rishabincloud/videos
+
+Chapters
+
+0:00:00 Teaser
+0:00:56 Moon Theme from DuckTales NES
+0:01:58 Introduction to Rishab Kumar and Cloud Engineering
+0:07:51 The Growth of Cloud Engineering
+0:13:58 Transitioning from Tech Support to Cloud Engineer
+0:20:02 The Importance of Curiosity and Learning
+0:25:50 Certifications and Continuous Learning
+0:41:50 The Google Dream: Insights from an Ex-Googler
+0:48:15 A Second Chance: Reapplying to Google
+0:55:05 Transitioning to Twilio: Finding Fulfillment
+1:02:25 Future Trends in Cloud Computing
+1:10:29 Starting from Scratch: A Roadmap to Cloud Engineering
+
+🎉 Thanks to our Champion and Sponsor supporters:
+👾 Drake Milly
+👾 Ulises Moralez
+👾 Goddard Tan
+👾 David MG
+👾 Matthew Springman
+👾 Claudio
+👾 Oscar R.
+👾 jedi-or-sith
+👾 Nattira Maneerat
+👾 Justin Hual
+
+--
+
+Learn to code for free and get a developer job: https://www.freecodecamp.org
+
+Read hundreds of articles on programming: https://freecodecamp.org/news",2025-01-31T15:00:11Z,N/A,27,en,en,https://i.ytimg.com/vi/8JLtPIhQduU/default.jpg,https://i.ytimg.com/vi/8JLtPIhQduU/hqdefault.jpg,PT1H25M,37312,991,53,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+wjj2gZbcoNw,Getting a developer job in 2025 with Lane Wagner [Podcast #157],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Lane Wagner. He's a software engineer, prolific contributor to freeCodeCamp, and founder of the Boot.dev online learning platform.
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,043 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+We talk about:
+- Lanes thoughts on college and computer science degrees
+- Back end development and why it resonnates with him
+- Why he's so enthusiastic about the Go Programming Language
+- What Lane's learned about how people learn
+
+Can you guess what song I'm playing in the intro?
+
+Quincy mentions the number of engineers graduating every year from Indian and Chinese universities (including computer science majors, which is usually the most popular engineering degree). It's hard to find exact numbers but...
+- India: more than 1 million engineering graduates / year
+- China: more than 1 million engineering graduates / year
+- US: only about 200,000 engineering graduates / year
+
+Links we talk about during our conversation:
+
+- Lane's 4-hour course on how to get a job as a developer: https://www.freecodecamp.org/news/how-to-get-a-developer-job/
+- Lane's 5-hour HTTP Networking course: https://www.freecodecamp.org/news/http-networking-protocol-course/
+- Lane's SQL for Web Developers course: https://www.freecodecamp.org/news/sql-for-web-devs/
+- Lane's freely available books published through freeCodeCamp Press: https://www.freecodecamp.org/news/author/wagslane/
+- Khan Academy founder's talk on mastery learning: https://www.youtube.com/watch?v=-MTRxRO5SRA
+- The Zone of Proxmial Development education concept: https://en.wikipedia.org/wiki/Zone_of_proximal_development
+
+Chapters
+
+0:00:00 Introduction to Lane Wagner and Boot.dev
+0:03:43 The Job Market Landscape for Developers
+0:07:49 Comparing Job Search Experiences: 2016 vs. 2024
+0:11:55 The Shift to Online Job Applications
+0:15:59 The Importance of Networking and Communication Skills
+0:20:00 Understanding the Current Job Market Dynamics
+0:23:44 The Role of Communication in Programming
+0:32:01 The Power of Practice and Repetition in Learning
+0:39:25 The Genesis of Boot Dev
+0:41:55 The Importance of Practice in Learning
+0:43:57 Finding the Right Balance in Learning
+0:47:02 The Role of Intentionality in Learning
+0:50:08 Maximizing Learning Opportunities
+0:52:59 The Challenge of Time Management
+0:56:00 The Reality of Competition in Tech
+0:59:00 The Future of Work and Learning
+1:02:58 Gamification in Learning Platforms
+1:18:36 Gamifying Learning: The Psychology Behind Potions
+1:19:57 Learning Mechanics: The Balance of Speed and Engagement
+1:22:35 Community Engagement: Building a Supportive Learning Environment
+1:27:16 The Role of Discord in Community Management
+1:33:05 Gamification Strategies: Enhancing Learning Through Game Mechanics
+1:40:15 Metrics for Success: Evaluating Learning Outcomes
+1:47:35 The Future of Higher Education: Navigating Challenges and Opportunities
+1:50:32 The Value of Education in Today's Job Market
+1:56:09 Navigating Career Paths: Skills Over Degrees
+2:02:20 Alternative Learning: Online Resources and Self-Education
+2:11:58 The Future of Work: AI and Programming Skills
+2:24:08 Practical Learning: Producing While Consuming",2025-01-24T23:10:06Z,N/A,27,en,en,https://i.ytimg.com/vi/wjj2gZbcoNw/default.jpg,https://i.ytimg.com/vi/wjj2gZbcoNw/hqdefault.jpg,PT2H26M40S,46772,1173,81,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+UKJsjKivhdE,AI Reality VS Speculation with Google Machine Learning Engineer Jiquan Ngiam [Podcast #156],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Jiquan Ngiam. He's a former Google Brain engineer who's building tools to make AI useful for everyone – not just developers. We talk about the power of AI and it's practical capabilities, and separate those from a lot of the hype surrounding the AI space.
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at wixstudio.com.
+
+Support also comes from the 11,113 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+We talk about:
+
+- How AI agents work
+- Where AI is going and its limitations
+- How non-developers can leverage AI 
+- And how developers can REALLY leverage AI
+
+Links we talk about during our conversation:
+
+- Jiquan's company, Lutra AI: https://lutra.ai/
+
+- Jiquan's article on generative agentic interfaces for working with large spreadsheets: https://blog.lutra.ai/generative-interfaces-for-ai-agents
+
+- Jiquan's article on OODA loops for AI Agents: https://blog.lutra.ai/ooda-loops-for-ai-agents
+
+- A paper Jiquan mentions, Executable Code Actions Elicit Better LLM Agents: https://arxiv.org/abs/2402.01030
+
+Chapters
+0:00:00 Introduction to AI and Machine Learning
+0:10:07 Transformers and Their Impact on AI
+0:20:06 Understanding AI Training and Post-Training Processes
+0:28:51 Harnessing Multimodal AI for Enhanced Communication
+0:35:33 Lutra: Empowering Non-Developers with AI
+0:41:58 OODA: The AI Decision-Making Framework
+0:51:10 Targeted Outreach: AI in Sales and Marketing
+0:56:32 Education and Reasoning: Shifting Paradigms
+1:03:36 The Future of AI and Software Design
+1:14:05 The Evolution of AI Task Delegation
+1:20:14 The Potential of AI in Real-World Applications
+1:26:39 Navigating the Future of Self-Driving Cars
+1:33:20 The S-Curve of LLM Development
+1:44:24 Unlocking Productivity with Personal Data Integration 
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp",2025-01-17T21:27:12Z,N/A,27,en,en,https://i.ytimg.com/vi/UKJsjKivhdE/default.jpg,https://i.ytimg.com/vi/UKJsjKivhdE/hqdefault.jpg,PT1H53M13S,29189,590,44,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+00K8Lw1hZYc,CUDA and GPU Programming with Elliot Arledge [Podcast #155],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Elliot Arledge. He's a 20-year old computer science student who's created several popular freeCodeCamp courses on LLMs, the Mojo programming language, and GPU programming with CUDA. He joins us from Edmonton, Alberta, Canada.
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,043 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+We talk about:
+- Building AI systems from scratch
+- How Elliot has learned so much so quickly and his methods
+- How he approaches reading academic papers
+- His CS degree coursework VS his self-directed learning
+
+Can you guess what song I'm playing in the intro?
+
+Links we talk about during our conversation:
+
+- Elliot's Mojo course on freeCodeCamp: https://www.freecodecamp.org/news/new-mojo-programming-language-for-ai-developers/
+
+- Elliot's Cuda GPU programming course on freeCodeCamp: https://www.freecodecamp.org/news/learn-cuda-programming/
+
+- Elliot's Python course on building an LLM from scratch: https://www.freecodecamp.org/news/how-to-build-a-large-language-model-from-scratch-using-python/
+
+- Elliot's YouTube channel: https://www.youtube.com/@elliotarledge
+
+- Elliot's many projects on GitHub: https://github.com/Infatoshi
+
+Chapters
+
+- 0:00:00 Introduction to CUDA and GPU Programming
+- 0:07:27 The Importance of GPUs in AI and LLMs
+- 0:13:46 Learning Methodologies and Productivity Tips
+- 0:21:21 The Role of Sleep in Learning and Productivity
+- 0:26:39 Creating Educational Content
+- 0:32:32 Overcoming Challenges in Learning
+- 0:42:31 The Value of a Computer Science Degree
+- 0:48:03 Balancing Education and Career Opportunities
+- 0:53:45 The Future of AI and LLMs
+- 0:59:59 Incremental Innovations in AI Models
+- 1:07:18 Approaching Academic Papers with Confidence 
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp",2025-01-10T19:13:28Z,N/A,27,en,en,https://i.ytimg.com/vi/00K8Lw1hZYc/default.jpg,https://i.ytimg.com/vi/00K8Lw1hZYc/hqdefault.jpg,PT1H19M46S,30303,748,40,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+OaQO5gSpE4g,Why devs needn't fear CSS with the King of CSS himself Kevin Powell [Podcast #154],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Kevin Powell. He's a designer, a software engineer, and an expert in CSS. He's runs a CSS-focused YouTube channel with nearly a million subscribers. There's nothing sensational there – he literally just teaches people CSS.
+
+Take our year-end freeCodeCamp podcast listener survey real quick: https://forms.gle/2M9NW776723uSdDT7
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,043 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+CORRECTION: I (Quincy) say during the interview that the Uber found a way to access microphones on iOS without users' knowledge. There have been documented cases of malware doing this (like Pegasus) but Uber didn't do this. They did do a lot of other shady things, like continue collecting data even after you deleted their app – but mic spying was not one of them. Yes, early Uber was an ethical tire fire. But it's important to get facts right here.
+
+We talk about:
+
+- Why you should still learn CSS in 2025
+- How teaching concepts improves your own understanding of them
+- How learning to skateboard helped Kevin escape Tutorial Hell
+- Massive improvements coming to CSS
+
+Links we talk about during our conversation:
+
+- Kevin's YouTube channel: https://www.youtube.com/kevinpowell
+
+- Original Space Jam website Kevin mentions: https://www.spacejam.com/1996/
+
+- The article that coined the term Responsive Design: https://alistapart.com/article/responsive-web-design/
+
+- Kevin's freeCodeCamp article on how learning skateboarding helped him out of tutorial hell: https://www.freecodecamp.org/news/how-learning-to-skateboard-helped-me-find-a-way-out-of-tutorial-hell/
+
+- Kevin's freeCodeCamp course on building and deploying a portfolio page: https://www.freecodecamp.org/news/how-to-build-a-portfolio-website-and-deploy-to-digital-ocean/
+
+- Playable Minesweeper in CSS that Quincy mentions: https://codepen.io/bali_balo/pen/BLJONZ
+
+- Acknowledged mistakes that are permanently coded into CSS: https://wiki.csswg.org/ideas/mistakes
+
+- Talk on why is CSS so weird: https://www.youtube.com/watch?v=aHUtMbJw8iA
+
+Chapters
+0:00:00 Teaser
+0:01:03 Musical Intro – Bubble Bobble
+0:02:04 Interview Starts
+0:04:57 Accessibility in Web Design
+0:08:14 Understanding Technical Debt
+0:11:01 The Designer-Developer Dynamic
+0:14:01 Evolution of CSS: From Tables to Flexbox and Grid
+0:20:03 Responsive Design: Adapting to Multiple Devices
+0:24:10 The Impact of Mobile Apps on Web Development
+0:27:53 Kevin Powell's Journey in CSS
+0:32:26 From Hobby to Career: The Journey Begins
+0:34:50 Teaching and Transitioning to YouTube
+0:41:59 The Growth of a YouTube Channel
+0:54:34 Taking the Leap: Leaving Teaching for Content Creation
+1:00:11 Learning Through Skateboarding: Overcoming Tutorial Hell
+1:03:42 Building Balance in Learning
+1:08:47 The Journey of Learning New Skills
+1:14:40 Navigating Cognitive Overload
+1:20:29 The Complexity of CSS
+1:29:59 Teaching Insights from Classroom Experience
+1:33:26 The Importance of Design Systems in UI Development
+1:36:09 Why Learn CSS and Front-End Design Concepts?
+1:40:55 The Evolution and Governance of CSS
+1:47:53 Translating Graphic Design Skills to Web Development
+1:52:19 The Relevance of CSS in Mobile App Development
+1:55:41 The Value of Learning in Public
+1:59:06 Navigating Influence and Responsibility in Teaching 
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp",2024-12-20T20:44:35Z,N/A,27,en,en,https://i.ytimg.com/vi/OaQO5gSpE4g/default.jpg,https://i.ytimg.com/vi/OaQO5gSpE4g/hqdefault.jpg,PT2H4M42S,38113,797,36,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+a0bzf4h4jjg,How to get a Developer Job – even in this economy – with James Q Quick [Podcast #153],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews James Q Quick. He's a developer, speaker, and teacher. 
+
+James grew up in Memphis. He was an athlete who played violin, and knew nothing about computer science but chose it as his college major. Since then, he's not only worked as a dev at Microsoft, FedEx and many tech startups. And he's given more than 100 talks at conferences about technical topics.
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com.
+
+Support also comes from the 11,043 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to https://www.freecodecamp.org/donate
+
+We talk about:
+- How coding a Harry Potter Trivia app launched James' developer career
+- Getting laid off then getting back onto the bike
+- How to go about getting a first developer job
+- How to make a name for yourself through conference talks and creating tutorials
+
+What song do you want to hear in the next intro?
+
+Links we talk about during our conversation:
+
+James's website: https://www.jamesqquick.com/
+
+Jevon's Paradox: https://en.wikipedia.org/wiki/Jevons_paradox
+
+Chapters
+0:00:00 Teaser
+0:00:41 Musical intro – Shinobi theme (1987)
+0:02:07 Interview starts
+0:05:08 Current Job Market Challenges
+0:08:12 The Importance of Networking
+0:11:03 Overcoming Introversion in Networking
+0:14:13 The Long-Term Investment in Learning to Code
+0:17:20 Balancing Passion and Financial Goals in Tech
+0:20:00 The Benefits of Working in Tech
+0:26:01 Climbing New Hills: Career Growth and Opportunities
+0:32:11 Navigating Challenges in the Tech Industry
+0:37:55 The Role of AI in Development
+0:43:54 Building a Network and Community
+0:50:01 Transitioning from Layoff to Content Creation
+0:55:57 Sponsorships and Developer Advocacy
+1:01:47 The Importance of Building Projects
+1:11:40 Job Searching in Today's Market
+1:21:40 Learning in Public: The Power of Feedback
+1:29:08 Dealing with Negativity in Public Spaces 
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp",2024-12-13T20:55:46Z,N/A,27,en,en,https://i.ytimg.com/vi/a0bzf4h4jjg/default.jpg,https://i.ytimg.com/vi/a0bzf4h4jjg/hqdefault.jpg,PT1H36M46S,29064,590,67,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+TpNwIgwWVR0,How a breakdancing injury launched a coding empire with Scott Tolinski [Podcast #152],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Scott Tolinski. He's a developer who 14 years ago - after injuring himself breakdancing – decided to create a programming tutorial YouTube channel called LevelUpTuts. He is also co-host of Syntax, the most popular web dev podcast on the planet.
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at wixstudio.com.
+
+Support also comes from the 11,113 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and help our mission by going to donate.freecodecamp.org
+
+We talk about:
+- Scott's perspective on the state of web dev
+- His journey from video editing into full blown software development for agencies
+- What he's learned from recording 2,000 tutorials and 800 web dev podcasts
+- Productivity tips and how he's kept up this pace for 12 years without burning out
+
+Can you guess what song I'm playing in the intro?
+
+Also, I want to thank the 11,036 kind people who support our charity each month, and who make this podcast possible. You can join them and support our mission at: https://www.freecodecamp.org/donate
+
+Links we talk about during our conversation:
+
+- The Syntax podcast: https://syntax.fm/
+
+- Scott's archive of more than 1,000 programming tutorials he taught on YouTube: https://www.youtube.com/@syntaxfm/videos
+
+- The Honeypot documentary about Scott (8 minute watch): https://www.youtube.com/watch?v=Q9eh2iJsjxE
+
+Chapters
+0:00:00 Podcast Introduction
+0:00:58 Introduction to Scott Tolinski and His Journey
+0:07:20 Web Apps vs. Mobile Apps: The Blurring Lines
+0:13:40 Scott's Background and Transition to Web Development
+0:20:11 The Role of Breakdancing in Scott's Life
+0:27:47 The Art of Breakdancing: Passion and Performance
+0:37:47 Navigating Post-Concussion Challenges
+0:45:12 Transitioning to Corporate Life
+0:50:45 The Struggles of Monetizing Content
+0:58:07 The Challenges of Startup Culture
+1:08:37 The Evolution of Podcasting
+1:15:49 Transitioning to Full-Time Content Creation
+1:27:35 Maintaining Authenticity in Content Creation
+1:36:28 Productivity Strategies for Creators
+
+🎉 Thanks to our Champion and Sponsor supporters:
+👾 Drake Milly
+👾 Ulises Moralez
+👾 Goddard Tan
+👾 David MG
+👾 Matthew Springman
+👾 Claudio
+👾 Oscar R.
+👾 jedi-or-sith
+👾 Nattira Maneerat
+👾 Justin Hual
+
+--
+
+Learn to code for free and get a developer job: https://www.freecodecamp.org
+
+Read hundreds of articles on programming: https://freecodecamp.org/news 
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp",2024-12-06T17:24:53Z,N/A,27,en,en,https://i.ytimg.com/vi/TpNwIgwWVR0/default.jpg,https://i.ytimg.com/vi/TpNwIgwWVR0/hqdefault.jpg,PT1H41M21S,16704,267,24,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+5MoZ1hJuvqM,Automating a coffee shop chain using self-taught coding skills with Eamonn Cottrell [Interview #151],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Eamonn Cottrell. He's a software engineer who also runs a local chain of coffee shops in Knoxville. Eamonn taught himself to code using freeCodeCamp. And he's since published 37 freeCodeCamp tutorials on  productivity and automation using spreadsheets.
+
+Support for this podcast comes from a grant from Wix Studio. Wix Studio provides developers tools to rapidly build websites with everything out-of-the-box, then extend, replace, and break boundaries with code. Learn more at https://wixstudio.com
+
+Support also comes from the 11,113 kind folks who support freeCodeCamp through a monthly donation. Join these kind folks and get involved in our mission by going to donate.freecodecamp.org
+
+We talk about:
+- Eamonn's love of coffee and how he bought VHS tapes to learn latte art
+- How he finds time to expand his skills in between running coffee shops and ultra-marathoning
+- How he used spreadsheets to automate the logistics of running coffee shops
+- How he balances being a musician and writer with the practical realities of providing for a family of 6
+
+CORRECTION: Vincent van Gogh was supported by his younger brother – not his brother in-law. van Gogh never married so he never had a brother in law. I'm not sure why I thought that. Also, he seems to have sold more than one painting in his life (as many of us were taught in school), but nowhere near enough paintings to support himself as an artist.
+
+Can you guess what song I'm playing in the intro?
+
+Links we talk about during our conversation:
+
+Eamonn's freeCodeCamp articles: https://www.freecodecamp.org/news/author/sieis/
+
+Eamonn's YouTube channel: https://www.youtube.com/@EamonnCottrell
+
+Excel-based esports: https://www.youtube.com/watch?v=N2QC6VQXo8U
+
+Ultra Marathons: https://www.youtube.com/@runtired
+
+Got Sheet: https://www.gotsheet.xyz/
+
+Progress and Perfection: https://www.progressandperfection.com/
+
+Eamonn on LinkedIn: https://www.linkedin.com/in/eamonncottrell/
+
+Eamonn on Twitter: https://x.com/EamonnCottrell
+
+Chapters
+0:00:00 Introduction to Eamonn Cottrell
+0:03:35 Eamonn's Diverse Pursuits
+0:05:39 The Ultra Marathon Journey
+0:10:59 Training and Daily Routine
+0:20:33 Family Life and Parenting
+0:24:55 Overcoming Addiction and Recovery
+0:30:24 The Journey of Recovery and Community Integration
+0:33:42 Embracing Regrets and Learning from Mistakes
+0:37:14 Education and Career Progression
+0:45:48 Life as a Barista: Craftsmanship and Community
+0:52:34 Mastering Latte Art: A Blend of Skill and Passion
+0:55:57 From Barista to COO: A Career Transformation
+1:02:14 The Power of Automation in Business Operations
+1:10:03 Personal Finance Management through Spreadsheets
+1:12:38 Navigating Financial Realities
+1:14:08 The Art of Budgeting and Planning
+1:14:57 Creating and Sharing Knowledge
+1:16:21 The Intersection of Creativity and Productivity
+1:19:56 The Journey of a Creative Mind
+1:22:24 Balancing Creativity with Practicality
+1:25:15 Documenting Your Journey
+1:28:49 Future Aspirations and Family Life
+1:31:49 The Balance of Work and Creativity
+1:33:40 The Impact of Parenthood on Productivity
+1:36:55 Lessons from Gaming and Life
+1:41:36 Final Thoughts and Resources 
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp",2024-11-22T15:00:13Z,N/A,27,en,en,https://i.ytimg.com/vi/5MoZ1hJuvqM/default.jpg,https://i.ytimg.com/vi/5MoZ1hJuvqM/hqdefault.jpg,PT1H49M38S,22824,415,10,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
+mgWOMu2yo_U,To code is to struggle! I interview Tech with Tim [Podcast #150],"On this week's episode of the podcast, freeCodeCamp founder Quincy Larson interviews Tim Ruscica, the software engineer and prolific programming teacher behind the @TechWithTim  YouTube channel. He's also developed courses on freeCodeCamp's YouTube channel.
+
+We talk about:
+- How Tim managed to get a $70k salary by hacking his way into a Microsoft internship when he was just 19
+- How he learned computer architecture as a kid by playing Minecraft
+- Lessons he learned from a failed tech startup
+- Why he recommends Python as a first programming language. ""It's the least overwhelming thing to get your hands dirty.""
+
+Can you guess what song I'm playing in the intro?
+
+Also, I want to thank the 11,133 kind people who support our charity each month, and who make this podcast possible. You can join them and support our mission at: https://www.freecodecamp.org/donate
+
+Links we talk about during our conversation:
+
+- The classroom montage from Real Genius that Quincy mentions: https://www.youtube.com/watch?v=wB1X4o-MV6o
+
+- One of Tim's mock coding interview videos: https://www.youtube.com/watch?v=3Q_oYDQ2whs
+
+- Tim's course: https://techwithtim.net/dev
+
+Chapters
+
+0:00:00 Introduction to Tim Rusica and His Journey
+0:04:11 Life in Dubai: The Digital Nomad Experience
+0:07:22 Early Programming Passion: From Minecraft to Coding
+0:10:23 Lessons from Running a Minecraft Server
+0:13:17 Family Influence: Growing Up with Engineering
+0:16:22 College Experience: Navigating University During a Pandemic
+0:19:17 The Decision to Drop Out of College
+0:22:13 YouTube Journey: From Teaching Kids to Building a Channel
+0:34:07 The Value of College in Today's World
+0:37:22 Landing an Internship at Microsoft
+0:46:01 The Experience of Working at Microsoft
+0:51:51 Transitioning from Intern to Entrepreneur
+0:52:21 The Importance of Critical Thinking
+0:59:59 Overcoming Tutorial Hell
+1:07:36 Navigating Coding Interviews
+1:14:07 The Best Language to Start Programming
+1:17:09 Essential Skills for Learning to Code
+1:19:36 The Importance of Struggle in Coding
+1:21:48 Passion vs. Talent in Programming
+1:23:57 Learning New Technologies Effectively
+1:34:02 Lessons from Startup Failures
+1:37:47 Future Plans and Focus on YouTube 
+
+❤️ Support for this channel comes from our friends at Scrimba – the coding platform that's reinvented interactive learning: https://scrimba.com/freecodecamp",2024-11-15T19:03:37Z,N/A,27,en,en,https://i.ytimg.com/vi/mgWOMu2yo_U/default.jpg,https://i.ytimg.com/vi/mgWOMu2yo_U/hqdefault.jpg,PT1H40M28S,34443,918,68,public,UC8butISFwT-Wl7EV0hUK0BQ,freeCodeCamp.org,"Learn math, programming, and computer science for free. A 501(c)(3) tax-exempt charity. We also run a free learning interactive platform at freecodecamp.org",US,"{'default': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s88-c-k-c0x00ffffff-no-rj', 'width': 88, 'height': 88}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s240-c-k-c0x00ffffff-no-rj', 'width': 240, 'height': 240}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s800-c-k-c0x00ffffff-no-rj', 'width': 800, 'height': 800}}",11200000,1921
