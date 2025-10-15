@@ -1,0 +1,34 @@
+=== 1. Environment & Dependencies ===
+Virtual environment files (critical to ignore)
+venv/
+.venv/
+
+Dependency directories for environments (conda, poetry, etc.)
+env/
+.env/
+
+=== 2. Build & Compilation Artifacts ===
+Python compiled files
+pycache/
+*.pyc
+*.pyd
+*.so
+
+Setup/Distribution files
+dist/
+build/
+*.egg-info/
+
+=== 3. IDE and System Files ===
+Visual Studio Code / JetBrains / other common IDE files
+.vscode/
+.idea/
+.history/
+*.swp
+
+Operating System specific files
+.DS_Store
+Thumbs.db
+
+
+

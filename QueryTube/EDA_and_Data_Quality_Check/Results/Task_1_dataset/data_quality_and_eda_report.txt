@@ -1,0 +1,69 @@
+==================================================
+          DATA QUALITY & EDA REPORT               
+==================================================
+
+1. DATA OVERVIEW
+--------------------
+Total Records: 795
+Total Columns: 24
+Duplicate Rows (Exact Match): 0
+Critical Duplicates ('id' or 'title'): 0
+
+2. DATA QUALITY CHECK: MISSING VALUES
+-----------------------------------
+Summary of columns with missing data (and percentage):
+-> tags: 225 records (28.30%)
+-> publishedAt: 120 records (15.09%)
+-> thumbnail_high: 103 records (12.96%)
+-> thumbnail_default: 103 records (12.96%)
+-> privacyStatus: 70 records (8.81%)
+-> description: 55 records (6.92%)
+-> channel_country: 49 records (6.16%)
+-> commentCount: 1 records (0.13%)
+Note: 'tags' and 'description' have the most missing values, which is common in web scraping.
+
+3. EXPLORATORY DATA ANALYSIS (EDA): NUMERICAL METRICS
+----------------------------------------------------
+The distribution of views, likes, and comments is highly skewed (most videos have low counts, a few are viral).
+
+--- Descriptive Statistics ---
+|       | viewCount   | likeCount   | commentCount   | channel_subscriberCount   |
+|:------|:------------|:------------|:---------------|:--------------------------|
+| count | 795         | 795         | 794            | 795                       |
+| mean  | 1.43216e+06 | 46018.1     | 1267.72        | 1.33546e+07               |
+| std   | 6.17023e+06 | 155808      | 3499.63        | 2.65611e+07               |
+| min   | 0           | 0           | 0              | 22500                     |
+| 25%   | 11985.5     | 215.5       | 11             | 68500                     |
+| 50%   | 35747       | 918         | 54             | 1.86e+06                  |
+| 75%   | 735272      | 16036       | 558.5          | 1.12e+07                  |
+| max   | 1.17096e+08 | 2.2435e+06  | 56655          | 1.1e+08                   |
+
+Key Insights from Numerical Metrics:
+-> View Count Range: 0 to 117096366
+-> Average Like Count: 46018.09
+-> Max Subscriber Count: 110000000 (indicating high-profile channels are included).
+
+4. EDA: CATEGORICAL TRENDS
+-----------------------------
+
+--- Top 3 Most Frequent Categories (by ID) ---
+| Category ID   | Count   |
+|:--------------|:--------|
+| 27            | 487     |
+| 28            | 135     |
+| 22            | 114     |
+Note: Category IDs need an external lookup table for human-readable names.
+
+--- Top 3 Most Frequent Publishing Channels ---
+| Channel Name                       | Video Count   |
+|:-----------------------------------|:--------------|
+| TechWithPri                        | 150           |
+| TED                                | 70            |
+| Tutorix - The Amazing Learning App | 53            |
+These channels dominate the dataset's video volume.
+
+5. CONCLUSION & NEXT STEPS
+-----------------------------
+The data is generally high quality, but requires imputation or dropping rows for 'tags', 'description', 'defaultLanguage', 'defaultAudioLanguage', and 'channel_country' before model training.
+The numerical data is highly skewed, suggesting log-transformation will be necessary for regression models.
+The dataset is dominated by a few large channels and categories, which should be considered in any subsequent analysis.

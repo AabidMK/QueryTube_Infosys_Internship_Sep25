@@ -1,0 +1,112 @@
+import pandas as pd
+
+# Define the file path. Assuming the file is in the same directory as the script.
+file_path = "task1_master_dataset.csv"
+
+# Load the dataset
+try:
+    df = pd.read_csv(file_path)
+except FileNotFoundError:
+    print(f"Error: The file '{file_path}' was not found. Please ensure it is in the correct directory.")
+    exit()
+
+print("--- Data Quality Check & Basic EDA Report ---")
+
+# ==============================================================================
+# 1. Data Structure and Initial Glance
+# ==============================================================================
+print("\n## 1. Data Structure and Initial Glance\n")
+print(f"Total Rows: {len(df)}")
+print(f"Total Columns: {len(df.columns)}\n")
+
+print("### First 5 Rows of the Dataset (df.head()):")
+print(df.head().to_markdown(index=False, numalign="left", stralign="left"))
+
+print("\n### Column Names, Data Types, and Non-Null Counts (df.info()):")
+df.info()
+
+print("\n--------------------------------------------------")
+
+# ==============================================================================
+# 2. Missing Values Analysis (Key Data Quality Check)
+# ==============================================================================
+print("\n## 2. Missing Values Analysis\n")
+missing_data = df.isnull().sum().sort_values(ascending=False)
+missing_percentage = (df.isnull().sum() / len(df) * 100).sort_values(ascending=False)
+
+missing_df = pd.DataFrame({
+    'Missing Count': missing_data,
+    'Missing %': missing_percentage.round(2)
+})
+
+# Filter to show only columns with missing values
+missing_df = missing_df[missing_df['Missing Count'] > 0]
+
+if not missing_df.empty:
+    print("Columns with Missing Values:")
+    print(missing_df.to_markdown(numalign="left", stralign="left"))
+else:
+    print("No missing values found in the dataset.")
+
+print("\n--------------------------------------------------")
+
+# ==============================================================================
+# 3. Descriptive Statistics (EDA)
+# ==============================================================================
+print("\n## 3. Descriptive Statistics\n")
+
+# A. Numerical Columns
+print("### A. Descriptive Statistics for Numerical Columns:")
+print(df.describe().to_markdown(numalign="left", stralign="left"))
+
+# B. Categorical/Object Columns (Includes most ID/Text fields)
+print("\n### B. Descriptive Statistics for Categorical/Object Columns:")
+print(df.describe(include=['object']).to_markdown(numalign="left", stralign="left"))
+
+print("\n--------------------------------------------------")
+
+# ==============================================================================
+# 4. Uniqueness and Cardinality Check (Data Quality Check / EDA)
+# ==============================================================================
+print("\n## 4. Uniqueness and Cardinality Check\n")
+
+unique_counts = df.nunique().sort_values(ascending=False)
+unique_ratio = (unique_counts / len(df) * 100).round(2).astype(str) + '%'
+
+unique_df = pd.DataFrame({
+    'Unique Count': unique_counts,
+    'Unique Ratio': unique_ratio
+})
+print("Unique Values Count and Ratio per Column:")
+print(unique_df.to_markdown(numalign="left", stralign="left"))
+
+# ==============================================================================
+# 5. Outlier Detection (Using statistical methods on numerical columns)
+# ==============================================================================
+print("\n--------------------------------------------------")
+print("\n## 5. Potential Outlier Detection (Z-Score on key numerical columns)\n")
+
+# Identify key numerical columns for general checks based on your data:
+numerical_cols = ['viewCount', 'likeCount', 'commentCount', 'channel_subscriberCount']
+
+for col in numerical_cols:
+    if col in df.columns:
+        # Calculate Z-scores
+        mean = df[col].mean()
+        std = df[col].std()
+        
+        # Define a common threshold for outliers, e.g., Z-score > 3
+        z_scores = (df[col] - mean) / std
+        outliers = df[df[col].notnull() & (z_scores.abs() > 3)]
+        
+        print(f"--- Column: {col} ---")
+        print(f"Number of potential outliers (Z-score > 3): {len(outliers)}")
+        if len(outliers) > 0:
+            print(f"Max value in column: {df[col].max()}")
+            print(f"Min value in column: {df[col].min()}")
+            print(f"Top 5 largest values (potential high outliers):\n{df[col].nlargest(5).to_markdown(header=False, numalign='left', stralign='left')}")
+        else:
+            print("No significant high Z-score outliers found.")
+        print("")
+
+print("--- Report End ---")
