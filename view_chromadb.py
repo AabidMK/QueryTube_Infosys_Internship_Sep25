@@ -1,64 +1,67 @@
 import chromadb
-import pandas as pd
+import textwrap
 
-# 1. Initialize the ChromaDB client
-# It's crucial to point the PersistentClient to the *same path* where your database is saved.
-client = chromadb.PersistentClient(path="./chroma_db")
+# --- Configuration ---
+DB_PATH = "./chroma_db"
+COLLECTION_NAME = "video_embeddings"
+# Set how many items you want to view from the collection
+VIEW_LIMIT = 5
 
-# 2. Get the existing collection
-# This accesses the collection you previously created and populated.
-collection_name = "video_embeddings"
-try:
-    collection = client.get_collection(name=collection_name)
-    print(f"Successfully connected to the '{collection_name}' collection.")
-except Exception as e:
-    print(f"Error: Could not get collection. Please ensure the database exists at the specified path.")
-    print(e)
-    exit()
+def view_collection():
+    """
+    Connects to the ChromaDB collection and prints a specified number of items.
+    """
+    print(f"--- Attempting to view collection: '{COLLECTION_NAME}' ---")
 
-# 3. View the data in the collection
-# You can retrieve data using the get() method.
+    # 1. Connect to the ChromaDB client and get the collection
+    try:
+        client = chromadb.PersistentClient(path=DB_PATH)
+        collection = client.get_collection(name=COLLECTION_NAME)
+        print(f"✅ Successfully connected to '{COLLECTION_NAME}'.")
+        print(f"Total items in collection: {collection.count()}\n")
+    except Exception as e:
+        print(f"❌ Error connecting to ChromaDB or finding collection: {e}")
+        print("Please ensure the database exists and the collection name is correct.")
+        return
 
-# --- Option A: Get a small sample of items ---
-# Use the 'limit' parameter to specify how many items to retrieve.
-print("\n--- Fetching a small sample (5 items) ---")
-data_sample = collection.get(
-    limit=5,
-    include=["metadatas", "embeddings"] # Specify what you want to retrieve
-)
+    # 2. Get a number of items from the collection
+    # We include 'metadatas' and 'documents' to see the information.
+    # We don't need 'embeddings' for viewing purposes as they are just long lists of numbers.
+    results = collection.get(
+        limit=VIEW_LIMIT,
+        include=["metadatas", "documents"]
+    )
 
-# Let's display the retrieved data in a more readable format
-if data_sample and data_sample['ids']:
-    for i in range(len(data_sample['ids'])):
-        print(f"\nItem ID: {data_sample['ids'][i]}")
-        print(f"  Metadata: {data_sample['metadatas'][i]}")
-        print(f"  Document (Transcript): {data_sample['embeddings'][i][:200]}...") # Print first 200 chars
-else:
-    print("No data found in the sample.")
+    if not results['ids']:
+        print("The collection is empty. Nothing to display.")
+        return
 
+    # 3. Loop through the results and print them in a formatted way
+    print(f"Displaying the first {len(results['ids'])} items:\n")
 
-# --- Option B: Get all items in the collection ---
-# You can retrieve everything by calling get() without a limit on IDs.
-# Be cautious with very large collections, as this can use a lot of memory.
-print("\n--- Fetching all items ---")
-all_data = collection.get(include=["metadatas"]) # Just getting metadatas for brevity
-total_items = len(all_data['ids'])
-print(f"Total items in collection: {total_items}")
+    for i, item_id in enumerate(results['ids']):
+        metadata = results['metadatas'][i]
+        document = results['documents'][i]
 
-# You can convert this data to a pandas DataFrame for easier analysis
-if total_items > 0:
-    df = pd.DataFrame(all_data['metadatas'])
-    df['id'] = all_data['ids'] # Add the ChromaDB IDs to the dataframe
-    print("\n--- All Metadatas as a Pandas DataFrame ---")
-    print(df.head())
+        # Safely get metadata fields, providing a default if a key is missing
+        video_id = metadata.get('id', 'N/A')
+        title = metadata.get('title', 'No Title Provided')
+        channel_title = metadata.get('channel_title', 'N/A') # The new field!
 
+        print(f"----------------------------------------")
+        print(f"Entry {i+1} | ChromaDB ID: {item_id}")
+        print(f"----------------------------------------")
+        print(f"  ▶️  Video Title: {title}")
+        print(f"  👤 Channel Title: {channel_title}")
+        print(f"  🆔 YouTube ID: {video_id}")
+        
+        # Format the transcript for better readability
+        print(f"  📄 Transcript Snippet:")
+        # textwrap.indent adds a prefix to each line
+        wrapped_text = textwrap.fill(document, width=80)
+        indented_text = textwrap.indent(wrapped_text, '      ')
+        print(indented_text[:400] + "...") # Print first 400 chars of the indented text
+        print("\n")
 
-# --- Option C: Get a specific item by its ID ---
-# If you know the ID of an item, you can retrieve it directly.
-# Let's try to get the item with ID '0'.
-print("\n--- Fetching a specific item by ID ('0') ---")
-specific_item = collection.get(
-    ids=['0'],
-    include=["metadatas", "embeddings"]
-)
-print(specific_item)
+if __name__ == "__main__":
+    view_collection()

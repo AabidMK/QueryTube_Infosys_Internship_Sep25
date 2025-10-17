@@ -1,0 +1,73 @@
+import pandas as pd
+import chromadb
+
+# --- Configuration ---
+DB_PATH = "./chroma_db"
+COLLECTION_NAME = "video_embeddings"
+CSV_FILE = "video_with_embeddings.csv"
+
+# 1. Load the updated dataset
+print(f"Loading data from '{CSV_FILE}'...")
+try:
+    df = pd.read_csv(CSV_FILE)
+except FileNotFoundError:
+    print(f"Error: The file '{CSV_FILE}' was not found. Please ensure it's in the correct directory.")
+    exit()
+
+# Verify that the new 'channel_title' column exists
+if 'channel_title' not in df.columns:
+    print(f"Error: The CSV file must contain a 'channel_title' column.")
+    exit()
+
+# 2. Connect to the existing ChromaDB collection
+print(f"Connecting to ChromaDB at '{DB_PATH}'...")
+client = chromadb.PersistentClient(path=DB_PATH)
+
+try:
+    collection = client.get_collection(name=COLLECTION_NAME)
+    print(f"Successfully connected to the '{COLLECTION_NAME}' collection.")
+    print(f"Items currently in collection: {collection.count()}")
+except ValueError:
+    print(f"Error: Collection '{COLLECTION_NAME}' not found in the database.")
+    print("Please make sure you have run the 'create_chromadb.py' script first.")
+    exit()
+
+# 3. Prepare the IDs and new metadata for the update
+# The IDs must match the ones used during creation (i.e., the string of the DataFrame index)
+ids_to_update = [str(i) for i in df.index]
+
+# Fetch the existing metadata from ChromaDB to avoid overwriting it.
+# We get all items corresponding to our list of IDs.
+print("Fetching existing metadata from the collection...")
+existing_items = collection.get(ids=ids_to_update, include=['metadatas'])
+
+# Now, create the new, updated metadata list.
+# We iterate through the existing metadata and add the channel_title from our DataFrame.
+new_metadatas = []
+for i, old_meta in enumerate(existing_items['metadatas']):
+    # Create a new dictionary to avoid modifying the original in-place
+    updated_meta = old_meta.copy()
+    # Add the new key-value pair from the corresponding row in the DataFrame
+    updated_meta['channel_title'] = df.loc[i, 'channel_title']
+    new_metadatas.append(updated_meta)
+
+# 4. Update the collection in batches
+print("Starting the update process...")
+batch_size = 100
+for i in range(0, len(ids_to_update), batch_size):
+    collection.update(
+        ids=ids_to_update[i:i+batch_size],
+        metadatas=new_metadatas[i:i+batch_size]
+    )
+
+print(f"✅ Successfully updated metadata for {len(ids_to_update)} items.")
+
+# 5. Verification
+# Fetch the first item from the collection to verify the change
+print("\n--- Verification ---")
+try:
+    updated_item = collection.get(ids=['0'], include=["metadatas"])
+    print("Metadata for the first item (ID '0') after update:")
+    print(updated_item['metadatas'][0])
+except IndexError:
+    print("Could not fetch item with ID '0' for verification.")
