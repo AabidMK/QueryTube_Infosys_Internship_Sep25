@@ -15,59 +15,56 @@ except Exception as e:
 # --- Pydantic Model for Request Body ---
 class SearchRequest(BaseModel):
     query: str
+    top_k: int = 5
 
 # --- FastAPI App Initialization ---
 app = FastAPI()
 
 # --- Add CORS Middleware ---
-# This is the crucial part that was missing.
-# It allows your frontend (running on a different "origin") to talk to your backend.
 origins = [
     "http://localhost",
     "http://127.0.0.1",
     "http://127.0.0.1:5500",
-    "http://0.0.0.0:8000", # Common for VS Code Live Server
-    "null" # Allow requests from local files (opening index.html directly)
+    "null" # Allow requests from local files
 ]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"], # Allows all methods (POST, GET, etc.)
-    allow_headers=["*"], # Allows all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
-
-# --- API Endpoint ---
 @app.post("/search")
-def search_videos(request: SearchRequest):
+def search(request: SearchRequest):
     if collection is None:
         return {"error": "ChromaDB collection is not available."}
     
     try:
-        # Query the collection
+        # --- MODIFICATION 1: Include "distances" in the query ---
         results = collection.query(
             query_texts=[request.query],
-            n_results=5 # Get top 5 results
+            n_results=request.top_k,
+            include=["metadatas", "documents", "distances"] # Added "distances"
         )
         
-        # Structure the results for the frontend
-        # The original code was returning a complex object. Let's simplify it.
         output = []
         
-        # Check if there are any results to process
         if results and results['ids'] and len(results['ids'][0]) > 0:
             num_results = len(results['ids'][0])
             for i in range(num_results):
                 metadata = results['metadatas'][0][i]
                 document = results['documents'][0][i]
+                distance = results['distances'][0][i] # Get the distance score
                 
+                # --- MODIFICATION 2: Add distance_score to the response ---
                 output.append({
                     "id": metadata.get('id', 'N/A'),
                     "title": metadata.get('title', 'No Title'),
                     "channel_title": metadata.get('channel_title', 'No Channel'),
-                    "transcript_snippet": document[:250] + "..." # Send a snippet
+                    "transcript_snippet": document[:250] + "...",
+                    "distance_score": distance # Add the score here
                 })
         
         return {"results": output}
@@ -76,7 +73,6 @@ def search_videos(request: SearchRequest):
         print(f"Error during search: {e}")
         return {"error": f"An error occurred during search: {e}"}
 
-# This part is for running the script directly with `python app.py`
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
