@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QueryTube – Semantic YouTube Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    .container {
+      width: 90%;
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin: 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    .results {
+      margin-top: 20px;
+    }
+    .video {
+      background: #fafafa;
+      border-left: 4px solid #3498db;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+    .video a {
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎥 QueryTube Search</h1>
+    <input type="text" id="queryInput" placeholder="Enter your search query..." />
+    <button onclick="searchVideos()">Search</button>
+
+    <div class="results" id="results"></div>
+  </div>
+
+  <script>
+    async function searchVideos() {
+      const query = document.getElementById("queryInput").value.trim();
+      if (!query) {
+        alert("Please enter a query!");
+        return;
+      }
+
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = "<p>🔍 Searching...</p>";
+
+      try {
+        const response = await fetch("http://127.0.0.1:8000/search", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: query, top_k: 5 })
+        });
+
+        const data = await response.json();
+        if (!data.results || data.results.length === 0) {
+          resultsDiv.innerHTML = "<p>❌ No results found.</p>";
+          return;
+        }
+
+        let html = "";
+        data.results.forEach((video) => {
+          const videoUrl = video.video_id
+            ? `https://www.youtube.com/watch?v=${video.video_id}`
+            : "#";
+
+          html += `
+            <div class="video">
+              <h3>${video.title}</h3>
+              <p><b>Channel:</b> ${video.channel}</p>
+              <p><b>Similarity:</b> ${video.similarity_score}</p>
+              <p>${video.transcript}</p>
+              <a href="${videoUrl}" target="_blank">▶ Watch on YouTube</a>
+            </div>
+          `;
+        });
+
+        resultsDiv.innerHTML = html;
+      } catch (err) {
+        resultsDiv.innerHTML = "<p>⚠️ Error fetching results. Check console.</p>";
+        console.error(err);
+      }
+    }
+  </script>
+</body>
+</html>
