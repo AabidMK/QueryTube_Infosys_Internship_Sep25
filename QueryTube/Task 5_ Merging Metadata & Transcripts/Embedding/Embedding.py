@@ -43,8 +43,13 @@ def process_data_for_embeddings(df):
     # This is the primary input for the semantic embedding model.
     df_clean['text_for_embedding'] = df_clean['title'].fillna('') + ' ' + df_clean['description'].fillna('') + ' ' + df_clean['transcript']
     
+    # 4. Add 'is_short' column: True if video duration < 120 seconds (2 minutes), False otherwise
+    df_clean['is_short'] = df_clean['duration'].apply(
+        lambda x: True if (x > 0 and x < 120) else False
+    )
+    
     # Keep only the columns needed for embedding and ID
-    df_clean = df_clean[['id', 'title', 'description', 'transcript', 'text_for_embedding', 'publishedAt', 'channel_title', 'viewCount', 'likeCount', 'commentCount']]
+    df_clean = df_clean[['id', 'title', 'description', 'transcript', 'text_for_embedding', 'publishedAt', 'channel_title', 'channel_id', 'viewCount', 'likeCount', 'commentCount', 'duration', 'is_short']]
     
     print(f"-> Cleaned dataset size for embedding: {len(df_clean)} rows.")
     return df_clean

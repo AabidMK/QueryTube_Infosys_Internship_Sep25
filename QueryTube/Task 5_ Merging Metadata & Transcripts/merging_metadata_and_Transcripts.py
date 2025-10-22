@@ -1,22 +1,14 @@
 import pandas as pd
 import os
 
-# --- Configuration for Data Preparation (Task 5: Merging) ---
-
-# Base directory for general file location
 BASE_DIR = r"C:\Users\dream\Desktop\Internships\Infosys Springboard\QueryTube" 
 
-# --- Input File Paths ---
-# 1. Flagged Metadata Dataset (Output from previous step)
+
 MAIN_DATASET_FILENAME = 'Task_1_Flagged_dataset.csv'
 MAIN_DATASET_PATH = r"C:\Users\dream\Desktop\Internships\Infosys Springboard\QueryTube\Transcipt dataset Flag\Task_1_Flagged_dataset.csv"
 
-# 2. Cleaned Transcripts Dataset
 TRANSCRIPT_DATASET_FILENAME = 'task2_cleaned_transcripts.csv'
 TRANSCRIPT_DATASET_PATH = r"C:\Users\dream\Desktop\Internships\Infosys Springboard\QueryTube\Dataset Cleaning\task2_cleaned_transcripts.csv"
-
-
-# --- New Output Path ---
 OUTPUT_DIR = r"C:\Users\dream\Desktop\Internships\Infosys Springboard\QueryTube\Task 5_ Merging Metadata & Transcripts"
 OUTPUT_FILENAME = "Final_Merged_Dataset.csv"
 OUTPUT_FULL_PATH = os.path.join(OUTPUT_DIR, OUTPUT_FILENAME)
@@ -28,13 +20,10 @@ def merge_datasets():
     """
     print("--- Starting Data Processing: Merging Metadata & Transcripts ---")
     
-    # --- 0. Ensure Output Directory Exists ---
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     print(f"Ensuring output directory exists: {OUTPUT_DIR}")
 
-    # --- 1. Load Data ---
     try:
-        # Load the Flagged Metadata Dataset
         main_df = pd.read_csv(MAIN_DATASET_PATH)
         print(f"Loaded Metadata (Flagged) from: {MAIN_DATASET_PATH} (Shape: {main_df.shape})")
     except FileNotFoundError:
