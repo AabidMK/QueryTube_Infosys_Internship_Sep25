@@ -1,0 +1,20 @@
+YOUTUBE TRANSCRIPT EXTRACTION REPORT
+Generated: 2025-09-18 14:10:52
+==================================================
+Total Videos: 70
+Processed: 70
+Successful: 68
+Failed: 2
+Success Rate: 97.1%
+Runtime: 79.0 minutes
+
+Transcript Types:
+  manual: 0
+  auto-generated: 0
+  unknown: 68
+
+Proxy Statistics:
+  Total: 36
+  Working: 36
+  Failed: 0
+  Avg Success Rate: 1.00
