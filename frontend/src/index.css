@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+/* Design tokens (light by default) */
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --text: #0b1220;
+  --muted: #6b7280;
+  --card-border: #e6eef8;
+  --accent: #2563eb; /* blue-600 */
+  --accent-2: #7c3aed; /* purple-600 */
+  --glass: rgba(255,255,255,0.6);
+  --shadow: 0 6px 18px rgba(11,18,32,0.06);
+  --radius: 1rem;
+  --transition-fast: 200ms;
+}
+
+/* Respect system preference as an initial state (will be overridden if .dark class is added) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #071028;
+    --surface: #081226;
+    --text: #e6eef8;
+    --muted: #94a3b8;
+    --card-border: rgba(255,255,255,0.04);
+    --accent: #60a5fa; /* lighter blue for dark */
+    --accent-2: #c084fc;
+    --glass: rgba(255,255,255,0.04);
+    --shadow: 0 8px 24px rgba(2,6,23,0.6);
+  }
+}
+
+/* dark class on html takes precedence for manual toggle (Tailwind 'class' strategy) */
+html.dark,
+.dark {
+  --bg: #0b1220;
+  --surface: #071226;
+  --text: #e6eef8;
+  --muted: #94a3b8;
+  --card-border: rgba(255,255,255,0.04);
+  --accent: #60a5fa;
+  --accent-2: #c084fc;
+  --glass: rgba(255,255,255,0.04);
+  --shadow: 0 8px 24px rgba(2,6,23,0.6);
+}
+
+/* Global resets / basics */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background var(--transition-fast) ease, color var(--transition-fast) ease;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Common UI helpers */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Card surface */
+.card {
+  background: linear-gradient(180deg, var(--surface), var(--surface));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--card-border);
+  transition: box-shadow var(--transition-fast) ease, transform var(--transition-fast) ease, background var(--transition-fast) ease;
+}
+
+/* Glassy card variant */
+.card--glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Accent / buttons */
+.btn-accent {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: white;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast) ease;
+}
+.btn-accent:hover { transform: translateY(-2px); }
+
+/* Thumbnail / image utilities */
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+  background-color: #f3f4f6;
+}
+
+/* Image skeleton / shimmer */
+.img-skeleton {
+  position: relative;
+  background: linear-gradient(90deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 50%, rgba(255,255,255,0.06) 100%);
+  overflow: hidden;
+}
+.img-skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent);
+  animation: shimmer 1.2s infinite;
+}
+@keyframes shimmer { to { transform: translateX(100%); } }
+
+/* Fallback placeholder background for broken thumbnails */
+.thumbnail--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.01));
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+/* Accessibility / utilities */
+.sr-only {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; border: 0; padding: 0; margin: -1px;
+}
+
+.no-select { user-select: none; -webkit-user-select: none; -ms-user-select: none; }
+
+/* line clamps for result card (keep existing behavior) */
+.line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Small helpers for layout consistency */
+.flex-center { display:flex; align-items:center; justify-content:center; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
