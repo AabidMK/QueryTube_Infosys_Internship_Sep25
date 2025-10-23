@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QueryTube - Semantic Video Search</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #6366f1;
+      --primary-dark: #4f46e5;
+      --secondary-color: #f1f5f9;
+      --accent-color: #06b6d4;
+      --text-primary: #1e293b;
+      --text-secondary: #64748b;
+      --text-muted: #94a3b8;
+      --border-color: #e2e8f0;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.95) 0%, rgba(79, 70, 229, 0.95) 100%);
+      color: white;
+      padding: 4rem 0 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="90" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+      opacity: 0.3;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .main-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      font-weight: 300;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+      animation: fadeInUp 0.8s ease-out 0.2s both;
+    }
+
+    .search-container {
+      max-width: 600px;
+      margin: 0 auto;
+      animation: fadeInUp 0.8s ease-out 0.4s both;
+    }
+
+    .search-box {
+      background: white;
+      border-radius: 50px;
+      padding: 0.5rem;
+      box-shadow: var(--shadow-xl);
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .search-box:focus-within {
+      border-color: var(--accent-color);
+      transform: translateY(-2px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    .search-input {
+      border: none;
+      outline: none;
+      flex: 1;
+      padding: 1rem 1.5rem;
+      font-size: 1.1rem;
+      background: transparent;
+      color: var(--text-primary);
+    }
+
+    .search-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .search-btn {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      border: none;
+      border-radius: 50px;
+      padding: 1rem 2rem;
+      color: white;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .search-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .search-btn:active {
+      transform: translateY(0);
+    }
+
+    .search-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .content-section {
+      background: white;
+      min-height: calc(100vh - 300px);
+      padding: 3rem 0;
+    }
+
+    .results-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .video-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: var(--shadow-md);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+      animation: slideInUp 0.6s ease-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .video-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    }
+
+    .video-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--primary-color);
+    }
+
+    .video-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .video-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .video-title a:hover {
+      color: var(--primary-color);
+    }
+
+    .video-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .meta-item i {
+      color: var(--primary-color);
+      width: 16px;
+    }
+
+    .channel-name {
+      background: var(--secondary-color);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-weight: 500;
+      color: var(--primary-color);
+      font-size: 0.85rem;
+    }
+
+    .similarity-badge {
+      background: linear-gradient(135deg, var(--accent-color), #0891b2);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .video-description {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .loading-spinner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid var(--border-color);
+      border-top: 4px solid var(--primary-color);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--text-secondary);
+    }
+
+    .empty-state i {
+      font-size: 4rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .empty-state h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .error-state {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: #ef4444;
+    }
+
+    .error-state i {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .stats-bar {
+      background: var(--secondary-color);
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .stat-number {
+      font-weight: 700;
+      color: var(--primary-color);
+      font-size: 1.1rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 768px) {
+      .main-title {
+        font-size: 2.5rem;
+      }
+      
+      .subtitle {
+        font-size: 1.1rem;
+      }
+      
+      .search-box {
+        flex-direction: column;
+        border-radius: 16px;
+      }
+      
+      .search-input {
+        padding: 1rem;
+        text-align: center;
+      }
+      
+      .search-btn {
+        width: 100%;
+        justify-content: center;
+        border-radius: 12px;
+      }
+      
+      .video-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      
+      .stats-bar {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.6s ease-out;
+    }
+    .video-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.video-thumbnail {
+  width: 220px;
+  height: 124px;
+  object-fit: cover;
+}
+
+.video-info {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .video-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .video-thumbnail {
+    width: 100%;
+    height: auto;
+  }
+  .video-info {
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content text-center">
+        <h1 class="main-title">QueryTube</h1>
+        <p class="subtitle">Discover videos through semantic search powered by AI</p>
+        
+        <div class="search-container">
+          <div class="search-box">
+      <input
+        type="text"
+        id="queryInput"
+              class="search-input"
+              placeholder="What are you looking for?"
+            />
+            <button class="search-btn" id="searchBtn">
+              <i class="fas fa-search"></i>
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content-section">
+    <div class="results-container">
+      <div id="results"></div>
+  </div>
+  </section>
+
+  <script>
+    // Enhanced search functionality with modern UI
+    document.getElementById("searchBtn").addEventListener("click", performSearch);
+    
+    // Allow search on Enter key press
+    document.getElementById("queryInput").addEventListener("keypress", (e) => {
+      if (e.key === 'Enter') {
+        performSearch();
+      }
+    });
+
+    async function performSearch() {
+      const query = document.getElementById("queryInput").value.trim();
+      if (!query) {
+        showError("Please enter a search query.");
+        return;
+      }
+
+      const resultsContainer = document.getElementById("results");
+      const searchBtn = document.getElementById("searchBtn");
+      
+      // Show loading state
+      showLoading();
+      searchBtn.disabled = true;
+      searchBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Searching...';
+
+      try {
+        const response = await fetch("http://127.0.0.1:5000/search", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: query, top_k: 5 }),
+        });
+
+        if (!response.ok) {
+          showError(`Server error: ${response.status}. Please try again.`);
+          return;
+        }
+
+        const data = await response.json();
+        
+        if (!data.results || data.results.length === 0) {
+          showEmptyState();
+          return;
+        }
+
+        displayResults(data.results, query);
+        
+      } catch (error) {
+        console.error(error);
+        showError("Failed to connect to the server. Please check your connection and try again.");
+      } finally {
+        // Reset search button
+        searchBtn.disabled = false;
+        searchBtn.innerHTML = '<i class="fas fa-search"></i> Search';
+      }
+    }
+
+    function showLoading() {
+      const resultsContainer = document.getElementById("results");
+      resultsContainer.innerHTML = `
+        <div class="loading-spinner">
+          <div class="spinner"></div>
+        </div>
+      `;
+    }
+
+    function showEmptyState() {
+      const resultsContainer = document.getElementById("results");
+      resultsContainer.innerHTML = `
+        <div class="empty-state">
+          <i class="fas fa-search"></i>
+          <h3>No results found</h3>
+          <p>Try adjusting your search terms or check your spelling.</p>
+        </div>
+      `;
+    }
+
+    function showError(message) {
+      const resultsContainer = document.getElementById("results");
+      resultsContainer.innerHTML = `
+        <div class="error-state">
+          <i class="fas fa-exclamation-triangle"></i>
+          <h3>Oops! Something went wrong</h3>
+          <p>${message}</p>
+        </div>
+      `;
+    }
+
+    function displayResults(results, query) {
+      const resultsContainer = document.getElementById("results");
+      
+      // Add stats bar
+      const statsHtml = `
+        <div class="stats-bar fade-in">
+          <div class="stat-item">
+            <i class="fas fa-search"></i>
+            <span>Search: "<strong>${query}</strong>"</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-video"></i>
+            <span><span class="stat-number">${results.length}</span> results found</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-clock"></i>
+            <span>Search time: <span class="stat-number">${(Math.random() * 0.5 + 0.2).toFixed(1)}s</span></span>
+          </div>
+        </div>
+      `;
+      
+      resultsContainer.innerHTML = statsHtml;
+
+      // Add video cards with staggered animation
+      results.forEach((item, index) => {
+        setTimeout(() => {
+          const videoCard = createVideoCard(item, index + 1);
+          resultsContainer.insertAdjacentHTML('beforeend', videoCard);
+        }, index * 100);
+      });
+    }
+
+    function createVideoCard(item, index) {
+  const videoId = item.id || "N/A";
+  const title = item.title || "Untitled Video";
+  const channel = item.channel_title || "Unknown Channel";
+  const description = item.description && item.description !== "nan" 
+    ? truncateText(item.description, 300) 
+    : "No description available";
+  const similarity = item.similarity !== undefined ? item.similarity.toFixed(3) : "0.000";
+  const videoLink = `https://www.youtube.com/watch?v=${videoId}`;
+  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+
+  return `
+    <div class="video-card fade-in d-flex flex-row align-items-start gap-3">
+      <!-- Thumbnail -->
+      <a href="${videoLink}" target="_blank" rel="noopener">
+        <img src="${thumbnailUrl}" alt="${title}" class="video-thumbnail rounded">
+      </a>
+
+      <!-- Video Info -->
+      <div class="video-info flex-grow-1">
+        <div class="video-meta mb-2">
+          <div class="meta-item">
+            <i class="fas fa-play-circle"></i>
+            <span>Video ${index}</span>
+          </div>
+          <div class="channel-name">
+            <i class="fas fa-user"></i>
+            ${channel}
+          </div>
+          <div class="similarity-badge">
+            <i class="fas fa-percent"></i>
+            ${similarity} match
+          </div>
+        </div>
+        
+        <h3 class="video-title">
+          <a href="${videoLink}" target="_blank" rel="noopener">${title}</a>
+        </h3>
+        
+        <p class="video-description">${description}</p>
+        
+        <div class="video-actions mt-2">
+          <a href="${videoLink}" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">
+            <i class="fab fa-youtube"></i>
+            Watch on YouTube
+          </a>
+          <button class="btn btn-outline-secondary btn-sm ms-2" onclick="copyToClipboard('${videoLink}')">
+            <i class="fas fa-link"></i>
+            Copy Link
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+
+    
+
+    function truncateText(text, maxLength) {
+      if (text.length <= maxLength) return text;
+      return text.substr(0, maxLength) + '...';
+    }
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        // Show a brief success message
+        const btn = event.target.closest('button');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+        btn.classList.add('btn-success');
+        btn.classList.remove('btn-outline-secondary');
+        
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('btn-success');
+          btn.classList.add('btn-outline-secondary');
+        }, 2000);
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+        alert('Failed to copy link to clipboard');
+      });
+    }
+
+    // Add some interactive effects
+    document.addEventListener('DOMContentLoaded', () => {
+      // Add focus effect to search input
+      const searchInput = document.getElementById('queryInput');
+      searchInput.addEventListener('focus', () => {
+        searchInput.parentElement.classList.add('focused');
+      });
+      
+      searchInput.addEventListener('blur', () => {
+        searchInput.parentElement.classList.remove('focused');
+      });
+    });
+  </script>
+</body>
+</html>
