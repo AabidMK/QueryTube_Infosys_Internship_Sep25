@@ -1,0 +1,10 @@
+Pandas
+NumPy
+Transformers
+sentence-transformers
+chromadb
+pyarrow
+fastparquet
+fastapi
+uvicorn
+tabulate
