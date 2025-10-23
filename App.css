@@ -1,0 +1,199 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Full layout */
+.App {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+/* Background video */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.4) blur(1px);
+}
+
+/* Overlay */
+.overlay {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 20px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.6),
+    rgba(20, 20, 20, 0.7)
+  );
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.glow-text {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.tube {
+  color: #ff4fc9;
+  text-shadow: 0 0 30px rgba(255, 79, 201, 0.5);
+}
+
+.tagline {
+  color: #cfcfcf;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 60px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.search-bar input::placeholder {
+  color: #bbb;
+}
+
+.search-bar input:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.search-bar button {
+  padding: 14px 22px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(135deg, #007bff, #ff4fc9);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Results grid */
+.results-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* Result cards */
+.result-card {
+  background: linear-gradient(
+    145deg,
+    rgba(40, 40, 40, 0.85),
+    rgba(70, 70, 70, 0.6)
+  );
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(255, 79, 201, 0.2);
+}
+
+.thumbnail-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.02);
+}
+
+.video-title {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.result-card p {
+  font-size: 0.95rem;
+  color: #d6d6d6;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.transcript {
+  color: #bcbcbc;
+  font-size: 0.9rem;
+  margin: 8px 0 14px;
+}
+
+/* Watch button */
+.watch-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  background: linear-gradient(90deg, #007bff, #ff4fc9);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.watch-button:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
