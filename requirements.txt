@@ -1,0 +1,6 @@
+chromadb
+pandas
+numpy
+sentence-transformers
+fastapi
+uvicorn
