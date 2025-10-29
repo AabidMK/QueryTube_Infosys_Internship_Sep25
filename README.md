@@ -105,5 +105,8 @@ This project helped improve both technical and teamwork skills while understandi
 ---
 
 ## 📸 Example Output
-<img width="512" height="441" alt="image" src="https://github.com/user-attachments/assets/eaf06233-768a-4e99-a691-638a9c6a8ea1" />
+<img width="1778" height="816" alt="image" src="https://github.com/user-attachments/assets/c2554d10-c77f-4d39-8c90-67d947dbd33e" />
+<img width="1525" height="898" alt="image" src="https://github.com/user-attachments/assets/f73f6c6e-7eec-4bd7-8447-3a0f88cff057" />
+
+
 
