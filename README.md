@@ -92,17 +92,19 @@ Enable YouTube Data API v3.
 Create an API key and store it securely (e.g., .env or config.json).
 
 Example config.json:
-
+```json
 {
   "YOUTUBE_API_KEY": "your_api_key_here"
 }
-
+```
 ---
 
 ## 💻 Usage
 
 # Run the app
+```bash
 python app.py
+```
 Then open your browser at 👉 http://127.0.0.1:5000/
 Type your natural-language query (e.g., “how to build a neural network”) and get the top-5 semantically relevant YouTube videos.
 
@@ -121,7 +123,7 @@ Type your natural-language query (e.g., “how to build a neural network”) and
 ## 🧩 Dependencies
 Python 3.8+
 
-youtube-transcript-api
+youtube-transcript-api, Fastapi
 
 sentence-transformers
 
@@ -148,6 +150,7 @@ pip install youtube-transcript-api sentence-transformers pandas numpy scikit-lea
 ⚙️ Integrate FAISS/ChromaDB for faster retrieval
 
 ☁️ Deploy to cloud (Render, GCP, AWS, etc.)
+
 ---
 ## 👨‍💻 Contributors
 
