@@ -4,7 +4,6 @@
 # Ignore specific directories that should definitely be excluded
 node_modules/
 __pycache__/
-chroma_db/
 build/
 dist/
 .venv/
