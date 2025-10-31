@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 
 # ---------- CONFIG ----------
-API_KEY = "AIzaSyAVuh8SCi17MsO8uG4H5Rj-3F2BApHn6nQ"
+API_KEY = ${Api_key}
 CHANNEL_ID = "UCteRPiisgIoHtMgqHegpWAQ"
 MAX_RESULTS = 50   # per page (YouTube API limit)
 # ----------------------------
@@ -131,7 +131,7 @@ if __name__ == "__main__":
 # import pandas as pd
 
 # # ---------- CONFIG ----------
-# API_KEY = "AIzaSyAVuh8SCi17MsO8uG4H5Rj-3F2BApHn6nQ"
+# API_KEY = ${Api_key}
 # CHANNEL_ID = "UCteRPiisgIoHtMgqHegpWAQ"
 # MAX_RESULTS = 50   # per page (YouTube API limit)
 # # ----------------------------
@@ -244,3 +244,4 @@ if __name__ == "__main__":
 
 #     print("Channel Info:", channel)
 #     print("Videos saved to youtube_videos.csv")
+
