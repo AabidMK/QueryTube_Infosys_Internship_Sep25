@@ -11,7 +11,6 @@ It integrates **Python**, **ChromaDB**, **embedding models**, and a **React fron
 3. [Tech Stack](#tech-stack)
 4. [Project Structure](#project-structure)
 5. [Pipeline Overview](#pipeline-overview)
-6. [How to Run](#how-to-run)
 
 ---
 
