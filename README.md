@@ -13,7 +13,7 @@ AI_SemanticSearchTube. Building a Semantic  Search App with YouTube Data
 ## 🚀 Features
 
 - **Semantic Search** over YouTube videos using embeddings
-- Natural language queries (e.g., *"Explain quantum computing in simple terms"*)
+- Natural language queries (e.g., *"Css tutoral for Beginners"*)
 - Leverages **ChromaDB** for efficient vector storage and retrieval
 - Integrates **YouTube Data API v3** for video metadata and transcripts
 - Built with **Python**, **LangChain**, and **Sentence Transformers**
@@ -21,7 +21,7 @@ AI_SemanticSearchTube. Building a Semantic  Search App with YouTube Data
 
 ---
 
-## 📦 Tech Stack
+## Tech Stack
 
 - **Language**: Python 3.9+
 - **Framework**: Streamlit (Frontend) / FastAPI (Backend)
@@ -32,22 +32,13 @@ AI_SemanticSearchTube. Building a Semantic  Search App with YouTube Data
 
 ---
 
-## ⚙️ Installation
+## Steps Of Execution
 
-### 1. Clone the Repository
+- **1**: to acccess the vidoes_with_cleaned_embeddings
+- **2**: eda file 
+- **3**: then chroma db upload code 
+- **4**: api_search 
+- **5**:backend 
+- **6**:frontend 
 
-```bash
-git clone https://github.com/AabidMK/QueryTube_Infosys_Internship_Sep25.git
-cd QueryTube_Infosys_Internship_Sep25
-git checkout khushi.P
 
-##Steps for execution
-###1-- to acccess the vidoes_with_cleaned_embeddings
-###2-- eda file 
-###3-- then chroma db upload code 
-###4-- api_search 
- ###5--backend 
-###6--frontend 
-
-##Steps for execution
-###1-- to acccess the vidoes_with_cleaned_embeddings , 2-- eda file ,3-- then chroma db upload code , 4-- api_search , 5--backend , 6--frontend add direct link access to these files for easy execution with appropriate titles
