@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Learn Python Basics",
+        "description": "Introduction to Python programming for beginners.",
+        "url": "https://youtu.be/python1"
+    },
+    {
+        "title": "Machine Learning Tutorial",
+        "description": "Comprehensive guide to ML concepts.",
+        "url": "https://youtu.be/ml1"
+    },
+    {
+        "title": "Deep Learning with PyTorch",
+        "description": "Step-by-step neural network building using PyTorch.",
+        "url": "https://youtu.be/dl1"
+    },
+    {
+        "title": "Flask API Development",
+        "description": "How to build APIs with Flask framework.",
+        "url": "https://youtu.be/flask1"
+    },
+    {
+        "title": "FastAPI Crash Course",
+        "description": "Build high-performance APIs using FastAPI.",
+        "url": "https://youtu.be/fastapi1"
+    }
+]

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Video Search</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4361ee;
+      --secondary: #3f37c9;
+      --accent: #4895ef;
+      --text: #2b2d42;
+      --background: #f8f9fa;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--background);
+      background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      margin: 0;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--text);
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      background: linear-gradient(45deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .header p {
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px;
+      background: var(--card-bg);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: slideUp 0.5s ease-out;
+    }
+
+    .search-box {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      flex: 1;
+      padding: 15px 20px;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+    }
+
+    button {
+      padding: 15px 30px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    button:hover {
+      background: var(--secondary);
+      transform: translateY(-2px);
+    }
+
+    #loading {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .loading-spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(67, 97, 238, 0.3);
+      border-radius: 50%;
+      border-top-color: var(--primary);
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    .video-card {
+      background: var(--card-bg);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .video-card h3 {
+      color: var(--text);
+      margin: 0 0 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .video-card p {
+      color: #666;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    .video-card a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .video-card a:hover {
+      color: var(--secondary);
+    }
+
+    .relevance-score {
+      display: inline-block;
+      padding: 4px 8px;
+      background: rgba(67, 97, 238, 0.1);
+      color: var(--primary);
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { 
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to { 
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 600px) {
+      .search-box {
+        flex-direction: column;
+      }
+      
+      button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🎥 Smart Video Search</h1>
+    <p>Find the perfect video content instantly</p>
+  </div>
+
+  <div class="container">
+    <div class="search-box">
+      <input 
+        type="text" 
+        id="queryInput" 
+        placeholder="What would you like to watch?" 
+        onkeypress="if(event.key === 'Enter') searchVideos()"
+      />
+      <button onclick="searchVideos()">
+        <i class="fas fa-search"></i>
+        Search
+      </button>
+    </div>
+
+    <div id="loading">
+      <div class="loading-spinner"></div>
+      <p>Searching for the best matches...</p>
+    </div>
+
+    <div class="results" id="results"></div>
+  </div>
+
+  <script>
+    async function searchVideos() {
+      const query = document.getElementById('queryInput').value.trim();
+      const resultsDiv = document.getElementById('results');
+      const loading = document.getElementById('loading');
+      
+      if (!query) {
+        showNotification('Please enter a search query', 'error');
+        return;
+      }
+
+      resultsDiv.innerHTML = '';
+      loading.style.display = 'block';
+
+      try {
+        const response = await fetch('http://127.0.0.1:5000/search', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query: query, top_k: 5 })
+        });
+
+        const data = await response.json();
+        loading.style.display = 'none';
+
+        if (data.error) {
+          showNotification(data.error, 'error');
+          return;
+        }
+
+        if (!data.results || data.results.length === 0) {
+          resultsDiv.innerHTML = '<p style="text-align: center; color: #666;">No results found. Try different keywords.</p>';
+          return;
+        }
+
+        data.results.forEach((video, index) => {
+          const card = document.createElement('div');
+          card.classList.add('video-card');
+          card.style.animation = `slideUp ${0.2 + index * 0.1}s ease-out forwards`;
+          card.innerHTML = `
+            <h3>${video.title}</h3>
+            <p>${video.description}</p>
+            <a href="${video.url}" target="_blank">
+              <i class="fas fa-play-circle"></i>
+              Watch Video
+            </a>
+            <p class="relevance-score">
+              <i class="fas fa-chart-line"></i>
+              Match: ${(video.score * 100).toFixed(1)}%
+            </p>
+          `;
+          resultsDiv.appendChild(card);
+        });
+
+      } catch (err) {
+        loading.style.display = 'none';
+        showNotification('Failed to connect to the API. Make sure the server is running.', 'error');
+      }
+    }
+
+    function showNotification(message, type = 'info') {
+      const notification = document.createElement('div');
+      notification.style.position = 'fixed';
+      notification.style.top = '20px';
+      notification.style.right = '20px';
+      notification.style.padding = '15px 25px';
+      notification.style.borderRadius = '8px';
+      notification.style.backgroundColor = type === 'error' ? '#ff4d4d' : '#4361ee';
+      notification.style.color = 'white';
+      notification.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+      notification.style.zIndex = '1000';
+      notification.style.animation = 'slideIn 0.3s ease-out';
+      notification.innerHTML = message;
+      
+      document.body.appendChild(notification);
+      
+      setTimeout(() => {
+        notification.style.animation = 'slideOut 0.3s ease-out';
+        setTimeout(() => notification.remove(), 300);
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
