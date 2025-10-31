@@ -5,7 +5,7 @@ from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled, No
 # ===============================
 # CONFIG
 # ===============================
-API_KEY = "AIzaSyAVuh8SCi17MsO8uG4H5Rj-3F2BApHn6nQ"   # Replace with your YouTube API Key
+API_KEY = ${Api_key}   # Replace with your YouTube API Key
 CHANNEL_ID = "UCteRPiisgIoHtMgqHegpWAQ"     # Replace with your target channel ID
 CSV_FILE = "youtube_transcripts3.csv"
 
@@ -133,4 +133,5 @@ if __name__ == "__main__":
     preferred_languages = ["en", "hi"]
 
     videos = get_video_ids(API_KEY, CHANNEL_ID, 50)
+
     save_to_csv(videos, CSV_FILE, preferred_languages)
