@@ -1,86 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>QueryTube – Semantic YouTube Search</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f4f4f9;
-      color: #333;
+      font-family: "Roboto", Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #0f0f0f;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
-    .container {
-      width: 90%;
-      max-width: 700px;
-      margin: 50px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    /* Top Search Bar */
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1e00ff;
+      margin-right: 10px;
     }
-    input[type="text"] {
-      width: 100%;
-      padding: 12px;
-      margin: 15px 0;
+
+    .actual_logo {
+      width: 45px;
+      height: 34px;
+      margin-right: 2px;
+      margin-bottom: 2px;
+    }
+
+    .search-bar {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -100px;
+    }
+
+    .search-bar input {
+      width: 60%;
+      padding: 9px 15px;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 20px 0 0 20px;
       font-size: 16px;
+      outline: none;
     }
-    button {
-      display: block;
-      width: 100%;
-      padding: 12px;
-      background: #3498db;
-      color: white;
-      border: none;
-      border-radius: 8px;
+
+    .search-bar button {
+      background-color: #f8f8f8;
+      border: 1px solid #ccc;
+      border-left: none;
       cursor: pointer;
-      font-size: 16px;
+      padding: 6px 16px;
+      border-radius: 0 20px 20px 0;
+      transition: all 0.2s ease;
     }
-    button:hover {
-      background: #2980b9;
+
+    .search-bar button:hover {
+      background-color: #f0f0f0;
     }
+
+    .search-bar button img {
+      width: 20px;
+      height: 20px;
+      opacity: 0.6;
+    }
+
+    /* Theme Toggle Button */
+    .theme-toggle {
+      background: none;
+      border: none;
+      font-size: 22px;
+      cursor: pointer;
+      margin-left: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.1);
+    }
+
+    /* Results Section */
     .results {
-      margin-top: 20px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 30px auto;
     }
+
     .video {
-      background: #fafafa;
-      border-left: 4px solid #3498db;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 6px;
-    }
-    .video a {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: background 0.3s ease;
       text-decoration: none;
-      color: #3498db;
-      font-weight: bold;
+      color: inherit;
+    }
+
+    .video:hover {
+      background-color: #f0f0f0;
+    }
+
+    .thumbnail img {
+      width: 320px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .details {
+      padding: 12px 16px;
+      flex: 1;
+    }
+
+    .details h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #030303;
+    }
+
+    .details p {
+      margin: 4px 0;
+      font-size: 14px;
+      color: #606060;
+    }
+
+    .similarity {
+      font-size: 13px;
+      color: #999;
+    }
+
+    .no-results,
+    .loading {
+      text-align: center;
+      color: #606060;
+      margin-top: 40px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 700px) {
+      .video {
+        flex-direction: column;
+      }
+
+      .thumbnail img {
+        width: 100%;
+        height: auto;
+      }
+
+      .details {
+        padding: 10px;
+      }
+
+      .search-bar input {
+        width: 80%;
+      }
+    }
+
+    .logo .tube {
+      color: rgb(0, 0, 0);
+      transition: color 0.3s ease;
+    }
+
+    .channel-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .channel-thumb {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .channel-name {
+      font-size: 14px;
+      color: #606060;
+      margin: 0;
+    }
+
+    body.dark .channel-name {
+      color: #cccccc;
+    }
+
+    .channel-thumb:hover {
+      box-shadow: 0 0 5px rgba(255,255,255,0.3);
+      transform: scale(1.05);
+      transition: all 0.2s ease;
+    }
+
+    /* 🌙 DARK THEME STYLES */
+    body.dark {
+      background-color: #0f0f0f;
+      color: #f9f9f9;
+    }
+
+    body.dark .logo {
+      color: #256cdf;
+    }
+
+    body.dark .header {
+      background-color: #181818;
+      box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    }
+
+    body.dark .video {
+      background-color: #202020;
+      box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+    }
+
+    body.dark .video:hover {
+      background-color: #2a2a2a;
+    }
+
+    body.dark .details h3 {
+      color: #ffffff;
+    }
+
+    body.dark .details p {
+      color: #bbbbbb;
+    }
+
+    body.dark .search-bar input {
+      background-color: #121212;
+      color: #ffffff;
+      border-color: #333333;
+    }
+
+    body.dark .search-bar button {
+      background-color: #202020;
+      border-color: #333333;
+    }
+
+    body.dark .search-bar button:hover {
+      background-color: #2a2a2a;
+    }
+
+    body.dark .logo .tube {
+      color: #c8c4c4;
+    }
+
+    .search-btn img {
+      width: 24px;
+      height: 24px;
+      transition: filter 0.3s ease;
     }
   </style>
 </head>
-<body>
-  <div class="container">
-    <h1>🎥 QueryTube Search</h1>
-    <input type="text" id="queryInput" placeholder="Enter your search query..." />
-    <button onclick="searchVideos()">Search</button>
 
-    <div class="results" id="results"></div>
+<body>
+  <!-- Header Bar -->
+  <div class="header">
+    <img class="actual_logo" src="./images/free-youtube-logo-blue-icon-10691-thumb.png" alt="">
+    <div class="logo">Query<span class="tube">Tube</span></div>
+    <div class="search-bar">
+      <input type="text" id="queryInput" placeholder="Search videos..." />
+      <button id="searchButton" class="search-btn">
+        <img id="searchIcon" src="./images/searchButton-black.png" alt="search">
+      </button>
+    </div>
+    <!-- 🌙 Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle">🌙</button>
   </div>
+
+  <!-- Results Section -->
+  <div class="results" id="results"></div>
 
   <script>
     async function searchVideos() {
       const query = document.getElementById("queryInput").value.trim();
+      const resultsDiv = document.getElementById("results");
+
       if (!query) {
         alert("Please enter a query!");
         return;
       }
 
-      const resultsDiv = document.getElementById("results");
-      resultsDiv.innerHTML = "<p>🔍 Searching...</p>";
+      resultsDiv.innerHTML = '<p class="loading">🔍 Searching for results...</p>';
 
       try {
         const response = await fetch("http://127.0.0.1:8000/search", {
@@ -90,34 +305,117 @@
         });
 
         const data = await response.json();
+
         if (!data.results || data.results.length === 0) {
-          resultsDiv.innerHTML = "<p>❌ No results found.</p>";
+          resultsDiv.innerHTML = '<p class="no-results">❌ No relevant results found.</p>';
           return;
         }
 
         let html = "";
-        data.results.forEach((video) => {
+        data.results.forEach(video => {
           const videoUrl = video.video_id
             ? `https://www.youtube.com/watch?v=${video.video_id}`
             : "#";
 
+          const thumbnailUrl = video.video_id
+            ? `https://img.youtube.com/vi/${video.video_id}/hqdefault.jpg`
+            : "https://via.placeholder.com/320x180?text=No+Thumbnail";
+
+          const channelThumbnail = video.channel_thumbnail 
+            ? video.channel_thumbnail
+            : video.channel_id
+              ? `https://yt3.googleusercontent.com/${video.channel_id}=s88-c-k-c0x00ffffff-no-rj`
+              : "https://via.placeholder.com/48x48?text=User";
+
+
+
+
           html += `
-            <div class="video">
-              <h3>${video.title}</h3>
-              <p><b>Channel:</b> ${video.channel}</p>
-              <p><b>Similarity:</b> ${video.similarity_score}</p>
-              <p>${video.transcript}</p>
-              <a href="${videoUrl}" target="_blank">▶ Watch on YouTube</a>
+        <a class="video" href="${videoUrl}" target="_blank">
+          <div class="thumbnail">
+            <img src="${thumbnailUrl}" alt="Thumbnail">
+          </div>
+          <div class="details">
+            <h3>${video.title}</h3>
+            <div class="channel-info">
+              <img class="channel-thumb" src="${channelThumbnail}" alt="Channel">
+              <p class="channel-name">${video.channel}</p>
             </div>
-          `;
+            <p class="similarity">Similarity: ${video.similarity_score}</p>
+            <p>${video.transcript}</p>
+          </div>
+        </a>
+      `;
+
         });
 
         resultsDiv.innerHTML = html;
       } catch (err) {
-        resultsDiv.innerHTML = "<p>⚠️ Error fetching results. Check console.</p>";
         console.error(err);
+        resultsDiv.innerHTML = '<p class="no-results">⚠️ Error fetching results. Please check backend.</p>';
       }
     }
+
+    // === THEME TOGGLE FUNCTION ===
+    function toggleTheme() {
+      const body = document.body;
+      const toggleButton = document.getElementById("themeToggle");
+
+      console.log("Theme toggle clicked!");
+
+      // Toggle dark class
+      body.classList.toggle("dark");
+      console.log("Current body classes:", body.classList);
+
+      const isDark = body.classList.contains("dark");
+      toggleButton.textContent = isDark ? "☀️" : "🌙";
+
+      // Save preference
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    }
+
+
+    // === APPLY SAVED THEME ON LOAD ===
+    window.addEventListener("DOMContentLoaded", () => {
+      const toggleButton = document.getElementById("themeToggle");
+      const body = document.body;
+      const searchIcon = document.getElementById("searchIcon");
+
+      const lightIcon = "./images/searchButton-black.png"; // your light-mode icon
+      const darkIcon = "./images/searchButton-white.png";   // your dark-mode icon
+
+      // --- Apply saved theme on load ---
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        body.classList.add("dark");
+        toggleButton.textContent = "☀️";
+        searchIcon.src = darkIcon;
+      } else {
+        body.classList.remove("dark");
+        toggleButton.textContent = "🌙";
+        searchIcon.src = lightIcon;
+      }
+
+      // --- Toggle theme on button click ---
+      toggleButton.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        const isDark = body.classList.contains("dark");
+        toggleButton.textContent = isDark ? "☀️" : "🌙";
+        searchIcon.src = isDark ? darkIcon : lightIcon;
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        console.log("Theme toggled:", isDark ? "dark" : "light");
+      });
+    });
+
+
+
+    // Allow Enter key to trigger search
+    document.getElementById("queryInput").addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        searchVideos();
+      }
+    });
   </script>
 </body>
+
 </html>

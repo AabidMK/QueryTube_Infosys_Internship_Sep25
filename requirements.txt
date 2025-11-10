@@ -1,0 +1,32 @@
+# API and Data Collection
+requests==2.31.0
+python-dotenv==1.0.0
+youtube-transcript-api==0.6.1
+
+# Data Processing and Analysis
+pandas==2.1.2
+numpy==1.24.3
+scikit-learn==1.3.2
+
+# NLP and Embeddings
+sentence-transformers==2.2.2
+transformers==4.35.0
+
+# Vector Database
+chromadb==0.4.15
+faiss-cpu==1.7.4
+
+# Web Framework
+flask==3.0.0
+fastapi==0.104.1
+uvicorn==0.24.0
+
+# Jupyter and Data Science Tools
+jupyter==1.0.0
+ipykernel==6.26.0
+matplotlib==3.8.1
+seaborn==0.13.0
+
+# Development Tools
+python-dotenv==1.0.0
+tqdm==4.66.1
