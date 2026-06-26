@@ -78,6 +78,7 @@ source venv/bin/activate        # On Windows: venv\Scripts\activate
 
 3️⃣ Install Dependencies
 pip install -r requirements.txt
+if not worked for some libraries you can install them manually, 👇 at Dependencies
 ```
 ---
 
@@ -103,9 +104,13 @@ Example config.json:
 
 # Run the app
 ```bash
-python app.py
+python src/app.py
 ```
-Then open your browser at 👉 http://127.0.0.1:5000/
+```bash
+uvicorn app:app --reload
+```
+
+Then open your browser at 👉 http://127.0.0.1:3000/
 Type your natural-language query (e.g., “how to build a neural network”) and get the top-5 semantically relevant YouTube videos.
 
 ---
@@ -137,7 +142,7 @@ Flask or Streamlit
 
 Install them via:
 ```bash
-pip install youtube-transcript-api sentence-transformers pandas numpy scikit-learn flask
+pip install youtube-transcript-api sentence-transformers pandas numpy scikit-learn flask fastapi chromadb dotenv
 ```
 ---
 
