@@ -2,16 +2,24 @@
 from sentence_transformers import SentenceTransformer
 import chromadb
 import numpy as np
-from typing import List, Dict, Any
+from typing import List, Dict, Any, TypedDict
 import os
 from dotenv import load_dotenv
+from langgraph.graph import StateGraph, START, END
 
 load_dotenv()
 COLLECTION_NAME = os.getenv('COLLECTION_NAME')
 
 
+class SearchState(TypedDict):
+    query: str
+    top_k: int
+    min_score: float
+    results: List[Dict[str, Any]]
+
+
 class VideoSearchEngine:
-    def __init__(self, chroma_path: str = "../notebooks/chromadb_data", collection_name: str = COLLECTION_NAME):
+    def __init__(self, chroma_path: str = "../notebooks/chromadb_data1", collection_name: str = COLLECTION_NAME):
         """
         Initializes model and ChromaDB collection.
         """
@@ -103,6 +111,37 @@ class VideoSearchEngine:
         )
         formatted = self._format_results(results, min_score=min_score)
         return formatted
+
+    def _langgraph_search_node(self, state: SearchState) -> SearchState:
+        results = self.search(
+            state["query"],
+            top_k=state["top_k"],
+            min_score=state.get("min_score", 0.2),
+        )
+        return {
+            "query": state["query"],
+            "top_k": state["top_k"],
+            "min_score": state.get("min_score", 0.2),
+            "results": results,
+        }
+
+    def build_graph(self):
+        """Build a minimal LangGraph workflow while preserving the same search logic."""
+        builder = StateGraph(SearchState)
+        builder.add_node("retrieve", self._langgraph_search_node)
+        builder.add_edge(START, "retrieve")
+        builder.add_edge("retrieve", END)
+        return builder.compile()
+
+    def search_with_langgraph(self, query: str, top_k: int = 5, min_score: float = 0.2) -> List[Dict[str, Any]]:
+        graph = self.build_graph()
+        state = graph.invoke({
+            "query": query,
+            "top_k": top_k,
+            "min_score": min_score,
+            "results": [],
+        })
+        return state.get("results", [])
 
     # -------------------------
     # CLI helper (preserve terminal behavior)

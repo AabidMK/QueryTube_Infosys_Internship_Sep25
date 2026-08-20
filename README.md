@@ -33,23 +33,24 @@ QueryTube solves this by combining **YouTube Data APIs**, **sentence transformer
 
 ```
 QueryTube_Infosys_Internship_Sep25/
-├── data/                          # Raw & cleaned data
+├── data/                          # Raw & cleaned data -> 6 csv/xls files
+|── images/
 ├── notebooks/                     # Jupyter notebooks for analysis
+│   ├── chromadb_data
 │   ├── cleaning_transcripts.ipynb
 │   ├── embeddings.ipynb
 │   ├── chromadb.ipynb
 │   └── other notebooks...
 │
 ├── src/                          # Source code
-│   ├── Milestone1.py            # YouTube Data Collection
-│   ├── Milestone2.ipynb         # Transcript Cleaning
 │   ├── video_search_engine.py   # Semantic search logic
-│   ├── youtube_channel_details.py # Metadata & channel info
+│   ├── videoDetails_extract.py # Metadata & channel info
 │   └── app.py                   # Frontend/backend interface
 │
-├── cleaned_transcripts.xls        # Clean transcript data
-├── cleaned_video_details.csv      # Video metadata
-├── merged_output.csv             # Combined dataset
+├── .env
+├── .gitignore
+├── index.html
+├── License
 ├── requirements.txt              # Required Python libraries
 └── README.md                     # Project documentation
 ```
@@ -104,13 +105,15 @@ Example config.json:
 
 # Run the app
 ```bash
-python src/app.py
+cd src
+python app.py
 ```
 ```bash
 uvicorn app:app --reload
 ```
 
 Then open your browser at 👉 http://127.0.0.1:3000/
+If not working, first live preview in your IDE, then try it.
 Type your natural-language query (e.g., “how to build a neural network”) and get the top-5 semantically relevant YouTube videos.
 
 ---
@@ -138,7 +141,6 @@ scikit-learn
 
 chromadb or faiss
 
-Flask or Streamlit
 
 Install them via:
 ```bash
