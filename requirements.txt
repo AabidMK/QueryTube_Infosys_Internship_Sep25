@@ -1,32 +1,40 @@
 # API and Data Collection
-requests==2.31.0
-python-dotenv==1.0.0
-youtube-transcript-api==0.6.1
+requests==2.34.2
+python-dotenv==1.2.2
+youtube-transcript-api==1.2.4
 
 # Data Processing and Analysis
-pandas==2.1.2
-numpy==1.24.3
-scikit-learn==1.3.2
+pandas==3.0.3
+numpy==2.5.0
+scikit-learn==1.9.0
 
 # NLP and Embeddings
-sentence-transformers==2.2.2
-transformers==4.35.0
+sentence-transformers==5.6.0
+transformers==5.12.1
+
+# LangChain and LangGraph
+langchain==1.3.16
+langchain-classic==1.0.8
+langchain-community==0.4.2
+langchain-core==1.6.0
+langchain-huggingface==1.2.2
+langchain-protocol==0.0.18
+langchain-text-splitters==1.1.2
+langgraph==1.2.11
+langgraph-checkpoint==4.2.0
+langgraph-prebuilt==1.1.0
+langgraph-sdk==0.4.3
+langsmith==0.11.1
 
 # Vector Database
-chromadb==0.4.15
-faiss-cpu==1.7.4
+chromadb==1.5.9
 
 # Web Framework
-flask==3.0.0
-fastapi==0.104.1
-uvicorn==0.24.0
+fastapi==0.138.1
+uvicorn==0.49.0
 
 # Jupyter and Data Science Tools
-jupyter==1.0.0
-ipykernel==6.26.0
-matplotlib==3.8.1
-seaborn==0.13.0
+ipykernel==7.3.0
 
 # Development Tools
-python-dotenv==1.0.0
-tqdm==4.66.1
+tqdm==4.68.3

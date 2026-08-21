@@ -27,6 +27,7 @@ var/
 .env
 
 # Virtual Environment
+venv2/
 venv/
 ENV/
 
@@ -34,6 +35,7 @@ ENV/
 *.db
 *.sqlite3
 /chromadb
+
 
 
 # IDE specific files
